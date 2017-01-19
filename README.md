@@ -11,7 +11,7 @@ Cactus is a minimalistic theme for bloggers based on the default theme of the sa
 Inside the folder of your Hugo site run:
 
     $ cd themes
-    $ git clone https://github.com/digitalcraftsman/hugo-cactus-theme.git
+    $ git clone https://github.com/nodejh/hugo-theme-simple.git
 
 For more information read the official [setup guide](//gohugo.io/overview/installing/) of Hugo.
 
@@ -27,7 +27,7 @@ Use the about page to introduce yourself to your visitors. You can customize the
 
 ## Hide pages
 
-Pages can be hidden and don't appear in the post list on the homepage if you add the variable `hidden = true` to the frontmatter. This allows you to link from elsewhere, i.e. just the menu. 
+Pages can be hidden and don't appear in the post list on the homepage if you add the variable `hidden = true` to the frontmatter. This allows you to link from elsewhere, i.e. just the menu.
 
 ## Disqus
 
@@ -44,7 +44,7 @@ Assign either `font-awesome` or `mono-social` to the `iconFont` variable. The Mo
 
 ## Nearly finished
 
-In order to see your site in action, run Hugo's built-in local server. 
+In order to see your site in action, run Hugo's built-in local server.
 
     $ hugo server
 
@@ -65,8 +65,7 @@ This theme is released under the MIT license. For more information read the [lic
 
 ## Acknowledgements
 
-Thanks to 
+Thanks to
 
 - [Nick Balestra](//github.com/nickbalestra/kactus) for creating the original theme
 - [Steve Francia](//github.com/spf13) for creating Hugo and the awesome community around the project.
-
