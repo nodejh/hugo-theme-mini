@@ -1,0 +1,29 @@
+<nav class="main-nav">
+	{{ $url := replace .Permalink .Site.BaseURL "" }}
+	{{ if not .IsHome }}
+		<a href='{{ .Site.BaseURL }}'> <span class="arrow">←</span>{{ with .Site.Params.home }}{{ . }}{{ else }}Home{{ end }}</a>
+	{{ end }}
+
+	{{ if ne $url "post/" }}
+		<a href='{{ .Site.BaseURL }}post'>{{ with .Site.Params.archive }}{{ . }}{{ else }}Archive{{ end }}</a>
+	{{ end }}
+
+	{{ if ne $url "tags/" }}
+		<a href='{{ .Site.BaseURL }}tags'>{{ with .Site.Params.about }}{{ . }}{{ else }}Tags{{ end }}</a>
+	{{ end }}
+
+	{{ if ne $url "about/" }}
+		<a href='{{ .Site.BaseURL }}about'>{{ with .Site.Params.about }}{{ . }}{{ else }}About{{ end }}</a>
+	{{ end }}
+
+	<a href="http://project.nodejh.com">Project</a>
+	<a href="http://resume.nodejh.com">Resume</a>
+
+	{{ range $key, $val := .Site.Params.Links }}
+		<a href="{{ $val }}">{{ $key }}</a>
+	{{ end }}
+
+	{{ if .Site.Params.enableRSS }}
+	<a class="cta" href="{{ .Site.RSSLink }}">{{ with .Site.Params.subscribe }}{{ . }}{{ else }}Subscribe{{ end }}</a>
+	{{ end }}
+</nav>

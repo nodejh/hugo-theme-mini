@@ -1,0 +1,12 @@
+<footer id="footer">
+    {{ if .Site.Social }}
+        {{ partial "social.html" . }}
+    {{ end }}
+    <p class="small">
+    {{ with .Site.Params.copyright }}
+        {{ . | markdownify }}
+    {{ else }}
+        © Copyright {{.Now.Format "2006"}} <i class="fa fa-heart" aria-hidden="true"></i> {{ .Site.Params.name }}
+    {{ end }}
+    </p>
+</footer>

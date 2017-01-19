@@ -1,0 +1,18 @@
+	{{ partial "head.html" . }}
+	<body>
+    {{ partial "nav.html" . }}
+
+    <section id="wrapper" class="home">
+        <article class="post">
+            <header>
+                <h1>{{ with .Site.Params.title404 }}{{ . }}{{ else }}404 - Page not found{{ end }}</h1>
+                <h3>{{ with .Site.Params.subtitle404 }}{{ . }}{{ else }}The content you're looking for doesn't seem to exist.{{ end }}</h3>
+            </header>
+
+            {{ partial "latest-posts.html" . }}
+        </article>
+
+        {{ partial "footer.html" . }}
+    </section>
+    </body>
+</html>

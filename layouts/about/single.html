@@ -1,0 +1,14 @@
+    {{ partial "head.html" . }}
+	<body>
+    {{ partial "nav.html" . }}
+    {{ partial "profile.html" . }}
+
+    <section id="wrapper" class="home">
+        {{ .Content }}
+        {{ partial "disqus.html" . }}
+        {{ partial "footer.html" . }}
+    </section>
+
+    {{ partial "js.html" . }}
+    </body>
+</html>

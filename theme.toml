@@ -1,0 +1,17 @@
+name = "Simple"
+license = "MIT"
+licenselink = "https://github.com/nodejh/hugo-theme-simple/blob/master/License.md"
+description = "A minimalistic and responsive theme for bloggers."
+homepage = "https://github.com/nodejh/hugo-theme-simple"
+tags = ["blog", "disqus", "google analytics", "rss", "syntax highlighting"]
+features = ["disqus", "google analytics", "rss", "syntax highlighting", "blog", "pagination", "sharing options"]
+min_version = 0.10
+
+[author]
+  name = "nodejh"
+  homepage = "https://github.com/nodejh"
+
+[[original]]
+  name = "Cactus"
+  homepage = "https://themes.gohugo.io/cactus/"
+  repo = "https://github.com/digitalcraftsman/hugo-cactus-theme"
