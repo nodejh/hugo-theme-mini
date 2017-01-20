@@ -721,7 +721,7 @@ h2.month {
     font: 300 16px/1.6 "Helvetica Neue", helvetica, Arial, sans-serif;
 }
 
-#disqus_thread {
+#disqus_thread, #ds-thread {
     margin-top: 100px;
 }
 
