@@ -1,14 +1,22 @@
-    {{ partial "head.html" . }}
-	<body>
-    {{ partial "nav.html" . }}
-    {{ partial "profile.html" . }}
+{{ partial "head.html" . }}
+<body>
+{{ partial "nav.html" . }}
+{{ partial "profile.html" . }}
 
-    <section id="wrapper" class="home">
-        {{ .Content }}
+<section id="wrapper" class="home">
+    {{ .Content }}
+
+    {{ if .Site.Params.enableDisqus }}
         {{ partial "disqus.html" . }}
-        {{ partial "footer.html" . }}
-    </section>
+    {{ end }}
 
-    {{ partial "js.html" . }}
-    </body>
+    {{ if .Site.Params.enableDuoshuo }}
+        {{ partial "duoshuo.html" . }}
+    {{ end }}
+
+    {{ partial "footer.html" . }}
+</section>
+
+{{ partial "js.html" . }}
+</body>
 </html>
