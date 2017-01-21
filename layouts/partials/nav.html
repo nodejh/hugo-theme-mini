@@ -16,9 +16,6 @@
 		<a href='{{ .Site.BaseURL }}about'>{{ with .Site.Params.about }}{{ . }}{{ else }}About{{ end }}</a>
 	{{ end }}
 
-	<a href="http://project.nodejh.com">Project</a>
-	<a href="http://resume.nodejh.com">Resume</a>
-
 	{{ range $key, $val := .Site.Params.Links }}
 		<a href="{{ $val }}">{{ $key }}</a>
 	{{ end }}
