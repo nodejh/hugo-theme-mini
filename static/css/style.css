@@ -797,7 +797,7 @@ h2.month {
 
 .archive .post-item {
     padding: 10px 10px;
-    border-left: 1px solid #cacaca;
+    /*border-left: 1px solid #cacaca;*/
     overflow-x: hidden;
     white-space:nowrap;
 }
@@ -825,7 +825,7 @@ h2.month {
 .archive .post-item:hover {
     color: #5694f1;
     padding-left: 13px;
-    border-left: 1px solid #5badf0;
+    /*border-left: 1px solid #5badf0;*/
     transition: 0.3s ease-out;
 }
 .archive .post-item:hover .post-time,.archive .post-item:hover .post-link {
