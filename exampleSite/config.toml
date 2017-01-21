@@ -1,20 +1,32 @@
 # Site settings
-baseurl = "http://replace-this-with-your-domain.com/"
-languageCode = "en-us"
-title = "Hugo Cactus Theme"
-theme = "hugo-cactus-theme"
+baseurl = "http://nodejh.com/"
+languageCode = "zh-cn"
+title = "nodejh"
+theme = "hugo-theme-simple"
 # Enter your tracking code to enable Google Analytics
-googleAnalytics = ""
-# Disable comments by leaving disqusShortname empty
-disqusShortname = "spf13"
+googleAnalytics = "UA-84989670-1"
 
 [params]
-	name = "John Doe"
-	description = "Describe your website"
-	bio = "Blogger - Programmer - Gopher"
+	name = "nodejh"
+	description = "My Blog"
+	bio = "To Be A Full Stack Developer"
 	# Enter optionally your twitter account
-	twitter = "Your Twitter account"
-	enableRSS = true
+	twitter = "nodejh"
+	enableRSS = false
+
+	# Disable comments by leaving disqusShortname empty
+	disqusShortname = "nodejh"
+	enableDisqus = false
+
+	# Duoshuo Comment
+	duoshuoShortname = "nodejh"
+	enableDuoshuo = true
+
+	enableGithubIssuesTips = false
+
+
+	# Use description as title in single page, posts page and tags page.
+	useDescriptionAsTitle = true
 
 	# Add custom assets with their paths relative to the static folder
 	customCSS = []
@@ -26,6 +38,7 @@ disqusShortname = "spf13"
 	# Navigation links
 	home = ""
 	about = ""
+	archive = ""
 	subscribe = ""
 	# Pagination links
 	olderPosts = ""
@@ -33,7 +46,7 @@ disqusShortname = "spf13"
 	readMore = ""
 	copyright = ""
 	# Sharing options and author information in posts
-	aboutAuthor = "I'm an enthusiastic gopher."
+	aboutAuthor = "I am so interesting."
 	tweet = ""
 	share = ""
 	# 404 page
@@ -41,13 +54,14 @@ disqusShortname = "spf13"
 	subtitle404 = ""
 
 	# Choose a font for the social icons in the footer. Either "mono-social" or "font-awesome"
-	iconFont = "mono-social"
-    # The social icons can be styled differently if you use mono as font - circle, rounded, or empty
-    socialIconStyle = "circle"
+	iconFont = "font-awesome"
+  # The social icons can be styled differently if you use mono as font - circle, rounded, or empty
+  socialIconStyle = "circle"
+
 
 # Add additional social link entries underneath
 [social]
-    twitter  = "https://www.twitter.com/"
-    facebook = "https://www.facebook.com/"
-    github   = "https://www.github.com/"
-    dribble  = "https://www.dribbble.com/"
+	facebook-square = "https://www.facebook.com/nodejh"
+  twitter = "https://www.twitter.com/nodejh"
+	stack-overflow = "http://stackoverflow.com/users/4518882/nodejh"
+  github = "https://www.github.com/nodejh"
