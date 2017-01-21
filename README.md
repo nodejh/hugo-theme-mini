@@ -1,71 +1,111 @@
-# Simple  Theme
+# Simple Theme
 
-Simple is a minimalistic theme for bloggers based on the default theme of the same-named [Cactus static site generator](//github.com/koenbok/Cactus) written in Python and [Nick Balestra](//github.com/nickbalestra/kactus)'s Jekyll port. Noteworthy features of this Hugo theme are the integration of a comment-system powered by Disqus, a customizable about page, support for RSS feeds, syntax highlighting for source code and sharing options for blog posts.
+Simple 是一个根据 [Cactus](https://github.com/nodejh/hugo-cactus-theme) 改编的简约主题。本人在 [Cactus](https://github.com/nodejh/hugo-cactus-theme)的基础上做了一些修改，主要是添加了归档页、添加了标签页、修改了部分样式。总的来说该主题具有以下特点：
 
++ 自定义 “关于” 页面
++ 标签页
++ 归档页
++ Disqus 评论
++ 多说评论
++ RSS 订阅
++ 语法高亮
 
 ![Screenshot](https://raw.githubusercontent.com/digitalcraftsman/hugo-cactus-theme/dev/images/screenshot.png)
 
 
-## Installation
+## 安装
 
-Inside the folder of your Hugo site run:
+进入 `hugo` 的站点目录运行下面的命令：
 
-    $ cd themes
-    $ git clone https://github.com/nodejh/hugo-theme-simple.git
+```
+$ cd themes
+$ git clone https://github.com/nodejh/hugo-theme-simple.git
+```
 
-For more information read the official [setup guide](//gohugo.io/overview/installing/) of Hugo.
 
-### The config file
+## 示例站点
 
-Take a look inside the [`exampleSite`](//github.com/digitalcraftsman/hugo-cactus-theme/tree/dev/exampleSite) folder of this theme. You'll find a file called [`config.toml`](//github.com/digitalcraftsman/hugo-cactus-theme/blob/dev/exampleSite/config.toml).
+[`exampleSite`](https://github.com/nodejh/hugo-theme-simple/tree/master/exampleSite) 是本主题的一个示例站点，里面有配置文件、关于页面的一些示例。
 
-To use it, copy the [`config.toml`](//github.com/digitalcraftsman/hugo-cactus-theme/blob/dev/exampleSite/config.toml) in the root folder of your Hugo site. Feel free to change strings as you like to customize your website.
 
-## About page
+### 配置文件
 
-Use the about page to introduce yourself to your visitors. You can customize the content as you like in the [`config.toml`](//github.com/digitalcraftsman/hugo-cactus-theme/blob/dev/exampleSite/config.toml). Furthermore, you should replace the [avatar placeholder](//github.com/digitalcraftsman/hugo-cactus-theme/blob/master/static/images/avatar.png) with a great image of yourself.
+本主题提供了一个示例配置文件是 [`exampleSite`](https://github.com/nodejh/hugo-theme-simple/tree/master/exampleSite) 目录里的 [`config.toml`](https://github.com/nodejh/hugo-theme-simple/blob/master/exampleSite/config.toml) 文件。
 
-## Hide pages
+配置文件中对大部分配置都有详细的注释说明，复制该文件到站点目录下，根据自己的情况修改即可。
 
-Pages can be hidden and don't appear in the post list on the homepage if you add the variable `hidden = true` to the frontmatter. This allows you to link from elsewhere, i.e. just the menu.
 
-## Disqus
+## 头像
 
-This theme features a comment system powered by Disqus too. Just add your Disqus-shortname to the [`config.toml`](//github.com/digitalcraftsman/hugo-cactus-theme/blob/dev/exampleSite/config.toml) and let readers respond to your blog posts.
+你可以将 [images](https://github.com/nodejh/hugo-theme-simple/blob/master/static/images/) 目录下的 `avatar.png`、`avatar@2x.png`  和 `favicon.ico` 都替换为你自己的图像。
 
-## Social link icons
 
-You can add a social link panel in the footer by adding entries to the `social` block in the [`config.toml`](//github.com/digitalcraftsman/hugo-cactus-theme/blob/dev/exampleSite/config.toml). You can choose between two icon fonts:
+## 关于页面
 
-- [Font awesome](https://fortawesome.github.io/Font-Awesome/) or
+使用关于页面首先要在你的站点目录的 `content` 目录下创建一个 `about` 目录，然后再创建一个 `index.md` 文件，编写该文件即可。
+
+你也可以参考本主题示例站点中的关于页：[`exampleSite/content/about/index.md`](https://github.com/nodejh/hugo-theme-simple/blob/master/exampleSite/content/about/index.md)。
+
+
+## 隐藏页面
+
+如果你不想让一个页面出现在文章列表中，只需要在 markdown 文件的 `frontmatter` 中添加 `hidden = true` 即可。
+
+然后你可以在其他任何地方通过链接来引用该页面，如在菜单中放置一个链接。
+
+关于页面就是这么实现的。
+
+
+## Disqus 评论
+
+本主题提供两种评论系统，Disqus 和多说。使用 Disqus 评论需要在 `config.toml` 进行设置。
+
+设置 `disqusShortname` 为你的 Disqus ID，并将 `enableDisqus` 设置为 `true` 即可开启 Disqus 评论。
+
+将 `enableDisqus` 设置为 `false` 则不启用 Disqus 评论。
+
+
+## 多说评论
+
+由于在中国大陆无法使用 Disqus，所以本主题提供了多说评论系统。多说评论系统的配置和 Disqus 配置基本一致。
+
+
+## 不使用评论系统
+
+由于使用第三发评论系统会使网站加载速度变慢，所以也可以不使用评论系统。只需要将 `enableDisqus` 和 `enableDuoshuo` 都设置为 `false` 即可。
+
+然后我的博客由于同步到了 Github Issues，所以也同时在主题中提供了跳转到 Github Issues 评论的文字提示。只需要设置 `enableGithubIssuesTips = true` 即可。当然，一般是不需要这么做的，这可能只是我个人需求。具体效果可以参考我的博客 [http://nodejh.com](http://nodejh.com)。
+
+
+## 社交链接
+
+本主题的社交链接是字体图标的样式，并放置在了页面底部。你可以通过在 `config.toml` 的 `social` 模块中修改添加你的社交链接。社交链接提供了两种字体图标，选用其中一种即可：
+
+- [Font awesome](https://fortawesome.github.io/Font-Awesome/) 或
 - [Mono social icons](https://github.com/drinchev/monosocialiconsfont)
 
-Assign either `font-awesome` or `mono-social` to the `iconFont` variable. The Mono social icons offer three styles of icons: -circle, rounded, or default (empty).
+`iconFont` 变量即字体图标库，可以是 `font-awesome` 或 `mono-social`。
 
-## Nearly finished
-
-In order to see your site in action, run Hugo's built-in local server.
-
-    $ hugo server
-
-Now enter [`localhost:1313`](http://localhost:1313) in the address bar of your browser.
+如果使用的是 `Mono social icons` 即 `iconFont = "mono-social"`，则图标还有三种可选样式：`-circle`、`rounded`、或默认 `empty`。
 
 
-## Contributing
+## 部署主题
 
-Did you found a bug or got an idea for a new feature? Feel free to use the [issue tracker](//github.com/digitalcraftsman/hugo-cactus-theme/issues) to let me know. Or make directly a [pull request](//github.com/digitalcraftsman/hugo-cactus-theme/pulls).
+配置完成之后，就可以使用下面的命令来启动 hugo 服务编译 markdown 文件生成静态站点：
 
-Please create a separate branch for your pull request.
+```
+$ hugo server
+```
+
+然后在浏览器地址栏输入 [`localhost:1313`](http://localhost:1313) 来访问站点。
 
 
 ## License
 
-This theme is released under the MIT license. For more information read the [license](//github.com/digitalcraftsman/hugo-cactus-theme/blob/dev/LICENSE.md).
+[MIT](https://github.com/nodejh/hugo-theme-simple/blob/master/LICENSE.md)
 
+## 鸣谢
 
-## Acknowledgements
+特别感谢 [digitalcraftsman](https://github.com/digitalcraftsman) 的 [Cacuts](https://github.com/digitalcraftsman/hugo-cactus-theme) 主题：
 
-Thanks to
-
-- [Nick Balestra](//github.com/nickbalestra/kactus) for creating the original theme
-- [Steve Francia](//github.com/spf13) for creating Hugo and the awesome community around the project.
+- [hugo-cactus-theme](https://github.com/digitalcraftsman/hugo-cactus-theme)
