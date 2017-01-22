@@ -1,5 +1,8 @@
 # Cactus Plus
 
+
+[English Documention](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/README.md) | [中文文档](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/README_zh-cn.md)
+
  Cactus Plus 是一个根据 [Cactus](https://github.com/digitalcraftsman/hugo-cactus-theme) 改编的简约主题。我在 [Cactus](https://github.com/digitalcraftsman/hugo-cactus-theme)的基础上做了一些修改，主要是添加了归档页、添加了标签页、修改了部分样式。总的来说该主题具有以下特点：
 
 + 自定义 “关于” 页面
