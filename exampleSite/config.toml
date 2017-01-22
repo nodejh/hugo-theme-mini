@@ -10,7 +10,7 @@ googleAnalytics = "your_google_analytics_code"
 [params]
 	name = "Hugo"
 	description = "Blog Description"
-	bio = "To Be A Full Stack Developer"
+	bio = "Blog biology"
 	# Enter optionally your twitter account
 	twitter = "your_twotter"
 	enableRSS = false
