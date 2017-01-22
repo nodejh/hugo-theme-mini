@@ -1,10 +1,10 @@
-name = "Simple"
+name = "Cactus Plus"
 license = "MIT"
-licenselink = "https://github.com/nodejh/hugo-theme-simple/blob/master/License.md"
+licenselink = "https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/License.md"
 description = "A minimalistic and responsive theme for bloggers."
 homepage = "https://github.com/nodejh/hugo-theme-simple"
-tags = ["blog", "disqus", "duoshuo", "google analytics", "rss", "syntax highlighting", "tags", "categories"]
-features = ["disqus", "duoshuo", "google analytics", "rss", "syntax highlighting", "blog", "pagination", "sharing options",  "tags", "categories"]
+tags = ["blog", "disqus", "duoshuo", "google analytics", "baidu tongji", "rss", "syntax highlighting", "tags", "categories"]
+features = ["blog", "disqus", "duoshuo", "google analytics", "baidu tongji", "rss", "syntax highlighting", "tags", "categories"]
 min_version = 0.10
 
 [author]

@@ -63,7 +63,7 @@ Just set both `enableDisqus = false` and `enableDuoshuo = false` if you want to 
 
 This theme use Google Analytics defalut. If you want to disable Google Analytics, just set `enableGoogleAnalytics = false` in [`config.toml`](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/exampleSite/config.toml).
 
-## 百度统计
+## Baidu Tongji
 
 This theme alse features Baidu Tongji for Chinese users. To use Baidu Tongji you should set `enableBaiduAnalytics = true` and set `baiduAnalytics` to your  `Baidu Tongji Code` which looks like `39843ea392201290bd6f76173d2e0000` in  [`config.toml`](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/exampleSite/config.toml).
 
