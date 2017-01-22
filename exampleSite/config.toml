@@ -2,7 +2,7 @@
 baseurl = "http://nodejh.com/"
 languageCode = "zh-cn"
 title = "nodejh"
-theme = "hugo-theme-simple"
+theme = "hugo-theme-cactus-plus"
 # Enter your tracking code to enable Google Analytics
 googleAnalytics = "UA-84989670-1"
 
@@ -14,19 +14,20 @@ googleAnalytics = "UA-84989670-1"
 	twitter = "nodejh"
 	enableRSS = false
 
-	# Disable comments by leaving disqusShortname empty
+	# Disqus comment
 	disqusShortname = "nodejh"
+	# Disable disqus comments by set `enableDisqus = "false"`
 	enableDisqus = false
 
-	# Duoshuo Comment
+	# Duoshuo comment
 	duoshuoShortname = "nodejh"
-	enableDuoshuo = true
+	# Disable duoshuo comments by set `enableDuoshuo = "false"`
+	enableDuoshuo = false
 
 	enableGithubIssuesTips = false
 
-
 	# Use description as title in single page, posts page and tags page.
-	useDescriptionAsTitle = true
+	useDescriptionAsTitle = false
 
 	# Add custom assets with their paths relative to the static folder
 	customCSS = []
@@ -56,12 +57,12 @@ googleAnalytics = "UA-84989670-1"
 	# Choose a font for the social icons in the footer. Either "mono-social" or "font-awesome"
 	iconFont = "font-awesome"
   # The social icons can be styled differently if you use mono as font - circle, rounded, or empty
-  socialIconStyle = "circle"
+  socialIconStyle = ""
 
 
 # Add additional social link entries underneath
 [social]
+	# For example: font-aswome-name = "your_social_url"
 	facebook-square = "https://www.facebook.com/nodejh"
-  twitter = "https://www.twitter.com/nodejh"
-	stack-overflow = "http://stackoverflow.com/users/4518882/nodejh"
-  github = "https://www.github.com/nodejh"
+  twitter-square = "https://www.twitter.com/nodejh"
+  github-square = "https://www.github.com/nodejh"

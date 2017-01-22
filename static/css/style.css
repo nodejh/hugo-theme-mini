@@ -871,9 +871,9 @@ code {
  * tags page
  */
 
-/*#wrapper.tags {
+#wrapper.tags {
   padding: 0px 40px 20px 40px;
-}*/
+}
 .page-tags {
     text-align: center;
 }
