@@ -1,26 +1,27 @@
 # Site settings
 baseurl = "http://nodejh.com/"
-languageCode = "zh-cn"
-title = "nodejh"
+# HTML Language Code Reference, such as en, zh-cn
+languageCode = "en,"
+title = "Blog Title"
 theme = "hugo-theme-cactus-plus"
 # Enter your tracking code to enable Google Analytics
-googleAnalytics = "UA-84989670-1"
+googleAnalytics = "your_google_analytics_code"
 
 [params]
-	name = "nodejh"
-	description = "My Blog"
+	name = "Hugo"
+	description = "Blog Description"
 	bio = "To Be A Full Stack Developer"
 	# Enter optionally your twitter account
-	twitter = "nodejh"
+	twitter = "your_twotter"
 	enableRSS = false
 
 	# Disqus comment
-	disqusShortname = "nodejh"
+	disqusShortname = "your_disqus_short_name"
 	# Disable disqus comments by set `enableDisqus = "false"`
 	enableDisqus = false
 
 	# Duoshuo comment
-	duoshuoShortname = "nodejh"
+	duoshuoShortname = "your_duoshuo_short_name"
 	# Disable duoshuo comments by set `enableDuoshuo = "false"`
 	enableDuoshuo = false
 
@@ -28,6 +29,14 @@ googleAnalytics = "UA-84989670-1"
 
 	# Use description as title in single page, posts page and tags page.
 	useDescriptionAsTitle = false
+
+	# Enable googleAnalytics
+	enableGoogleAnalytics = true
+
+	# Enable baiduAnalytics
+	enableBaiduAnalytics = false
+	# Baidu Tongji Code
+	baiduAnalytics = 'your_baidu_tongji_code'
 
 	# Add custom assets with their paths relative to the static folder
 	customCSS = []
@@ -62,7 +71,6 @@ googleAnalytics = "UA-84989670-1"
 
 # Add additional social link entries underneath
 [social]
-	# For example: font-aswome-name = "your_social_url"
-	facebook-square = "https://www.facebook.com/nodejh"
-  twitter-square = "https://www.twitter.com/nodejh"
-  github-square = "https://www.github.com/nodejh"
+	facebook-square = "your_facebook_link"
+  twitter-square = "your_twitter_link"
+  github-square = "your_github_link"
