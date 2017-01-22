@@ -3,13 +3,15 @@
 
 [English Documention](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/README.md) | [中文文档](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/README_zh-cn.md)
 
- Cactus Plus 是一个根据 [Cactus](https://github.com/digitalcraftsman/hugo-cactus-theme) 改编的简约主题。我在 [Cactus](https://github.com/digitalcraftsman/hugo-cactus-theme)的基础上做了一些修改，主要是添加了归档页、添加了标签页、修改了部分样式。总的来说该主题具有以下特点：
+ Cactus Plus 是一个根据 [Cactus](https://github.com/digitalcraftsman/hugo-cactus-theme) 改编的简约主题。我在 [Cactus](https://github.com/digitalcraftsman/hugo-cactus-theme)的基础上做了一些修改，主要是添加了归档页和标签页、添加了百度统计、修改了部分样式。总的来说该主题具有以下特点：
 
-+ 自定义 “关于” 页面
++ 自定义关于页面
 + 标签页
 + 归档页
 + Disqus 评论
 + 多说评论
++ Google Analytics
++ 百度统计
 + RSS 订阅
 + 语法高亮
 
@@ -81,6 +83,15 @@ $ git clone https://github.com/nodejh/hugo-theme-cactus-plus.git
 由于使用第三发评论系统会使网站加载速度变慢，所以也可以不使用评论系统。只需要将 `enableDisqus` 和 `enableDuoshuo` 都设置为 `false` 即可。
 
 然后我的博客由于同步到了 Github Issues，所以也同时在主题中提供了跳转到 Github Issues 评论的文字提示。只需要设置 `enableGithubIssuesTips = true` 即可。当然，一般是不需要这么做的，这可能只是我个人需求。具体效果可以参考我的博客 [http://nodejh.com](http://nodejh.com)。
+
+
+## Google Analytics
+
+该主题默认使用了 Google Analytics。如果要禁用 Google Analytics，只需要设置 [`config.toml`](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/exampleSite/config.toml) 中的 `enableGoogleAnalytics = false`。
+
+## 百度统计
+
+该主题同样也提供了百度统计，主要是方便中国大陆用户使用。开启百度统计的方式，首先需要设置 [`config.toml`](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/exampleSite/config.toml) 中的 `enableBaiduAnalytics = true`，然后将 `baiduAnalytics` 改为在百度统计后台获取的 `统计代码`，形如 `39843ea392201290bd6f76173d2e0000`。
 
 
 ## 社交链接

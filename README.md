@@ -1,8 +1,10 @@
 # Cactus Plus
 
+
 [English Documention](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/README.md) | [中文文档](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/README_zh-cn.md)
 
-Cactus Plus is a minimalistic theme for bloggers based on the theme named [Cactus](https://github.com/digitalcraftsman/hugo-cactus-theme). Noteworthy features of this Hugo theme are the integration of a comment-system powered by [Disqus](https://disqus.com/) and [Duoshuo](http://duoshuo.com/), a customizable about page, a simple tags page and a minimalistic archives page, support for RSS feeds, syntax highlighting for source code and sharing options for blog posts.
+
+Cactus Plus is a minimalistic theme for bloggers based on the theme named [Cactus](https://github.com/digitalcraftsman/hugo-cactus-theme). Noteworthy features of this Hugo theme are the integration of a comment-system powered by [Disqus](https://disqus.com/) and [Duoshuo](http://duoshuo.com/), a customizable about page, a simple tags page and a minimalistic archives page, support for RSS feeds, syntax highlighting for source code and site analytics.
 
 ## Screenshot
 
@@ -31,7 +33,7 @@ To use it, copy the [`config.toml`](https://github.com/nodejh/hugo-theme-cactus-
 
 ## About page
 
-Use the about page to introduce yourself to your visitors. You can customize the content as you like in the [`config.toml`](//github.com/digitalcraftsman/hugo-cactus-theme/blob/dev/exampleSite/config.toml).
+Use the about page to introduce yourself to your visitors. You can customize the content as you like in the `/content/about/index.md`.
 
 ## Avatar
 
@@ -56,6 +58,16 @@ This theme features a comment system powered by Duoshuo too. Duoshuo is mainly p
 Just set both `enableDisqus = false` and `enableDuoshuo = false` if you want to disable comment.
 
 
+
+## Google Analytics
+
+This theme use Google Analytics defalut. If you want to disable Google Analytics, just set `enableGoogleAnalytics = false` in [`config.toml`](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/exampleSite/config.toml).
+
+## 百度统计
+
+This theme alse features Baidu Tongji for Chinese users. To use Baidu Tongji you should set `enableBaiduAnalytics = true` and set `baiduAnalytics` to your  `Baidu Tongji Code` which looks like `39843ea392201290bd6f76173d2e0000` in  [`config.toml`](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/exampleSite/config.toml).
+
+
 ## Social link icons
 
 You can add a social link panel in the footer by adding entries to the `social` block in the [`config.toml`](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/exampleSite/config.toml). You can choose between two icon fonts:
@@ -65,11 +77,14 @@ You can add a social link panel in the footer by adding entries to the `social` 
 
 Assign either `font-awesome` or `mono-social` to the `iconFont` variable. The Mono social icons offer three styles of icons: -circle, rounded, or default (empty).
 
+
 ## Nearly finished
 
 In order to see your site in action, run Hugo's built-in local server.
 
-    $ hugo server
+```
+$ hugo server
+```
 
 Now enter [`localhost:1313`](http://localhost:1313) in the address bar of your browser.
 
