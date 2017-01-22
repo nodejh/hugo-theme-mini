@@ -31,7 +31,7 @@ googleAnalytics = "your_google_analytics_code"
 	useDescriptionAsTitle = false
 
 	# Enable googleAnalytics
-	enableGoogleAnalytics = true
+	enableGoogleAnalytics = false
 
 	# Enable baiduAnalytics
 	enableBaiduAnalytics = false
