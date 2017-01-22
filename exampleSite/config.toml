@@ -1,7 +1,7 @@
 # Site settings
 baseurl = "http://nodejh.com/"
 # HTML Language Code Reference, such as en, zh-cn
-languageCode = "en,"
+languageCode = "en"
 title = "Blog Title"
 theme = "hugo-theme-cactus-plus"
 # Enter your tracking code to enable Google Analytics
