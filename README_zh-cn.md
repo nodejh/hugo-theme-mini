@@ -3,23 +3,31 @@
 
 [English Documention](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/README.md) | [中文文档](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/README_zh-cn.md)
 
- Cactus Plus 是一个根据 [Cactus](https://github.com/digitalcraftsman/hugo-cactus-theme) 改编的简约主题。我在 [Cactus](https://github.com/digitalcraftsman/hugo-cactus-theme)的基础上做了一些修改，主要是添加了归档页和标签页、添加了百度统计、修改了部分样式。总的来说该主题具有以下特点：
+Cactus Plus 是一个根据 [Cactus](https://github.com/digitalcraftsman/hugo-cactus-theme) 改编的简约主题。
 
-+ 自定义关于页面
-+ 标签页
-+ 归档页
-+ Disqus 评论
-+ 多说评论
-+ Google Analytics
-+ 百度统计
-+ RSS 订阅
-+ 语法高亮
+**Cactus Plus 的主要更新如下：**
+
++ **添加了标签页**
++ **添加了归档页**
++ **集成了 [Disqus](https://disqus.com/) 和[多说](http://duoshuo.com/)评论系统**
++ **提供了 Google Analytics 和百度统计**
+
+示例网站： [http://nodejh.com](http://nodejh.com)。
 
 
-## Screenshot
+## 截图
+
+**首页**
 
 ![Screenshot](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/images/screenshot.png)
 
+**标签页**
+
+![Screenshot](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/images/tags.png)
+
+**归档页**
+
+![Screenshot](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/images/archive.png)
 
 ## 安装
 

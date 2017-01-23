@@ -4,12 +4,30 @@
 [English Documention](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/README.md) | [中文文档](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/README_zh-cn.md)
 
 
-Cactus Plus is a minimalistic theme for bloggers based on the theme named [Cactus](https://github.com/digitalcraftsman/hugo-cactus-theme). Noteworthy features of this Hugo theme are the integration of a comment-system powered by [Disqus](https://disqus.com/) and [Duoshuo](http://duoshuo.com/), a customizable about page, a simple tags page and a minimalistic archives page, support for RSS feeds, syntax highlighting for source code and site analytics.
+Cactus Plus is a minimalistic theme for bloggers based on the theme named [Cactus](https://github.com/digitalcraftsman/hugo-cactus-theme).
+
+**Noteworthy updates of this Hugo theme are :**
+
++ **a tags page**
++ **an archive page**
++ **both [Disqus](https://disqus.com/) and [Duoshuo](http://duoshuo.com/) comment-system**
++ **both Google Analytics and Baidu Tongji for site analytics.**
+
+Here's the link to online demo: [http://nodejh.com](http://nodejh.com).
 
 ## Screenshot
 
+**home page**
+
 ![Screenshot](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/images/screenshot.png)
 
+**tags page**
+
+![Screenshot](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/images/tags.png)
+
+**archive page**
+
+![Screenshot](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/images/archive.png)
 
 ## Installation
 
@@ -88,12 +106,6 @@ $ hugo server
 
 Now enter [`localhost:1313`](http://localhost:1313) in the address bar of your browser.
 
-
-## Contributing
-
-Did you found a bug or got an idea for a new feature? Feel free to use the [issue tracker](//github.com/digitalcraftsman/hugo-cactus-theme/issues) to let me know. Or make directly a [pull request](//github.com/digitalcraftsman/hugo-cactus-theme/pulls).
-
-Please create a separate branch for your pull request.
 
 
 ## License
