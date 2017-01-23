@@ -1,6 +1,6 @@
 +++
 title = "(Hu)go Template Primer"
-description = ""
+description = "Hugo uses the excellent go library for its template engine. "
 tags = [
     "go",
     "golang",
@@ -39,7 +39,7 @@ details can be found in the [go docs][gohtmltemplate].
 ## Basic Syntax
 
 Go lang templates are html files with the addition of variables and
-functions. 
+functions.
 
 **Go variables and functions are accessible within {{ }}**
 
@@ -111,7 +111,7 @@ the /layout/ directory within Hugo.
 
 Go templates provide the most basic iteration and conditional logic.
 
-### Iteration 
+### Iteration
 
 Just like in go, the go templates make heavy use of range to iterate over
 a map, array or slice. The following are different examples of how to use
@@ -119,42 +119,42 @@ range.
 
 **Example 1: Using Context**
 
-    {{ range array }} 
+    {{ range array }}
         {{ . }}
     {{ end }}
 
 **Example 2: Declaring value variable name**
 
-    {{range $element := array}} 
-        {{ $element }} 
+    {{range $element := array}}
+        {{ $element }}
     {{ end }}
 
 **Example 2: Declaring key and value variable name**
 
     {{range $index, $element := array}}
-        {{ $index }} 
-        {{ $element }} 
+        {{ $index }}
+        {{ $element }}
     {{ end }}
 
-### Conditionals 
+### Conditionals
 
 If, else, with, or, & and provide the framework for handling conditional
 logic in Go Templates. Like range, each statement is closed with `end`.
 
 
-Go Templates treat the following values as false: 
+Go Templates treat the following values as false:
 
 * false
-* 0 
+* 0
 * any array, slice, map, or string of length zero
 
 **Example 1: If**
 
     {{ if isset .Params "title" }}<h4>{{ index .Params "title" }}</h4>{{ end }}
 
-**Example 2: If -> Else** 
+**Example 2: If -> Else**
 
-    {{ if isset .Params "alt" }} 
+    {{ if isset .Params "alt" }}
         {{ index .Params "alt" }}
     {{else}}
         {{ index .Params "caption" }}
@@ -174,9 +174,9 @@ The first example above could be simplified as:
 
     {{ with .Params.title }}<h4>{{ . }}</h4>{{ end }}
 
-**Example 5: If -> Else If** 
+**Example 5: If -> Else If**
 
-    {{ if isset .Params "alt" }} 
+    {{ if isset .Params "alt" }}
         {{ index .Params "alt" }}
     {{ else if isset .Params "caption" }}
         {{ index .Params "caption" }}
@@ -187,12 +187,12 @@ The first example above could be simplified as:
 One of the most powerful components of go templates is the ability to
 stack actions one after another. This is done by using pipes. Borrowed
 from unix pipes, the concept is simple, each pipeline's output becomes the
-input of the following pipe. 
+input of the following pipe.
 
 Because of the very simple syntax of go templates, the pipe is essential
 to being able to chain together function calls. One limitation of the
 pipes is that they only can work with a single value and that value
-becomes the last parameter of the next pipeline. 
+becomes the last parameter of the next pipeline.
 
 A few simple examples should help convey how to use the pipe.
 
@@ -200,7 +200,7 @@ A few simple examples should help convey how to use the pipe.
 
     {{ if eq 1 1 }} Same {{ end }}
 
-is the same as 
+is the same as
 
     {{ eq 1 1 | if }} Same {{ end }}
 
@@ -219,10 +219,10 @@ Access the page parameter called "disqus_url" and escape the HTML.
     Stuff Here
     {{ end }}
 
-Could be rewritten as 
+Could be rewritten as
 
     {{  isset .Params "caption" | or isset .Params "title" | or isset .Params "attr" | if }}
-    Stuff Here 
+    Stuff Here
     {{ end }}
 
 
@@ -247,24 +247,24 @@ Notice how once we have entered the loop the value of {{ . }} has changed. We
 have defined a variable outside of the loop so we have access to it from within
 the loop.
 
-# Hugo Parameters 
+# Hugo Parameters
 
 Hugo provides the option of passing values to the template language
 through the site configuration (for sitewide values), or through the meta
 data of each specific piece of content. You can define any values of any
 type (supported by your front matter/config format) and use them however
-you want to inside of your templates. 
+you want to inside of your templates.
 
 
-## Using Content (page) Parameters 
+## Using Content (page) Parameters
 
 In each piece of content you can provide variables to be used by the
-templates. This happens in the [front matter](/content/front-matter). 
+templates. This happens in the [front matter](/content/front-matter).
 
 An example of this is used in this documentation site. Most of the pages
 benefit from having the table of contents provided. Sometimes the TOC just
 doesn't make a lot of sense. We've defined a variable in our front matter
-of some pages to turn off the TOC from being displayed. 
+of some pages to turn off the TOC from being displayed.
 
 Here is the example front matter:
 

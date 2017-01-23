@@ -6,6 +6,7 @@ menu:
     parent: tutorials
 prev: /tutorials/mathjax
 title: Migrate to Hugo from Jekyll
+description: Jekyll has a rule that any directory not starting with `_` will be copied as-is to the `_site` output.
 weight: 10
 ---
 

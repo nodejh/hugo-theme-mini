@@ -8,6 +8,7 @@ menu:
 next: /tutorials/github-pages-blog
 prev: /tutorials/automated-deployments
 title: Creating a New Theme
+description: This tutorial will show you how to create a simple theme in Hugo. 
 weight: 10
 ---
 
@@ -31,7 +32,7 @@ func main() {
     fmt.Print("Hello")
 }
 ```
- 
+
 > There are a few concepts that you need to understand before creating a theme.
 
 ### Skins
@@ -131,13 +132,13 @@ INFO: 2014/09/29 Using config file: config.toml
 INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/
 WARN: 2014/09/29 Unable to locate layout: [index.html _default/list.html _default/single.html]
 WARN: 2014/09/29 Unable to locate layout: [404.html]
-0 draft content 
-0 future content 
-0 pages created 
+0 draft content
+0 future content
+0 pages created
 0 tags created
 0 categories created
 in 2 ms
-$ 
+$
 ```
 
 The "`--verbose`" flag gives extra information that will be helpful when we build the template. Every line of the output that starts with "INFO:" or "WARN:" is present because we used that flag. The lines that start with "WARN:" are warning messages. We'll go over them later.
@@ -163,7 +164,7 @@ $ ls -l public
 total 16
 -rw-r--r--  1 quoha  staff  416 Sep 29 17:02 index.xml
 -rw-r--r--  1 quoha  staff  262 Sep 29 17:02 sitemap.xml
-$ 
+$
 ```
 
 Hugo created two XML files, which is standard, but there are no HTML files.
@@ -180,9 +181,9 @@ INFO: 2014/09/29 Using config file: /Users/quoha/Sites/zafta/config.toml
 INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/
 WARN: 2014/09/29 Unable to locate layout: [index.html _default/list.html _default/single.html]
 WARN: 2014/09/29 Unable to locate layout: [404.html]
-0 draft content 
-0 future content 
-0 pages created 
+0 draft content
+0 future content
+0 pages created
 0 tags created
 0 categories created
 in 2 ms
@@ -250,7 +251,7 @@ $ find themes -type f | xargs ls -l
 -rw-r--r--  1 quoha  staff     0 Sep 29 17:31 themes/zafta/layouts/partials/footer.html
 -rw-r--r--  1 quoha  staff     0 Sep 29 17:31 themes/zafta/layouts/partials/header.html
 -rw-r--r--  1 quoha  staff    93 Sep 29 17:31 themes/zafta/theme.toml
-$ 
+$
 ```
 
 The skeleton includes templates (the files ending in .html), license file, a description of your theme (the theme.toml file), and an empty archetype.
@@ -313,9 +314,9 @@ INFO: 2014/09/29 Using config file: /Users/quoha/Sites/zafta/config.toml
 INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/themes/zafta/static/ to /Users/quoha/Sites/zafta/public/
 INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/
 WARN: 2014/09/29 Unable to locate layout: [404.html theme/404.html]
-0 draft content 
-0 future content 
-0 pages created 
+0 draft content
+0 future content
+0 pages created
 0 tags created
 0 categories created
 in 2 ms
@@ -360,7 +361,7 @@ When Hugo created our theme, it created an empty home page template. Now, when w
 $ find . -name index.html | xargs ls -l
 -rw-r--r--  1 quoha  staff  0 Sep 29 20:21 ./public/index.html
 -rw-r--r--  1 quoha  staff  0 Sep 29 17:31 ./themes/zafta/layouts/index.html
-$ 
+$
 ```
 
 #### The Magic of Static
@@ -379,7 +380,7 @@ drwxr-xr-x  4 quoha  staff  136 Sep 29 17:31 themes/zafta/layouts/partials
 drwxr-xr-x  4 quoha  staff  136 Sep 29 17:31 themes/zafta/static
 drwxr-xr-x  2 quoha  staff   68 Sep 29 17:31 themes/zafta/static/css
 drwxr-xr-x  2 quoha  staff   68 Sep 29 17:31 themes/zafta/static/js
-$ 
+$
 ```
 
 ## The Theme Development Cycle
@@ -435,9 +436,9 @@ INFO: 2014/09/29 Using config file: /Users/quoha/Sites/zafta/config.toml
 INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/themes/zafta/static/ to /Users/quoha/Sites/zafta/public/
 INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/
 WARN: 2014/09/29 Unable to locate layout: [404.html theme/404.html]
-0 draft content 
-0 future content 
-0 pages created 
+0 draft content
+0 future content
+0 pages created
 0 tags created
 0 categories created
 in 2 ms
@@ -449,9 +450,9 @@ INFO: 2014/09/29 File System Event: ["/Users/quoha/Sites/zafta/themes/zafta/layo
 Change detected, rebuilding site
 
 WARN: 2014/09/29 Unable to locate layout: [404.html theme/404.html]
-0 draft content 
-0 future content 
-0 pages created 
+0 draft content
+0 future content
+0 pages created
 0 tags created
 0 categories created
 in 1 ms
@@ -473,12 +474,12 @@ Right now, that page is empty because we don't have any content and we don't hav
 
 ```html
 $ vi themes/zafta/layouts/index.html
-<!DOCTYPE html> 
-<html> 
-<body> 
-  <p>hugo says hello!</p> 
-</body> 
-</html> 
+<!DOCTYPE html>
+<html>
+<body>
+  <p>hugo says hello!</p>
+</body>
+</html>
 :wq
 
 $
@@ -492,9 +493,9 @@ INFO: 2014/09/29 Using config file: /Users/quoha/Sites/zafta/config.toml
 INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/themes/zafta/static/ to /Users/quoha/Sites/zafta/public/
 INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/
 WARN: 2014/09/29 Unable to locate layout: [404.html theme/404.html]
-0 draft content 
-0 future content 
-0 pages created 
+0 draft content
+0 future content
+0 pages created
 0 tags created
 0 categories created
 in 2 ms
@@ -502,11 +503,11 @@ in 2 ms
 $ find public -type f -name '*.html' | xargs ls -l
 -rw-r--r--  1 quoha  staff  78 Sep 29 21:26 public/index.html
 
-$ cat public/index.html 
-<!DOCTYPE html> 
-<html> 
-<body> 
-  <p>hugo says hello!</p> 
+$ cat public/index.html
+<!DOCTYPE html>
+<html>
+<body>
+  <p>hugo says hello!</p>
 </html>
 ```
 
@@ -515,15 +516,15 @@ $ cat public/index.html
 Note: If you're running the server with the `--watch` option, you'll see different content in the file:
 
 ```
-$ cat public/index.html 
-<!DOCTYPE html> 
-<html> 
-<body> 
-  <p>hugo says hello!</p> 
-<script>document.write('<script src="http://' 
-        + (location.host || 'localhost').split(':')[0] 
-    + ':1313/livereload.js?mindelay=10"></' 
-        + 'script>')</script></body> 
+$ cat public/index.html
+<!DOCTYPE html>
+<html>
+<body>
+  <p>hugo says hello!</p>
+<script>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+    + ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
 </html>
 ```
 
@@ -546,7 +547,7 @@ INFO: 2014/09/29 attempting to create  post/first.md of post
 INFO: 2014/09/29 curpath: /Users/quoha/Sites/zafta/themes/zafta/archetypes/default.md
 ERROR: 2014/09/29 Unable to Cast <nil> to map[string]interface{}
 
-$ 
+$
 ```
 
 That wasn't very nice, was it?
@@ -585,7 +586,7 @@ total 16
 -rw-r--r--  1 quoha  staff  104 Sep 29 21:54 first.md
 -rw-r--r--  1 quoha  staff  105 Sep 29 21:57 second.md
 
-$ cat content/post/first.md 
+$ cat content/post/first.md
 +++
 Categories = []
 Description = ""
@@ -596,7 +597,7 @@ title = "first"
 +++
 my first post
 
-$ cat content/post/second.md 
+$ cat content/post/second.md
 +++
 Categories = []
 Description = ""
@@ -607,7 +608,7 @@ title = "second"
 +++
 my second post
 
-$ 
+$
 ```
 
 Build the web site and then verify the results.
@@ -620,9 +621,9 @@ INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/themes/zafta/static/ to /
 INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/
 INFO: 2014/09/29 found taxonomies: map[string]string{"category":"categories", "tag":"tags"}
 WARN: 2014/09/29 Unable to locate layout: [404.html theme/404.html]
-0 draft content 
-0 future content 
-2 pages created 
+0 draft content
+0 future content
+2 pages created
 0 tags created
 0 categories created
 in 4 ms
@@ -655,7 +656,7 @@ There are three other types of templates: partials, content views, and terms. We
 The home page will contain a list of posts. Let's update its template to add the posts that we just created. The logic in the template will run every time we build the site.
 
 ```
-$ vi themes/zafta/layouts/index.html 
+$ vi themes/zafta/layouts/index.html
 <!DOCTYPE html>
 <html>
 <body>
@@ -693,26 +694,26 @@ INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/themes/zafta/static/ to /
 INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/
 INFO: 2014/09/29 found taxonomies: map[string]string{"tag":"tags", "category":"categories"}
 WARN: 2014/09/29 Unable to locate layout: [404.html theme/404.html]
-0 draft content 
-0 future content 
-2 pages created 
+0 draft content
+0 future content
+2 pages created
 0 tags created
 0 categories created
 in 4 ms
-$ find public -type f -name '*.html' | xargs ls -l 
+$ find public -type f -name '*.html' | xargs ls -l
 -rw-r--r--  1 quoha  staff  94 Sep 29 22:23 public/index.html
 -rw-r--r--  1 quoha  staff   0 Sep 29 22:23 public/post/first/index.html
 -rw-r--r--  1 quoha  staff   0 Sep 29 22:23 public/post/index.html
 -rw-r--r--  1 quoha  staff   0 Sep 29 22:23 public/post/second/index.html
-$ cat public/index.html 
+$ cat public/index.html
 <!DOCTYPE html>
 <html>
 <body>
-  
+
     <h1>second</h1>
-  
+
     <h1>first</h1>
-  
+
 </body>
 </html>
 $
@@ -744,7 +745,7 @@ Please see the Hugo documentation on template rendering for all the details on d
 #### Update the Template File
 
 ```
-$ vi themes/zafta/layouts/_default/single.html 
+$ vi themes/zafta/layouts/_default/single.html
 <!DOCTYPE html>
 <html>
 <head>
@@ -770,9 +771,9 @@ INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/themes/zafta/static/ to /
 INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/
 INFO: 2014/09/29 found taxonomies: map[string]string{"tag":"tags", "category":"categories"}
 WARN: 2014/09/29 Unable to locate layout: [404.html theme/404.html]
-0 draft content 
-0 future content 
-2 pages created 
+0 draft content
+0 future content
+2 pages created
 0 tags created
 0 categories created
 in 4 ms
@@ -783,7 +784,7 @@ $ find public -type f -name '*.html' | xargs ls -l
 -rw-r--r--  1 quoha  staff    0 Sep 29 22:40 public/post/index.html
 -rw-r--r--  1 quoha  staff  128 Sep 29 22:40 public/post/second/index.html
 
-$ cat public/post/first/index.html 
+$ cat public/post/first/index.html
 <!DOCTYPE html>
 <html>
 <head>
@@ -796,7 +797,7 @@ $ cat public/post/first/index.html
 </body>
 </html>
 
-$ cat public/post/second/index.html 
+$ cat public/post/second/index.html
 <!DOCTYPE html>
 <html>
 <head>
@@ -839,9 +840,9 @@ INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/themes/zafta/static/ to /
 INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/
 INFO: 2014/09/29 found taxonomies: map[string]string{"tag":"tags", "category":"categories"}
 WARN: 2014/09/29 Unable to locate layout: [404.html theme/404.html]
-0 draft content 
-0 future content 
-2 pages created 
+0 draft content
+0 future content
+2 pages created
 0 tags created
 0 categories created
 in 4 ms
@@ -852,15 +853,15 @@ $ find public -type f -name '*.html' | xargs ls -l
 -rw-r--r--  1 quoha  staff    0 Sep 29 22:44 public/post/index.html
 -rw-r--r--  1 quoha  staff  128 Sep 29 22:44 public/post/second/index.html
 
-$ cat public/index.html 
+$ cat public/index.html
 <!DOCTYPE html>
 <html>
 <body>
-  
+
     <h1><a href="/post/second/">second</a></h1>
-  
+
     <h1><a href="/post/first/">first</a></h1>
-  
+
 </body>
 </html>
 
@@ -887,7 +888,7 @@ Let's add an "about" page and display it at the top level (as opposed to a sub-l
 The default in Hugo is to use the directory structure of the content/ directory to guide the location of the generated html in the public/ directory. Let's verify that by creating an "about" page at the top level:
 
 ```
-$ vi content/about.md 
+$ vi content/about.md
 +++
 title = "about"
 description = "about this site"
