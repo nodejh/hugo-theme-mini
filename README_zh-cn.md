@@ -1,7 +1,7 @@
 # Cactus Plus
 
 
-[English Documention](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/README.md) | [中文文档](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/README_zh-cn.md)
+[English Document](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/README.md) | [中文文档](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/README_zh-cn.md)
 
 Cactus Plus 是一个根据 [Cactus](https://github.com/digitalcraftsman/hugo-cactus-theme) 改编的简约主题。
 
