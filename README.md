@@ -1,5 +1,27 @@
-# Cactus Plus
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
+- [Cactus Plus](#cactus-plus)
+	- [Screenshot](#screenshot)
+	- [Installation](#installation)
+	- [Example Site](#example-site)
+		- [The config file](#the-config-file)
+	- [About page](#about-page)
+	- [Tags page](#tags-page)
+	- [Avatar](#avatar)
+	- [Hide pages](#hide-pages)
+	- [Disqus](#disqus)
+	- [Duoshuo](#duoshuo)
+	- [Disable Comment](#disable-comment)
+	- [Google Analytics](#google-analytics)
+	- [Baidu Tongji](#baidu-tongji)
+	- [Social link icons](#social-link-icons)
+	- [Nearly finished](#nearly-finished)
+	- [License](#license)
+	- [Acknowledgements](#acknowledgements)
+
+<!-- /TOC -->
+
+# Cactus Plus
 
 [English Document](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/README.md) | [中文文档](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/README_zh-cn.md)
 
@@ -52,6 +74,19 @@ To use it, copy the [`config.toml`](https://github.com/nodejh/hugo-theme-cactus-
 ## About page
 
 Use the about page to introduce yourself to your visitors. You can customize the content as you like in the `/content/about/index.md`.
+
+## Tags page
+
+Use the tags page to show all post's tags. You can create the file `/content/tags/index.md` and set `hidden = true`.
+
+For example:
+
+```markdown
++++
+date = "2015-06-20T14:02:37+02:00"
+title = "Tags"
+hidden = true
++++
 
 ## Avatar
 
