@@ -4,7 +4,7 @@
 	- [Screenshot](#screenshot)
 	- [Installation](#installation)
 	- [Example Site](#example-site)
-		- [The config file](#the-config-file)
+	- [The config file](#the-config-file)
 	- [About page](#about-page)
 	- [Tags page](#tags-page)
 	- [Avatar](#avatar)
@@ -65,7 +65,7 @@ For more information read the official [setup guide](//gohugo.io/overview/instal
 
 There is an example site with config file and markdown files in [`exampleSite`](https://github.com/nodejh/hugo-theme-cactus-plus/tree/master/exampleSite) directory.
 
-### The config file
+## The config file
 
 Take a look inside the [`exampleSite`](https://github.com/nodejh/hugo-theme-cactus-plus/tree/master/exampleSite) folder of this theme. You'll find a file called [`config.toml`](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/exampleSite/config.toml).
 

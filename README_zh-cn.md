@@ -4,7 +4,7 @@
 	- [截图](#截图)
 	- [安装](#安装)
 	- [示例站点](#示例站点)
-		- [配置文件](#配置文件)
+	- [配置文件](#配置文件)
 	- [关于页面](#关于页面)
 	- [标签页](#标签页)
 	- [头像](#头像)
@@ -67,7 +67,7 @@ $ git clone https://github.com/nodejh/hugo-theme-cactus-plus.git
 [`exampleSite`](https://github.com/nodejh/hugo-theme-cactus-plus/tree/master/exampleSite) 是本主题的一个示例站点，里面有配置文件、关于页面的一些示例。
 
 
-### 配置文件
+## 配置文件
 
 本主题提供了一个示例配置文件是 [`exampleSite`](https://github.com/nodejh/hugo-theme-cactus-plus/tree/master/exampleSite) 目录里的 [`config.toml`](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/exampleSite/config.toml) 文件。
 
