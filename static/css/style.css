@@ -134,7 +134,7 @@ h2 {
     color: #bbb;
 }
 
-.profile #wrapper {
+.wrapper.profile {
     padding: 100px 40px 0px;
     max-width: 600px;
     margin: 0 auto;
@@ -200,13 +200,13 @@ nav.main-nav a.cta {
     margin-left: 12px;
 }
 
-#wrapper {
+.wrapper {
     max-width: 600px;
     margin: 0 auto;
     padding: 60px 40px 100px 40px;
 }
 
-#wrapper.home {
+.wrapper.home {
     max-width: 600px;
     margin: 0 auto;
     padding: 0px 40px 20px 40px;
@@ -747,7 +747,7 @@ h2.month {
 /* Media Queries */
 
 @media screen and (max-width: 540px) {
-    #wrapper {
+    .wrapper {
         padding: 20px 20px 20px 20px;
     }
     #header {
@@ -871,7 +871,7 @@ code {
  * tags page
  */
 
-#wrapper.tags {
+.wrapper.tags {
   padding: 0px 40px 20px 40px;
 }
 .page-tags {
