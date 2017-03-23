@@ -1,3 +1,26 @@
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Cactus Plus](#cactus-plus)
+	- [截图](#截图)
+	- [安装](#安装)
+	- [示例站点](#示例站点)
+	- [配置文件](#配置文件)
+	- [关于页面](#关于页面)
+	- [标签页](#标签页)
+	- [头像](#头像)
+	- [隐藏页面](#隐藏页面)
+	- [Disqus 评论](#disqus-评论)
+	- [多说评论](#多说评论)
+	- [不使用评论系统](#不使用评论系统)
+	- [Google Analytics](#google-analytics)
+	- [百度统计](#百度统计)
+	- [社交链接](#社交链接)
+	- [部署主题](#部署主题)
+	- [License](#license)
+	- [鸣谢](#鸣谢)
+
+<!-- /TOC -->
+
 # Cactus Plus
 
 
@@ -44,7 +67,7 @@ $ git clone https://github.com/nodejh/hugo-theme-cactus-plus.git
 [`exampleSite`](https://github.com/nodejh/hugo-theme-cactus-plus/tree/master/exampleSite) 是本主题的一个示例站点，里面有配置文件、关于页面的一些示例。
 
 
-### 配置文件
+## 配置文件
 
 本主题提供了一个示例配置文件是 [`exampleSite`](https://github.com/nodejh/hugo-theme-cactus-plus/tree/master/exampleSite) 目录里的 [`config.toml`](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/exampleSite/config.toml) 文件。
 
@@ -57,6 +80,19 @@ $ git clone https://github.com/nodejh/hugo-theme-cactus-plus.git
 
 你也可以参考本主题示例站点中的关于页：[`exampleSite/content/about/index.md`](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/exampleSite/content/about/index.md)。
 
+## 标签页
+
+本主题也提供了 `标签页` 功能。
+
+在 `content` 目录下新建一个名为 `tags` 的目录，然后在次目录创建一个名为 `index.md` 的文件，写入下面的内容，注意设置 `hidden = true` 即可：
+
+```markdown
++++
+date = "2015-06-20T14:02:37+02:00"
+title = "Tags"
+hidden = true
++++
+```
 
 ## 头像
 
