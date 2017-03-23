@@ -3,7 +3,7 @@
        {{ partial "nav.html" . }}
        {{ partial "profile.html" . }}
 
-        <section class="wrapper tags">
+        <section id="wrapper" class="tags">
             <div class="page-tags" id="tags">
                 {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
                  <span class="tags">

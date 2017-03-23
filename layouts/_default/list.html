@@ -3,7 +3,7 @@
 	{{ partial "nav.html" . }}
 	{{ partial "profile.html" . }}
 
-	<section class="wrapper home">
+	<section id="wrapper" class="home">
 		{{ range .Data.Pages.GroupByDate "2006" }}
 		<div class="archive">
 			<h3>{{ .Key }}</h3>
