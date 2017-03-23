@@ -73,7 +73,7 @@ To use it, copy the [`config.toml`](https://github.com/nodejh/hugo-theme-cactus-
 
 ## About page
 
-Use the about page to introduce yourself to your visitors. You can customize the content as you like in the `/content/about/index.md`.
+Use the about page to introduce yourself to your visitors. You can customize the content as you like in the `/content/about/_index.md`.
 
 ## Tags page
 

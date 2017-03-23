@@ -9,7 +9,7 @@
 	{{ end }}
 
 	{{ if ne $url "tags/" }}
-		<a href='{{ .Site.BaseURL }}tags'>{{ with .Site.Params.about }}{{ . }}{{ else }}Tags{{ end }}</a>
+		<a href='{{ .Site.BaseURL }}tags'>{{ with .Site.Params.tags }}{{ . }}{{ else }}Tags{{ end }}</a>
 	{{ end }}
 
 	{{ if ne $url "about/" }}
