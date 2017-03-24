@@ -27,10 +27,12 @@
                       </span>
                     </h2>
                 </header>
-                {{ if .TableOfContents }}
-                  <div id="toc">
-                    {{ .TableOfContents }}
-                  </div>
+                {{ if .Site.Params.enableToc }}
+                  {{ if .TableOfContents }}
+                    <div id="toc">
+                      {{ .TableOfContents }}
+                    </div>
+                  {{ end }}
                 {{ end }}
                 <section id="post-body">
                     {{ .Content }}
