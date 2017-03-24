@@ -1,5 +1,6 @@
 # Site settings
 baseurl = "http://nodejh.com/"
+canonifyURLs = true
 # HTML Language Code Reference, such as en, zh-cn
 languageCode = "en"
 title = "Blog Title"

@@ -1,10 +1,10 @@
 <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
-<script src="{{ .Site.BaseURL }}js/main.js"></script>
+<script src="/js/main.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
 {{ range .Site.Params.customJS }}
-<script src="{{ $.Site.BaseURL }}{{ . }}"></script>
+<script src="/{{ . }}"></script>
 {{ end }}
 
 {{ if .Site.Params.enableGoogleAnalytics }}

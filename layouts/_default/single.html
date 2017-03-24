@@ -2,7 +2,7 @@
     <body>
        {{ partial "nav.html" . }}
 
-        <section id="wrapper">
+        <section class="wrapper">
             <article class="post">
                 <header>
                     <h1>
@@ -20,7 +20,7 @@
                       {{ with .Params.tags }}
                       {{ if ge (len .) 1 }}
                           {{ range . }}
-                              <a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}">{{ . }}</a>
+                              <a href="/tags/{{ . | urlize }}">{{ . }}</a>
                           {{ end }}
                       {{ end }}
                       {{ end}}
