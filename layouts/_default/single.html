@@ -27,9 +27,11 @@
                       </span>
                     </h2>
                 </header>
-                <div id="toc" class="well col-md-4 col-sm-6">
-                  {{ .TableOfContents }}
-                </div>
+                {{ if .TableOfContents }}
+                  <div id="toc">
+                    {{ .TableOfContents }}
+                  </div>
+                {{ end }}
                 <section id="post-body">
                     {{ .Content }}
                 </section>
