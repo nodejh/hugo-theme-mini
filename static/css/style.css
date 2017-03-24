@@ -418,30 +418,6 @@ hr {
     background: #eee;
 }
 
-span.code {
-    font-family: Menlo, Monaco, Courier;
-    background-color: #EEE;
-    font-size: 14px;
-}
-
-pre {
-    /*font-family: Menlo, Monaco, Courier;*/
-    /*white-space: pre-wrap;*/
-    overflow-x: scroll;
-    /*border: 1px solid #ddd;*/
-    /*padding: 20px;*/
-    /*background-color: #fdfdfd;*/
-    /*font-size:14px;*/
-    /*overflow: auto;*/
-    /*border-radius: 3px;*/
-    /*background: #272b2d;*/
-    /*font-family: 'Source Code Pro', Menlo, monospace;*/
-    /*font-size: 13px;*/
-    /*line-height: 1.5em;*/
-    /*font-weight: 500;*/
-    /*color: #d0d4d7;*/
-}
-
 table {
     width: 100%;
     margin: 40px 0;
@@ -911,7 +887,7 @@ a.symbol:hover {
 }
 #TableOfContents {
   margin: 1em 0 0 0;
-  overflow-x: scroll;
+  overflow-x: auto;
   word-wrap: normal;
   word-break: break-all;
   white-space: nowrap;
