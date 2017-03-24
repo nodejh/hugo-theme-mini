@@ -859,15 +859,6 @@ a.symbol:hover {
     color: #BCD4DA;
 }
 
-code {
-    font-family: Menlo, Monaco, Courier;
-    background-color: #EEE;
-    font-size: 14px;
-    padding: 4px;
-    font-weight: 600;
-}
-
-
 /**
  * Table of content
  */
@@ -875,10 +866,8 @@ code {
   line-height: 1em;
   font-size: .7em;
   word-wrap: break-word;
-  /*-webkit-font-smoothing: subpixel-antialiased;*/
-  /*-moz-osx-font-smoothing: auto;*/
-  padding: 16px;
-  padding-left: 21px;
+  padding: 8px;
+  padding-left: 16px;
   padding-bottom: 14px;
   margin: 0 0 25px 0;
   display: block;
@@ -909,8 +898,8 @@ code {
 #TableOfContents a code{
   font-family: Menlo, Monaco, Courier;
   background-color: #fff;
-  font-size: 14px;
-  padding: 4px;
+  font-size: 11px;
+  padding: 2px 3px;
   font-weight: 100;
 }
 
