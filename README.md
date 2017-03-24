@@ -73,11 +73,11 @@ To use it, copy the [`config.toml`](https://github.com/nodejh/hugo-theme-cactus-
 
 ## About page
 
-Use the about page to introduce yourself to your visitors. You can customize the content as you like in the `/content/about/index.md`.
+Use the about page to introduce yourself to your visitors. You can customize the content as you like in the `/content/about/_index.md`.
 
 ## Tags page
 
-Use the tags page to show all post's tags. You can create the file `/content/tags/index.md` and set `hidden = true`.
+Use the tags page to show all post's tags. You can create the file `/content/tags/index.md` and set `hidden = true` so that the page does not show on your home page or other lists of pages.
 
 For example:
 
