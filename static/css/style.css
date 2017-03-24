@@ -891,11 +891,21 @@ code {
   font-family: 'Menlo', 'Monaco', Courier, monospace;
   /*font: normal 13px/1.5em "Helvetica Neue", Helvetica, Arial, sans-serif;*/
 }
-#TableOfContents { margin: 1em 0 0 0; }
-#TableOfContents ul { list-style-type:none; margin: 0; padding: 0 .5em;  }
-#TableOfContents ul li { list-style-type:none; line-height: 1.7em; }
-#TableOfContents > ul { padding: 0; }
-#TableOfContents > ul > li > ul { padding: 0; }
+#TableOfContents {
+  margin: 1em 0 0 0;
+}
+#TableOfContents ul {
+  list-style-type:none; margin: 0; padding: 0 .5em;
+}
+#TableOfContents ul li {
+  list-style-type:none; line-height: 1.7em;
+}
+#TableOfContents > ul {
+  padding: 0;
+}
+#TableOfContents > ul > li > ul {
+  padding: 0;
+}
 #TableOfContents a code{
   font-family: Menlo, Monaco, Courier;
   background-color: #fff;
