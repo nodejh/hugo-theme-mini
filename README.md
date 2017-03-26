@@ -34,6 +34,7 @@ Cactus Plus is a minimalistic theme for bloggers based on the theme named [Cactu
 + **an archive page**
 + **both [Disqus](https://disqus.com/) and [Duoshuo](http://duoshuo.com/) comment-system**
 + **both Google Analytics and Baidu Tongji for site analytics.**
++ **Table of Content**
 
 Here's the link to online demo: [http://nodejh.com](http://nodejh.com).
 

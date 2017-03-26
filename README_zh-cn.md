@@ -34,6 +34,7 @@ Cactus Plus 是一个根据 [Cactus](https://github.com/digitalcraftsman/hugo-ca
 + **添加了归档页**
 + **集成了 [Disqus](https://disqus.com/) 和[多说](http://duoshuo.com/)评论系统**
 + **提供了 Google Analytics 和百度统计**
++ **文章目录**
 
 示例网站： [http://nodejh.com](http://nodejh.com)。
 
