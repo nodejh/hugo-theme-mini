@@ -77,7 +77,7 @@ $ git clone https://github.com/nodejh/hugo-theme-cactus-plus.git
 
 ## 关于页面
 
-使用关于页面首先要在你的站点目录的 `content` 目录下创建一个 `about` 目录，然后再创建一个 `index.md` 文件，编写该文件即可。
+使用关于页面首先要在你的站点目录的 `content` 目录下创建一个 `about` 目录，然后再创建一个 `_index.md` 文件，编写该文件即可。
 
 你也可以参考本主题示例站点中的关于页：[`exampleSite/content/about/index.md`](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/exampleSite/content/about/index.md)。
 
@@ -85,7 +85,7 @@ $ git clone https://github.com/nodejh/hugo-theme-cactus-plus.git
 
 本主题也提供了 `标签页` 功能。
 
-在 `content` 目录下新建一个名为 `tags` 的目录，然后在次目录创建一个名为 `index.md` 的文件，写入下面的内容，注意设置 `hidden = true` 即可：
+在 `content` 目录下新建一个名为 `tags` 的目录，然后在次目录创建一个名为 `_index.md` 的文件，写入下面的内容，注意设置 `hidden = true` 即可：
 
 ```markdown
 +++
