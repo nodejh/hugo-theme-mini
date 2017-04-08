@@ -6,6 +6,7 @@ title = "Blog Title"
 theme = "hugo-theme-cactus-plus"
 # Enter your tracking code to enable Google Analytics
 googleAnalytics = "your_google_analytics_code"
+hasCJKLanguage = true
 
 [params]
 	name = "Hugo"

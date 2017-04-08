@@ -3,6 +3,7 @@
       {{ partial "nav.html" . }}
       {{ partial "profile.html" . }}
 
+
        <section id="wrapper" class="tags">
            <div class="page-tags" id="tags">
                {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
@@ -11,7 +12,6 @@
                 </span>
                {{ end }}
            </div>
-
            {{ partial "footer.html" . }}
        </section>
 
