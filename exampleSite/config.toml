@@ -28,9 +28,6 @@ hasCJKLanguage = true
 
 	enableGithubIssuesTips = false
 
-	# Use description as title in single page, posts page and tags page.
-	useDescriptionAsTitle = false
-
 	# Enable googleAnalytics
 	enableGoogleAnalytics = false
 

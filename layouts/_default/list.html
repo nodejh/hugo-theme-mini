@@ -12,14 +12,11 @@
 					<div class="post-item">
 						<div class="post-time">{{ .Date.Format "Jan 2" }}</div>
 						<a href="{{ .Permalink }}" class="post-link">
-							{{ if .Site.Params.useDescriptionAsTitle }}
-	                {{ .Description }}
-	            {{ else }}
-	            	 {{ .Title }}
-	          	{{ end }}
+							{{ .Title }}
 						</a>
 					</div>
-					{{ end }}			</ul>
+					{{ end }}
+			</ul>
 		</div>
 		{{ end }}
 		{{ partial "footer.html" . }}
