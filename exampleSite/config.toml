@@ -48,6 +48,7 @@ hasCJKLanguage = true
 	about = ""
 	archive = ""
 	subscribe = ""
+	tags = ""
 	# Pagination links
 	olderPosts = ""
 	newerPosts = ""
