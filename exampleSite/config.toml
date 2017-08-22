@@ -13,7 +13,7 @@ hasCJKLanguage = true
 	description = "Blog Description"
 	bio = "Blog biology"
 	# Enter optionally your twitter account
-	twitter = "your_twotter"
+	twitter = "your_twitter"
 	enableRSS = false
 
 	# Disqus comment
