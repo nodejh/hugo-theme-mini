@@ -116,7 +116,7 @@ Just set both `enableDisqus = false` and `enableDuoshuo = false` if you want to 
 
 ## Google Analytics
 
-This theme use Google Analytics defalut. If you want to disable Google Analytics, just set `enableGoogleAnalytics = false` in [`config.toml`](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/exampleSite/config.toml).
+This theme use Google Analytics by default. If you want to disable Google Analytics, just set `enableGoogleAnalytics = false` in [`config.toml`](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/exampleSite/config.toml).
 
 ## Baidu Tongji
 
