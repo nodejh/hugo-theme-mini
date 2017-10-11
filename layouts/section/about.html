@@ -7,11 +7,15 @@
     {{ .Content }}
 
     {{ if .Site.Params.enableDisqus }}
-        {{ partial "disqus.html" . }}
+        {{ if eq .Params.disabledisqus "true" }}
+            {{ partial "disqus.html" . }}
+        {{ end }}
     {{ end }}
 
     {{ if .Site.Params.enableDuoshuo }}
-        {{ partial "duoshuo.html" . }}
+        {{ if eq .Params.disableduoshuo "true" }}
+            {{ partial "duoshuo.html" . }}
+        {{ end }}
     {{ end }}
 
     {{ partial "footer.html" . }}
