@@ -1,42 +1,36 @@
-# Cactus Plus
-
-[English Document](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/README.md) | [中文文档](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/README_zh-cn.md)
-
-
-<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
-
-- [Cactus Plus](#cactus-plus)
-	- [Screenshot](#screenshot)
-	- [Installation](#installation)
-	- [Example Site](#example-site)
-	- [The config file](#the-config-file)
-	- [About page](#about-page)
-	- [Tags page](#tags-page)
-	- [Avatar](#avatar)
-	- [Hide pages](#hide-pages)
-	- [Disqus](#disqus)
-	- [Duoshuo](#duoshuo)
-	- [Disable Comment](#disable-comment)
-	- [Google Analytics](#google-analytics)
-	- [Baidu Tongji](#baidu-tongji)
-	- [Social link icons](#social-link-icons)
-	- [Nearly finished](#nearly-finished)
-	- [License](#license)
-	- [Acknowledgements](#acknowledgements)
-
-<!-- /TOC -->
+# Hogu Theme Cactus Plus
 
 Cactus Plus is a minimalistic theme for bloggers based on the theme named [Cactus](https://github.com/digitalcraftsman/hugo-cactus-theme).
 
-**Noteworthy updates of this Hugo theme are :**
+**Features**
 
-+ **a tags page**
-+ **an archive page**
-+ **both [Disqus](https://disqus.com/) and [Duoshuo](http://duoshuo.com/) comment-system**
-+ **both Google Analytics and Baidu Tongji for site analytics.**
++ **More beautiful style**
++ **Tags page**
++ **Archive page**
++ **[Disqus](https://disqus.com/) comment-system**
++ **Both Google Analytics and Baidu Analytics for site analytics.**
 + **Table of Content**
 
 Here's the link to online demo: [http://nodejh.com](http://nodejh.com).
+
+[English Document](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/README.md) | [中文文档](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/README_zh-cn.md)
+
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Hogu Theme Cactus Plus](#hogu-theme-cactus-plus)
+	- [Screenshot](#screenshot)
+	- [Installation](#installation)
+	- [Example Site](#example-site)
+	- [Posts Summary](#posts-summary)
+	- [About page](#about-page)
+	- [Avatar](#avatar)
+	- [Hide pages](#hide-pages)
+	- [Disqus](#disqus)
+	- [Social link icons](#social-link-icons)
+	- [Nearly finished](#nearly-finished)
+	- [License](#license)
+
+<!-- /TOC -->
 
 ## Screenshot
 
@@ -47,48 +41,38 @@ Here's the link to online demo: [http://nodejh.com](http://nodejh.com).
 **tags page**
 
 ![Screenshot](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/images/tags.png)
-
 **archive page**
 
 ![Screenshot](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/images/archive.png)
 
 ## Installation
 
+First clone the theme to your themes directory:
+
 ```
 $ cd themes
 $ git clone https://github.com/nodejh/hugo-theme-cactus-plus.git
 ```
 
-For more information read the official [setup guide](//gohugo.io/overview/installing/) of Hugo.
-
-
-## Example Site
-
-There is an example site with config file and markdown files in [`exampleSite`](https://github.com/nodejh/hugo-theme-cactus-plus/tree/master/exampleSite) directory.
-
-## The config file
-
 Take a look inside the [`exampleSite`](https://github.com/nodejh/hugo-theme-cactus-plus/tree/master/exampleSite) folder of this theme. You'll find a file called [`config.toml`](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/exampleSite/config.toml).
 
 To use it, copy the [`config.toml`](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/exampleSite/config.toml) in the root folder of your Hugo site. Feel free to change strings as you like to customize your website.
 
+For more information read the official [setup guide](//gohugo.io/overview/installing/) of Hugo.
+
+## Example Site
+
+## Posts Summary
+
+Summary will show follow the post title title in home page.
+
+And if you want to use description property that in post's fromt matter to instated of post's content summary, set `useDescriptionReplaceSummary = true`.
+
+To use the content summary, you may add the `<!--more-->` summary divider where you want to split the article alternatively. For org content, use # more where you want to split the article. Content that comes before the summary divider will be used as that content’s summary.By default, Hugo automatically takes the first 70 words of your content as its summary. See also [https://gohugo.io/content-management/summaries/](https://gohugo.io/content-management/summaries/).
+
 ## About page
 
 Use the about page to introduce yourself to your visitors. You can customize the content as you like in the `/content/about/_index.md`.
-
-## Tags page
-
-Use the tags page to show all post's tags. You can create the file `/content/tags/_index.md` and set `hidden = true` so that the page does not show on your home page or other lists of pages.
-
-For example:
-
-```markdown
-+++
-date = "2015-06-20T14:02:37+02:00"
-title = "Tags"
-hidden = true
-+++
-```
 
 ## Avatar
 
@@ -101,26 +85,6 @@ Pages can be hidden and don't appear in the post list on the homepage if you add
 ## Disqus
 
 This theme features a comment system powered by Disqus. Just add your Disqus-shortname to the [`config.toml`](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/exampleSite/config.toml) and set `enableDisqus = true`, then let readers respond to your blog posts.
-
-
-## Duoshuo
-
-This theme features a comment system powered by Duoshuo too. Duoshuo is mainly provide for Chinese users. Just add your Duoshuo-shortname to the [`config.toml`](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/exampleSite/config.toml) and set `enableDuoshuo = true`.
-
-
-## Disable Comment
-
-Just set both `enableDisqus = false` and `enableDuoshuo = false` if you want to disable comment.
-
-
-
-## Google Analytics
-
-This theme use Google Analytics by default. If you want to disable Google Analytics, just set `enableGoogleAnalytics = false` in [`config.toml`](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/exampleSite/config.toml).
-
-## Baidu Tongji
-
-This theme alse features Baidu Tongji for Chinese users. To use Baidu Tongji you should set `enableBaiduAnalytics = true` and set `baiduAnalytics` to your  `Baidu Tongji Code` which looks like `39843ea392201290bd6f76173d2e0000` in  [`config.toml`](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/exampleSite/config.toml).
 
 
 ## Social link icons
@@ -144,14 +108,6 @@ $ hugo server
 Now enter [`localhost:1313`](http://localhost:1313) in the address bar of your browser.
 
 
-
 ## License
 
 This theme is released under the MIT license. For more information read the [license](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/LICENSE.md).
-
-
-## Acknowledgements
-
-Thanks to
-
-- [hugo-cactus-theme](https://github.com/digitalcraftsman/hugo-cactus-theme)

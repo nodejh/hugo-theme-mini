@@ -2,8 +2,8 @@
     <body>
        {{ partial "nav.html" . }}
 
-        <section id="wrapper">
-            <article class="post">
+        <section id="wrapper" class="post">
+            <article>
                 <header>
                     <h1>
                         {{ .Title }}
@@ -35,20 +35,16 @@
                 </section>
             </article>
 
-            {{ if .Site.Params.enableGithubIssuesTips }}
-                {{ partial "github-issues-tip.html" . }}
+            {{ if .Site.Params.enableShare }}
+                {{ partial "share.html" . }}
             {{ end }}
 
             {{ if .Site.Params.enableDisqus }}
-                {{ if ne .Params.disabledisqus "true" }}
-                    {{ partial "disqus.html" . }}
-                {{ end }}
+                {{ partial "disqus.html" . }}
             {{ end }}
 
-            {{ if .Site.Params.enableDuoshuo }}
-                {{ if ne .Params.disableduoshuo "true" }}
-                    {{ partial "duoshuo.html" . }}
-                {{ end }}
+            {{ if .Site.Params.showLatestPosts }}
+                {{ partial "latest-posts.html" . }}
             {{ end }}
 
             {{ partial "footer.html" . }}

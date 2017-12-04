@@ -222,7 +222,7 @@ nav.main-nav a.cta {
 #wrapper {
     max-width: 600px;
     margin: 0 auto;
-    padding: 60px 40px 100px 40px;
+    padding: 60px 20px 100px 20px;
 }
 
 #wrapper.home {
@@ -364,7 +364,6 @@ em, i {
 #post-list h2 {
     font: normal 17px/1.5em "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #aaa;
-    max-width: 400px;
     margin-top: 2px;
 }
 
@@ -544,7 +543,9 @@ Post List
 
 #header {
 }
-
+#wrapper.post {
+    max-width: 670px;
+}
 .post {
     margin: auto;
 }
@@ -833,9 +834,7 @@ h2.month {
 /* CUSTOM ADDITIONS */
 
 #social {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    text-align: center;
 }
 
 a.symbol {
@@ -906,24 +905,24 @@ a.symbol:hover {
  */
 
 #wrapper.tags {
-  padding: 0px 40px 20px 40px;
+    max-width: 850px;
+    padding-top: 0;
 }
 .page-tags {
     text-align: center;
 }
-
-.page-tags .tags {
-    font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+.page-tags ul li {
     margin: 10px 15px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
     display: inline-block;
+    font-size: 1.2em;
 }
+.page-tags ul li a {
+    color: #8a8a8a;
 
-.page-tags .tags a {
-    color: #666;
 }
-
-.page-tags .tags:hover a {
+.page-tags ul li a span {
+    font-size: .9em;
+}
+.page-tags ul li a:hover {
     color: #5694f1;
 }

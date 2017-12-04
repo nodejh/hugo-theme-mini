@@ -1,40 +1,39 @@
 # Site settings
 baseurl = "http://nodejh.com/"
-# HTML Language Code Reference, such as en, zh-cn
-languageCode = "en"
-title = "Blog Title"
+languageCode = "zh-cn"
+title = "nodejh"
 theme = "hugo-theme-cactus-plus"
 # Enter your tracking code to enable Google Analytics
-googleAnalytics = "your_google_analytics_code"
+googleAnalytics = "UA-84989670-1"
 hasCJKLanguage = true
 
 [params]
-	name = "Hugo"
-	description = "Blog Description"
-	bio = "Blog biology"
-	# Enter optionally your twitter account
-	twitter = "your_twitter"
-	enableRSS = false
+	name = "nodejh"
+	description = "My Blog"
+	bio = "Web Developer"
+
+	enableRSS = true
+
+	# Table of content
+	enableToc = true
 
 	# Disqus comment
-	disqusShortname = "your_disqus_short_name"
-	# Disable disqus comments by set `enableDisqus = "false"`
-	enableDisqus = false
+	disqusShortname = "nodejh"
+	# Enable disqus comment, true|false
+	enableDisqus = true
 
-	# Duoshuo comment
-	duoshuoShortname = "your_duoshuo_short_name"
-	# Disable duoshuo comments by set `enableDuoshuo = "false"`
-	enableDuoshuo = false
+	# Enable summary, true|false
+	enableSummary = true
+	# Use description replace summary, defalt false
+	useDescriptionReplaceSummary = false
 
-	enableGithubIssuesTips = false
+	# Enable Google Analytics
+	enableGoogleAnalytics = true
 
-	# Enable googleAnalytics
-	enableGoogleAnalytics = false
-
-	# Enable baiduAnalytics
-	enableBaiduAnalytics = false
-	# Baidu Tongji Code
-	baiduAnalytics = 'your_baidu_tongji_code'
+	# Enable Baidu Analytics
+	enableBaiduAnalytics = true
+	# Baidu Analytics Code
+	baiduAnalytics = '39843ea392201290bd6f76173d2e1633'
 
 	# Add custom assets with their paths relative to the static folder
 	customCSS = []
@@ -44,20 +43,37 @@ hasCJKLanguage = true
 	# translate or customize each string of the theme.
 
 	# Navigation links
+	# Home text, default: 'Home'
 	home = ""
+	# About text, default: 'About'
 	about = ""
+	# Archive text, default: 'Archive'
 	archive = ""
+	#  Subscribe button Text, default: 'Subscribe'
 	subscribe = ""
-	tags = ""
+
 	# Pagination links
+	# default: 'Older Posts'
 	olderPosts = ""
+	# default: 'Newer Posts'
 	newerPosts = ""
+
+	# show latest posts in single page
+	showLatestPosts = true
+	# Latest posts title, default: 'Read More'
 	readMore = ""
+
+	# default similar to: © Copyright 2017 ❤️ nodejh
+	# 	nodejh is site name specified in params.name
 	copyright = ""
-	# Sharing options and author information in posts
-	aboutAuthor = "I am so interesting."
+
+	# Share
+	enableShare = false
+	# Enter optionally your twitter account
+	twitterAccount = ""
 	tweet = ""
-	share = ""
+	facebook = ""
+
 	# 404 page
 	title404 = ""
 	subtitle404 = ""
@@ -67,9 +83,8 @@ hasCJKLanguage = true
   # The social icons can be styled differently if you use mono as font - circle, rounded, or empty
   socialIconStyle = ""
 
-
 # Add additional social link entries underneath
 [social]
-	facebook-square = "your_facebook_link"
-  twitter-square = "your_twitter_link"
-  github-square = "your_github_link"
+	facebook-square = "https://www.facebook.com/nodejh"
+	twitter-square = "https://www.twitter.com/nodejh"
+	github-square = "https://www.github.com/nodejh"
