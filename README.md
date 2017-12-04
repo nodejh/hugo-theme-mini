@@ -64,6 +64,8 @@ For more information read the official [setup guide](//gohugo.io/overview/instal
 
 ## Example Site
 
+There is an example site with config file and markdown files in [`exampleSite`](https://github.com/nodejh/hugo-theme-cactus-plus/tree/master/exampleSite) directory.
+
 ## Posts Summary
 
 Summary will show follow the post title title in home page.
