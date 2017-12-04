@@ -58,6 +58,8 @@ Take a look inside the [`exampleSite`](https://github.com/nodejh/hugo-theme-cact
 
 To use it, copy the [`config.toml`](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/exampleSite/config.toml) in the root folder of your Hugo site. Feel free to change strings as you like to customize your website.
 
+And you may replace your site `archetypes/default.md` with [`hugo-theme-cactus-plus/exampleSite/archetypes/default.md`](https://github.com/nodejh/hugo-theme-cactus-plus/tree/master/exampleSite/archetypes/default.md)
+
 For more information read the official [setup guide](//gohugo.io/overview/installing/) of Hugo.
 
 ## Example Site
