@@ -905,7 +905,7 @@ a.symbol:hover {
  */
 
 #wrapper.tags {
-    max-width: 850px;
+    max-width: 768px;
     padding-top: 0;
 }
 .page-tags {
