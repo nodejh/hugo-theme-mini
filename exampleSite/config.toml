@@ -24,7 +24,7 @@ hasCJKLanguage = true
 
 	# Enable summary, true|false
 	enableSummary = true
-	# Use description replace summary, defalt false
+	# Use posts' front matter description replace summary, true|false
 	useDescriptionReplaceSummary = false
 
 	# Enable Google Analytics
@@ -58,8 +58,8 @@ hasCJKLanguage = true
 	# default: 'Newer Posts'
 	newerPosts = ""
 
-	# show latest posts in single page
-	showLatestPosts = true
+	# show latest posts in single page, true|false
+	showLatestPosts = false
 	# Latest posts title, default: 'Read More'
 	readMore = ""
 
@@ -67,7 +67,7 @@ hasCJKLanguage = true
 	# 	nodejh is site name specified in params.name
 	copyright = ""
 
-	# Share
+	# Enable Share Button at bottom of post, true|false
 	enableShare = false
 	# Enter optionally your twitter account
 	twitterAccount = ""

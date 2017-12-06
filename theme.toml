@@ -3,8 +3,8 @@ license = "MIT"
 licenselink = "https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/LICENSE.md"
 description = "A minimalistic and responsive theme for bloggers."
 homepage = "https://github.com/nodejh/hugo-theme-simple"
-tags = ["blog", "disqus", "duoshuo", "google analytics", "baidu tongji", "rss", "syntax highlighting", "tags", "categories"]
-features = ["blog", "disqus", "duoshuo", "google analytics", "baidu tongji", "rss", "syntax highlighting", "tags", "categories"]
+tags = ["blog", "beautiful", "disqus", "rss", "syntax highlighting", "tags"]
+features = ["blog", "beautiful", "disqus", "rss", "syntax highlighting", "tags"]
 min_version = 0.18
 
 [author]
