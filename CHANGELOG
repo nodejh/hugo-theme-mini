@@ -1,0 +1,5 @@
+## 2017.12.09  Version 1.0
+
+- [x] Support twitter card.
+- [x] Remove name in `.Site.Params`. It's duplicate with `.Site.title`.
+- [x] Add `author` in `.Site.Params`.

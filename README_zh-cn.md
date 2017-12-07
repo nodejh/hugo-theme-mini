@@ -1,5 +1,7 @@
 # Hugo Theme Cactus Plus
 
+[English Document](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/README.md) | [中文文档](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/README_zh-cn.md)
+
 Cactus Plus 是在 [Cactus](https://github.com/digitalcraftsman/hugo-cactus-theme) 更改的一个简约主题。
 
 **特点**
@@ -10,10 +12,11 @@ Cactus Plus 是在 [Cactus](https://github.com/digitalcraftsman/hugo-cactus-them
 + **集成了 [Disqus](https://disqus.com/) 评论系统**
 + **提供了 Google Analytics 和百度统计**
 + **文章目录**
++ **Twitter Card**
 
 示例网站： [http://nodejh.com](http://nodejh.com)。
 
-[English Document](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/README.md) | [中文文档](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/README_zh-cn.md)
+
 
 
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->

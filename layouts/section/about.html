@@ -12,12 +12,6 @@
         {{ end }}
     {{ end }}
 
-    {{ if .Site.Params.enableDuoshuo }}
-        {{ if ne .Params.disableduoshuo "true" }}
-            {{ partial "duoshuo.html" . }}
-        {{ end }}
-    {{ end }}
-
     {{ partial "footer.html" . }}
 </section>
 

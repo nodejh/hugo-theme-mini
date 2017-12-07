@@ -1,39 +1,40 @@
 # Site settings
-baseurl = "http://nodejh.com/"
-languageCode = "zh-cn"
-title = "nodejh"
+baseurl = "your_site_url_address"
+languageCode = "en"
+title = "site title"
 theme = "hugo-theme-cactus-plus"
-# Enter your tracking code to enable Google Analytics
-googleAnalytics = "UA-84989670-1"
-hasCJKLanguage = true
+googleAnalytics = "your_google_analytics_id"
+# Set the value to true if your site include CJK (Chinese, Japanese, and Korean languages) characters
+hasCJKLanguage = false
 
 [params]
-	name = "nodejh"
-	description = "My Blog"
-	bio = "Web Developer"
+	author = "site_author"
+	description = "Site Description"
+	bio = "author biography"
+
+	twitter = "your_twitter_id"
+	facebook = "your_facebook_id"
 
 	enableRSS = true
-
-	# Table of content
 	enableToc = true
 
-	# Disqus comment
-	disqusShortname = "nodejh"
-	# Enable disqus comment, true|false
 	enableDisqus = true
+	disqusShortname = "your_disqus_short_name"
 
-	# Enable summary, true|false
+
 	enableSummary = true
-	# Use posts' front matter description replace summary, true|false
+	# Set the value to true if use description in post front matter replace content summary
 	useDescriptionReplaceSummary = false
 
-	# Enable Google Analytics
-	enableGoogleAnalytics = true
 
-	# Enable Baidu Analytics
-	enableBaiduAnalytics = true
-	# Baidu Analytics Code
-	baiduAnalytics = '39843ea392201290bd6f76173d2e1633'
+	enableGoogleAnalytics = true
+	enableBaiduAnalytics = false
+	# Set the value to your baidu analysis code if you want to use baidu analytics
+	baiduAnalytics = 'your_baidu_analysis_code'
+
+	enableTwitterCard = true
+	# The url for twitter card image, default is avatar.png in static/images directory
+	twitterCardImage = ""
 
 	# Add custom assets with their paths relative to the static folder
 	customCSS = []
@@ -43,36 +44,23 @@ hasCJKLanguage = true
 	# translate or customize each string of the theme.
 
 	# Navigation links
-	# Home text, default: 'Home'
 	home = ""
-	# About text, default: 'About'
 	about = ""
-	# Archive text, default: 'Archive'
 	archive = ""
-	#  Subscribe button Text, default: 'Subscribe'
 	subscribe = ""
 
-	# Pagination links
-	# default: 'Older Posts'
 	olderPosts = ""
-	# default: 'Newer Posts'
 	newerPosts = ""
-
-	# show latest posts in single page, true|false
-	showLatestPosts = false
-	# Latest posts title, default: 'Read More'
-	readMore = ""
-
-	# default similar to: © Copyright 2017 ❤️ nodejh
-	# 	nodejh is site name specified in params.name
 	copyright = ""
 
-	# Enable Share Button at bottom of post, true|false
-	enableShare = false
-	# Enter optionally your twitter account
-	twitterAccount = ""
+	# show latest posts in single page
+	showLatestPosts = false
+	readMore = ""
+
+	# Share
+	enableShare = true
 	tweet = ""
-	facebook = ""
+	share = ""
 
 	# 404 page
 	title404 = ""
@@ -82,6 +70,7 @@ hasCJKLanguage = true
 	iconFont = "font-awesome"
   # The social icons can be styled differently if you use mono as font - circle, rounded, or empty
   socialIconStyle = ""
+
 
 # Add additional social link entries underneath
 [social]

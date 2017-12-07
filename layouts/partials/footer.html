@@ -6,7 +6,7 @@
     {{ with .Site.Params.copyright }}
         {{ . | markdownify }}
     {{ else }}
-       © Copyright {{ now.Format "2006"}} <i class="fa fa-heart" aria-hidden="true"></i> {{ .Site.Params.name }}
+       © Copyright {{ now.Format "2006"}} <i class="fa fa-heart" aria-hidden="true"></i> {{ .Site.Params.Author }}
     {{ end }}
     </p>
     <p class="small">
