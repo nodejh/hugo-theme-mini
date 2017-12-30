@@ -271,7 +271,9 @@ ul {
 }
 
 li {
-    list-style-position: inside;
+    list-style-position: outside;
+    /* text-indent: -1.5em; */
+    margin-left: 1.5em;
 }
 
 ul>li {
