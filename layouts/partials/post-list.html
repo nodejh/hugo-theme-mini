@@ -10,7 +10,7 @@
                         {{ if .Site.Params.useDescriptionReplaceSummary }}
                             <h2>{{ .Description | plainify }}</h2>
                         {{ else }}
-                            <h2>{{ .Summary | plainify }}</h2>
+                            <h2>{{ .Summary | plainify | htmlUnescape }}</h2>
                         {{ end }}
                     {{ end }}
                 </a>
