@@ -1,4 +1,4 @@
-# Hogu Theme Cactus Plus
+# Hugo Theme Cactus Plus
 
 [English Document](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/README.md) | [中文文档](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/README_zh-cn.md)
 
@@ -19,7 +19,7 @@ Here's the link to online demo: [http://nodejh.com](http://nodejh.com).
 
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
-- [Hogu Theme Cactus Plus](#hogu-theme-cactus-plus)
+- [Hugo Theme Cactus Plus](#hugo-theme-cactus-plus)
 	- [Screenshot](#screenshot)
 	- [Installation](#installation)
 	- [Example Site](#example-site)
@@ -60,7 +60,7 @@ Take a look inside the [`exampleSite`](https://github.com/nodejh/hugo-theme-cact
 
 To use it, copy the [`config.toml`](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/exampleSite/config.toml) in the root folder of your Hugo site. Feel free to change strings as you like to customize your website.
 
-And you may replace your site `archetypes/default.md` with [`hugo-theme-cactus-plus/exampleSite/archetypes/default.md`](https://github.com/nodejh/hugo-theme-cactus-plus/tree/master/exampleSite/archetypes/default.md)
+And you may replace your site `archetypes/default.md` with [`hugo-theme-cactus-plus/archetypes/default.md`](https://github.com/nodejh/hugo-theme-cactus-plus/tree/master/archetypes/default.md)
 
 For more information read the official [setup guide](//gohugo.io/overview/installing/) of Hugo.
 
