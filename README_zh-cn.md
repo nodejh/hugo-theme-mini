@@ -63,7 +63,7 @@ $ git clone https://github.com/nodejh/hugo-theme-cactus-plus.git
 
 配置文件中对大部分配置都有详细的注释说明，复制该文件到站点目录下，根据自己的情况修改即可。
 
-然后可能你还需要用 [`hugo-theme-cactus-plus/exampleSite/archetypes/default.md`](https://github.com/nodejh/hugo-theme-cactus-plus/tree/master/exampleSite/archetypes/default.md) 替换你的项目中的 `archetypes/default.md`。
+然后可能你还需要用 [`hugo-theme-cactus-plus/archetypes/default.md`](https://github.com/nodejh/hugo-theme-cactus-plus/tree/master/archetypes/default.md) 替换你的项目中的 `archetypes/default.md`。
 
 更多安装信息查看 Hugo 官方文档 [setup guide](//gohugo.io/overview/installing/)。
 
