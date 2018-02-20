@@ -43,6 +43,10 @@
                 {{ partial "disqus.html" . }}
             {{ end }}
 
+            {{ if .Site.Params.staticman_api }}
+                {{ partial "post-comments" . }}
+            {{ end }}
+
             {{ if .Site.Params.showLatestPosts }}
                 {{ partial "latest-posts.html" . }}
             {{ end }}

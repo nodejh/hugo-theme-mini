@@ -21,6 +21,9 @@ hasCJKLanguage = false
 	enableDisqus = true
 	disqusShortname = "your_disqus_short_name"
 
+  enableStaticman = true	
+  staticman_api = "https://api.staticman.net/v2/entry/your_github_user_name/your_repo/master/comments"
+  githubPullURL = "https://github.com/your_github_user_name/your_repo/pulls"
 
 	enableSummary = true
 	# Set the value to true if use description in post front matter replace content summary
