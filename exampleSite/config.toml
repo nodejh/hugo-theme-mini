@@ -21,9 +21,12 @@ hasCJKLanguage = false
 	enableDisqus = true
 	disqusShortname = "your_disqus_short_name"
 
-  enableStaticman = true	
+  enableStaticman = true
+  # for comments
   staticman_api = "https://api.staticman.net/v2/entry/your_github_user_name/your_repo/master/comments"
   githubPullURL = "https://github.com/your_github_user_name/your_repo/pulls"
+  # for contribute-post
+  staticman_posts = "https://api.staticman.net/v2/entry/your_github_user_name/your_repo/master/posts"
 
 	enableSummary = true
 	# Set the value to true if use description in post front matter replace content summary
@@ -40,7 +43,7 @@ hasCJKLanguage = false
 	twitterCardImage = ""
 
 	# Add custom assets with their paths relative to the static folder
-	customCSS = []
+	customCSS = ["css/staticman.css"]
 	customJS  = []
 
 	# The variables below are optionally too and can be used to

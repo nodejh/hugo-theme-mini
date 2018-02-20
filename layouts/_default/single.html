@@ -43,7 +43,8 @@
                 {{ partial "disqus.html" . }}
             {{ end }}
 
-            {{ if .Site.Params.staticman_api }}
+            {{ if .Site.Params.enableStaticman }}
+                {{ partial "post-meta" . }}
                 {{ partial "post-comments" . }}
             {{ end }}
 
