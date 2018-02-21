@@ -18,15 +18,10 @@ hasCJKLanguage = false
 	enableRSS = true
 	enableToc = true
 
-	enableDisqus = true
+	enableDisqus = false
 	disqusShortname = "your_disqus_short_name"
-
-  enableStaticman = true
-  # for comments
-  staticman_api = "https://api.staticman.net/v2/entry/your_github_user_name/your_repo/master/comments"
-  githubPullURL = "https://github.com/your_github_user_name/your_repo/pulls"
-  # for contribute-post
-  staticman_posts = "https://api.staticman.net/v2/entry/your_github_user_name/your_repo/master/posts"
+	# to use staticman, one should define [staticman] parameters
+  enableStaticman = false
 
 	enableSummary = true
 	# Set the value to true if use description in post front matter replace content summary
@@ -43,7 +38,7 @@ hasCJKLanguage = false
 	twitterCardImage = ""
 
 	# Add custom assets with their paths relative to the static folder
-	customCSS = ["css/staticman.css"]
+	customCSS = [] # to configure the comment-system
 	customJS  = []
 
 	# The variables below are optionally too and can be used to
@@ -83,3 +78,10 @@ hasCJKLanguage = false
 	facebook-square = "https://www.facebook.com/nodejh"
 	twitter-square = "https://www.twitter.com/nodejh"
 	github-square = "https://www.github.com/nodejh"
+
+# to use staticman comment-system 
+[staticman]
+  endpoint = "https://api.staticman.net/v2/entry/"
+  username = "your_username"
+  repository = "your_repo"
+  branch = "master"

@@ -19,6 +19,7 @@
   display: inline-block;
   vertical-align: middle;
   border-radius: 50%;
+  max-width: 50px;
 }
 
 .post-comment-info {
