@@ -26,7 +26,7 @@
 
   <h1>Say something</h1>
 
-  <form class="post-new-comment" method="POST" action="https://api.staticman.net/v2/entry/{{ .Site.Params.staticman.username }}/{{ .Site.Params.staticman.repository }}/{{ .Site.Params.staticman.branch }}/comments">
+  <form class="post-new-comment" method="POST" action="{{ .Site.Params.staticman_send_to }}">
     <input type="hidden" name="options[redirect]" value="{{ .Permalink }}#comment-submitted">
     <input type="hidden" name="options[entryId]" value="{{ .UniqueID }}">
     <input name="fields[name]" type="text" class="post-comment-field" placeholder="Your name">
@@ -39,7 +39,7 @@
 <div id="comment-submitted" class="dialog">
 <h1>Thank you</h1>
   <p>Your comment has been submitted and will be published once it has been approved.</p>
-  <p><a href="https://github.com/{{ .Site.Params.staticman.username }}/{{ .Site.Params.staticman.repository }}/pulls">Click here</a> to see the pull request you generated.</p>
+  <p><a href="{{ .Site.Params.github_pull }}">Click here</a> to see the pull request you generated.</p>
   
   <p><a href="#" class="btn">OK</a></p>
 </div>

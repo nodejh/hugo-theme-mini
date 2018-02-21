@@ -20,8 +20,13 @@ hasCJKLanguage = false
 
 	enableDisqus = false
 	disqusShortname = "your_disqus_short_name"
-	# to use staticman, one should define [staticman] parameters
+	# to use staticman, one should define staticman parameters
   enableStaticman = false
+  # to use staticman comment-system
+  staticman_send_to = "https://api.staticman.net/v2/entry/your_username/your_repo/master/comments"
+  github_pull = "https://github.com/your_username/your_repo/pulls"
+  staticman_post_to = "https://api.staticman.net/v2/entry/your_username/your_repo/master/posts"
+
 
 	enableSummary = true
 	# Set the value to true if use description in post front matter replace content summary
@@ -78,10 +83,3 @@ hasCJKLanguage = false
 	facebook-square = "https://www.facebook.com/nodejh"
 	twitter-square = "https://www.twitter.com/nodejh"
 	github-square = "https://www.github.com/nodejh"
-
-# to use staticman comment-system 
-[staticman]
-  endpoint = "https://api.staticman.net/v2/entry/"
-  username = "your_username"
-  repository = "your_repo"
-  branch = "master"
