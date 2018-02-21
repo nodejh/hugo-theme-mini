@@ -1,0 +1,14 @@
+<form class="post-new-comment" method="POST" action="{{ .Site.Params.staticman_post_to }}">
+  <input type="hidden" name="options[redirect]" value="{{ .Permalink }}#post-submitted">
+  <input name="fields[title]" type="text" class="post-comment-field" placeholder="Title">
+  <textarea name="fields[body]" class="post-comment-field" placeholder="The content. Feel free to use Markdown." rows="10"></textarea>
+  <input type="submit" class="post-comment-field btn" value="Submit">
+</form>
+
+<div id="post-submitted" class="dialog">
+<h1>Thank you</h1>
+  <p>Your post has been submitted and will be published once it has been approved.</p>
+  <p><a href="{{ .Site.Params.github_pull }}">Click here</a> to see the pull request you generated.</p>
+  
+  <p><a href="#" class="btn">OK</a></p>
+</div>

@@ -18,8 +18,14 @@ hasCJKLanguage = false
 	enableRSS = true
 	enableToc = true
 
-	enableDisqus = true
+	enableDisqus = false
 	disqusShortname = "your_disqus_short_name"
+	# to use staticman, one should define staticman parameters
+  enableStaticman = false
+  # to use staticman comment-system
+  staticman_send_to = "https://api.staticman.net/v2/entry/your_username/your_repo/master/comments"
+  github_pull = "https://github.com/your_username/your_repo/pulls"
+  staticman_post_to = "https://api.staticman.net/v2/entry/your_username/your_repo/master/posts"
 
 
 	enableSummary = true
@@ -37,7 +43,7 @@ hasCJKLanguage = false
 	twitterCardImage = ""
 
 	# Add custom assets with their paths relative to the static folder
-	customCSS = []
+	customCSS = [] # to configure the comment-system
 	customJS  = []
 
 	# The variables below are optionally too and can be used to
