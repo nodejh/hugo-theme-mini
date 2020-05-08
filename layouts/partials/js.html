@@ -4,7 +4,13 @@
 <script>hljs.initHighlightingOnLoad();</script>
 
 {{ range .Site.Params.customJS }}
+{{ if ( or ( hasPrefix . "http://" ) ( hasPrefix . "https://" ) ) }}
+<!-- remote js -->
+<script src="{{ . }}"></script>
+{{ else }}
+<!-- local js -->
 <script src="{{ $.Site.BaseURL }}{{ . }}"></script>
+{{ end }}
 {{ end }}
 
 {{ if .Site.Params.enableGoogleAnalytics }}

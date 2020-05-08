@@ -26,7 +26,12 @@
 		{{ end }}
 
 		{{ range .Site.Params.customCSS }}
+		{{ if ( or ( hasPrefix . "http://" ) ( hasPrefix . "https://" ) ) }}
+		<!-- remote css -->
+		<link rel="stylesheet" href="{{ . }}">
+		{{ else }}
+		<!-- local css -->
 		<link rel="stylesheet" href="{{ $.Site.BaseURL }}{{ . }}">
 		{{ end }}
-		<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+		{{ end }}
 	</head>
