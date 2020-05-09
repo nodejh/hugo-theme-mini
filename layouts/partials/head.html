@@ -9,7 +9,7 @@
 		{{ end }}
 		{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
 		{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
-		{{ .Hugo.Generator }}
+		{{ hugo.Generator }}
 		<title>{{ if .IsHome }}{{ .Title }}{{ else }}{{ .Title }} &middot; {{ .Site.Title }}{{ end }}</title>
 		<link rel="shortcut icon" href="{{ .Site.BaseURL }}images/favicon.ico">
 		<link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
