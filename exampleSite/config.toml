@@ -77,3 +77,7 @@ hasCJKLanguage = false
 	facebook-square = "https://www.facebook.com/nodejh"
 	twitter-square = "https://www.twitter.com/nodejh"
 	github-square = "https://www.github.com/nodejh"
+	
+# R Markdown support
+
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
