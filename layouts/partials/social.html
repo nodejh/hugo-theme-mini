@@ -2,7 +2,7 @@
 {{ if eq .Site.Params.iconFont "font-awesome" }}
 	
 	{{ range $key, $val := .Site.Social }}
-    <a class="symbol" href="{{ $val }}">
+    <a class="symbol" rel="me" href="{{ $val }}">
         <i class="fa fa-{{ $key }}"></i>
     </a>
     {{ end }}
@@ -11,7 +11,7 @@
 	
 	{{ $iconStyle := .Site.Params.socialIconStyle }}
     {{ range $key, $val := .Site.Social }}
-    <a class="symbol" href="{{ $val }}">
+    <a class="symbol" rel="me" href="{{ $val }}">
         {{ $iconStyle }}{{ if eq $key "twitter" }}twitterbird{{ else }}{{ $key }}{{ end }}
     </a>
     {{ end }}
