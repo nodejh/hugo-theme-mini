@@ -932,3 +932,9 @@ a.symbol:hover {
 .page-tags ul li a:hover {
     color: #5694f1;
 }
+
+.center {
+  text-align: center;
+}
+
+
