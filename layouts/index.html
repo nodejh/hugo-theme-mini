@@ -1,15 +1,27 @@
-	{{ partial "head.html" . }}
-	<body>
-    {{ partial "nav.html" . }}
+{{ define "main" }}
+  {{ partial "profile.html" . }}
 
-    {{ partial "profile.html" . }}
 
-    <section id="wrapper" class="home">
-        {{ partial "post-list.html"  . }}
-        {{ partial "pagination.html" . }}
-        {{ partial "footer.html"     . }}
-    </section>
-
-    {{ partial "js.html" . }}
-    </body>
-</html>
+<section id="wrapper" class="home">
+  <ul id="post-list">
+    {{ range where .Paginator.Pages "Params.hidden" "ne" "true" }}
+    {{ $url := replace .Permalink .Site.BaseURL "" }}
+        {{ if ne $url "about/" }}
+            <li>
+                <aside class="dates">{{ .Date.Format "Jan 2" }}</aside>
+                <a href='{{ .Permalink }}'>
+                    {{ .Title }}
+                    {{ if .Site.Params.enableSummary }}
+                        {{ if .Site.Params.useDescriptionReplaceSummary }}
+                            <h2>{{ .Description | plainify }}</h2>
+                        {{ else }}
+                            <h2>{{ .Summary | plainify | htmlUnescape }}</h2>
+                        {{ end }}
+                    {{ end }}
+                </a>
+            </li>
+        {{ end }}
+    {{ end }}
+  </ul>
+</section>
+{{ end }}
