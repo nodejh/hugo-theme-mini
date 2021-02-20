@@ -1,13 +1,16 @@
-<div class="profile">
-  <section id="wrapper">
-    <header id="header">
-      <a href="{{ with .Site.Params.avatarLink }}{{ . }}{{ else }}{{ .Site.BaseURL }}about{{ end }}">
-        <img id="avatar" class="2x" src="{{ .Site.BaseURL }}images/avatar.png" />
-      </a>
+<header class="profile">
+  <section class="wrapper">
+      {{ if .Site.Params.avatarLink }}
+        <a href="{{ .Site.Params.avatarLink }}">
+          <img class="avatar" alt="avatar" src="{{ .Site.BaseURL }}images/avatar.png" />
+        </a>
+      {{ else }}
+        <img class="avatar" alt="avatar" src="{{ .Site.BaseURL }}images/avatar.png" />
+      {{ end }}
+
       <h1>{{ .Site.Title }}</h1>
-      {{ with .Site.Params.bio }}
+      {{ with .Site.Params.Bio }}
         <h2>{{ . | markdownify }}</h2>
       {{ end }}
-    </header>
   </section>
-</div>
+</header>

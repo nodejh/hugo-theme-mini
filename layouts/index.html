@@ -1,27 +1,46 @@
 {{ define "main" }}
-  {{ partial "profile.html" . }}
+{{ partial "profile.html" . }}
+
+<section id="wrapper">
+  <ul id="post-list">
+    {{ $pages := where .Site.RegularPages "Params.hidden" "ne" "true" }}
+    {{ $paginator := .Paginate ($pages) }}
+    {{ range $paginator.Pages }}
+      <li>
+          <div>
+            <h1 class="title"><a href='{{ .RelPermalink }}'>{{ .Title }}</a></h1>   
+            <div class="dates">{{ .Date.Format "Jan 2" }}</div>
+          </div>
+        
+        <div>{{ .Summary | plainify | htmlUnescape }}</div>
+
+      </li>
+    {{ end }}
 
 
-<section id="wrapper" class="home">
+
+  </ul>
+
+  <h1>old</h1>
   <ul id="post-list">
     {{ range where .Paginator.Pages "Params.hidden" "ne" "true" }}
-    {{ $url := replace .Permalink .Site.BaseURL "" }}
-        {{ if ne $url "about/" }}
-            <li>
-                <aside class="dates">{{ .Date.Format "Jan 2" }}</aside>
-                <a href='{{ .Permalink }}'>
-                    {{ .Title }}
-                    {{ if .Site.Params.enableSummary }}
-                        {{ if .Site.Params.useDescriptionReplaceSummary }}
-                            <h2>{{ .Description | plainify }}</h2>
-                        {{ else }}
-                            <h2>{{ .Summary | plainify | htmlUnescape }}</h2>
-                        {{ end }}
-                    {{ end }}
-                </a>
-            </li>
-        {{ end }}
-    {{ end }}
+      {{ $url := replace .Permalink .Site.BaseURL "" }}
+          {{ if ne $url "about/" }}
+              <li>
+                  <aside class="dates">{{ .Date.Format "Jan 2" }}</aside>
+                  <a href='{{ .Permalink }}'>
+                      {{ .Title }}
+                      {{ if .Site.Params.enableSummary }}
+                          {{ if .Site.Params.useDescriptionReplaceSummary }}
+                              <h2>{{ .Description | plainify }}</h2>
+                          {{ else }}
+                              <h2>{{ .Summary | plainify | htmlUnescape }}</h2>
+                          {{ end }}
+                      {{ end }}
+                  </a>
+              </li>
+          {{ end }}
+      {{ end }}
   </ul>
 </section>
 {{ end }}

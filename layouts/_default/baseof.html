@@ -9,8 +9,11 @@
 
   <body>
     {{ partial "navigation.html" . }}
-    {{ block "header" . }}{{ end }}
-    {{ block "main" . }}{{ end }}
-    {{ block "footer" . }}{{ end }}
+
+    <div class="main">
+      {{ block "header" . }}{{ end }}
+      {{ block "main" . }}{{ end }}
+      {{ block "footer" . }}{{ end }}
+    </div>
   </body>
 </html>
