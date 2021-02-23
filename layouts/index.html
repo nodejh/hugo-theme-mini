@@ -1,46 +1,41 @@
 {{ define "main" }}
 {{ partial "profile.html" . }}
 
-<section id="wrapper">
-  <ul id="post-list">
+<div id="list-page">
     {{ $pages := where .Site.RegularPages "Params.hidden" "ne" "true" }}
     {{ $paginator := .Paginate ($pages) }}
     {{ range $paginator.Pages }}
-      <li>
+        {{ $title := .Title }}
+        {{ $summary := .Summary }}
+        <section class="item">
           <div>
-            <h1 class="title"><a href='{{ .RelPermalink }}'>{{ .Title }}</a></h1>   
-            <div class="dates">{{ .Date.Format "Jan 2" }}</div>
+            <h1 class="title"><a href='{{ .RelPermalink }}'>{{ $title }}</a></h1>   
+            <div class="date">{{ .Date.Format "Jan 2" }}</div>
           </div>
-        
-        <div>{{ .Summary | plainify | htmlUnescape }}</div>
 
-      </li>
+          <div class="summary">{{ $summary | plainify | htmlUnescape }}</div>
+
+
+
+          {{ with .Resources.ByType "image" }}
+            {{ $image := index . 1 }}  
+            {{ range .  }}
+              {{ if eq .Name "images/cover.png" }} 
+                {{ $image = . }}
+              {{ else if eq .Name "images/cover.jpg" }}
+                {{ $image = . }}
+              {{ else if eq .Name "images/cover.jpeg" }}
+                {{ $image = . }}
+              {{ end }}
+            {{ end }}
+
+            <div class="cover">
+              <img src="{{ $image.RelPermalink }}" alt="{{ $title }}">
+            </div>
+          {{ end }}
+
+        </section>
     {{ end }}
 
-
-
-  </ul>
-
-  <h1>old</h1>
-  <ul id="post-list">
-    {{ range where .Paginator.Pages "Params.hidden" "ne" "true" }}
-      {{ $url := replace .Permalink .Site.BaseURL "" }}
-          {{ if ne $url "about/" }}
-              <li>
-                  <aside class="dates">{{ .Date.Format "Jan 2" }}</aside>
-                  <a href='{{ .Permalink }}'>
-                      {{ .Title }}
-                      {{ if .Site.Params.enableSummary }}
-                          {{ if .Site.Params.useDescriptionReplaceSummary }}
-                              <h2>{{ .Description | plainify }}</h2>
-                          {{ else }}
-                              <h2>{{ .Summary | plainify | htmlUnescape }}</h2>
-                          {{ end }}
-                      {{ end }}
-                  </a>
-              </li>
-          {{ end }}
-      {{ end }}
-  </ul>
-</section>
+</div>
 {{ end }}

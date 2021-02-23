@@ -10,10 +10,10 @@
   <body>
     {{ partial "navigation.html" . }}
 
-    <div class="main">
-      {{ block "header" . }}{{ end }}
+    <main class="main">
       {{ block "main" . }}{{ end }}
-      {{ block "footer" . }}{{ end }}
-    </div>
+    </main>
+    
+    {{ block "footer" . }}{{ end }}
   </body>
 </html>

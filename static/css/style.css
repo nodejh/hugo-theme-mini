@@ -120,11 +120,11 @@ table {
 
 a {
   text-decoration: none;
-  color: #5694f1;
+  color: #5badf0;
 }
 
 a:hover {
-  color: #5badf0;
+  color: #0366d6;
 }
 
 
@@ -147,6 +147,9 @@ nav.navigation a {
   font-size: 13px;
   line-height: 1.35;
   border-radius: 3px;
+}
+nav.navigation a:hover {
+  color: #0366d6;
 }
 
 nav.navigation a.button {
@@ -191,7 +194,7 @@ nav.navigation a.button {
 
 /* profile  */
 
-.profile .wrapper {
+.profile {
   margin: 60px auto 0 auto;
   text-align: center;
 }
@@ -202,7 +205,6 @@ nav.navigation a.button {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  margin-bottom: 20px;
 }
 
 .profile h1 {
@@ -210,6 +212,7 @@ nav.navigation a.button {
   letter-spacing: 0px;
   font-size: 20px;
   color: #222;
+  margin-top: 12px;
 }
 
 .profile h2 {
@@ -217,7 +220,49 @@ nav.navigation a.button {
   font-weight: 300;
   color: #aaa;
   margin-top: 10px;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-style: normal;
 }
 
+
+/* index post list */
+#list-page .item {
+  margin: 48px 0 0 0;
+}
+
+#list-page .title {
+  display: inline-block;
+  color: #333;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+#list-page .title a {
+  color: #333;
+  display: block;
+}
+
+#list-page .title a:hover {
+  color: #0366d6;
+}
+
+#list-page .date {
+    float: right;
+    position: relative;
+    top: 1px;
+    color: #bbb;
+}
+
+#list-page .summary {
+  color: #6a737d;
+  margin-top: 12px;
+}
+
+#list-page .cover {
+  width: 100px;
+  height: 100px;
+  background: #fff;
+}
+
+#list-page .cover img {
+  width: 100%;
+  text-align: center;
+}
