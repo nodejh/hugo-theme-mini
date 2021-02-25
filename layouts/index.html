@@ -7,15 +7,13 @@
     {{ range $paginator.Pages }}
         {{ $title := .Title }}
         {{ $summary := .Summary }}
-        <section class="item">
+        <!-- <section class="item">
           <div>
             <h1 class="title"><a href='{{ .RelPermalink }}'>{{ $title }}</a></h1>   
             <div class="date">{{ .Date.Format "Jan 2" }}</div>
           </div>
 
           <div class="summary">{{ $summary | plainify | htmlUnescape }}</div>
-
-
 
           {{ with .Resources.ByType "image" }}
             {{ $image := index . 1 }}  
@@ -33,6 +31,49 @@
               <img src="{{ $image.RelPermalink }}" alt="{{ $title }}">
             </div>
           {{ end }}
+        </section> -->
+
+
+        <section class="item">
+          
+          {{ if .Resources.ByType "image" }}
+          <!-- with cover image -->
+
+              {{ $images := .Resources.ByType "image" }}
+              {{ $image := index $images 1 }}
+              {{ range .Resources.ByType "image"  }}
+                  {{ if eq .Name "images/cover.png" }} 
+                      {{ $image = . }}
+                  {{ else if eq .Name "images/cover.jpg" }}
+                      {{ $image = . }}
+                  {{ else if eq .Name "images/cover.jpeg" }}
+                      {{ $image = . }}
+                  {{ end }}
+              {{ end }}
+
+
+              <div class="left">
+                <h1 class="title"><a href='{{ .RelPermalink }}'>{{ $title }}</a></h1>
+                <div class="summary">{{ $summary | plainify | htmlUnescape }}</div>
+              </div>
+
+              <div class="right">
+                <img src="{{ $image.RelPermalink }}" alt="{{ $title }}">
+              </div>
+          {{ else }}
+          <!-- no cover image -->
+
+              <div>
+                <h1 class="title"><a href='{{ .RelPermalink }}'>{{ $title }}</a></h1>   
+                <div class="date">{{ .Date.Format "Jan 2" }}</div>
+              </div>
+
+              <div class="summary">{{ $summary | plainify | htmlUnescape }}</div>
+
+          {{ end }}
+
+  
+
 
         </section>
     {{ end }}

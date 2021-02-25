@@ -224,7 +224,7 @@ nav.navigation a.button {
 
 
 /* index post list */
-#list-page .item {
+/* #list-page .item {
   margin: 48px 0 0 0;
 }
 
@@ -252,7 +252,7 @@ nav.navigation a.button {
 }
 
 #list-page .summary {
-  color: #6a737d;
+  color: #8c8c8c;
   margin-top: 12px;
 }
 
@@ -265,4 +265,20 @@ nav.navigation a.button {
 #list-page .cover img {
   width: 100%;
   text-align: center;
+} */
+
+#list-page .item {
+  display: inline-block;
+}
+
+#list-page .item .left {
+  float: left;
+}
+#list-page .item .right {
+  float: right;
+  width: 200px;
+  min-width: 200px;
+  max-height: 150px;
+  border-radius: 4px;
+  overflow: hidden;
 }
