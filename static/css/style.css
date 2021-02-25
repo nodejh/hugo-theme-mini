@@ -252,7 +252,7 @@ nav.navigation a.button {
 }
 
 #list-page .summary {
-  color: #6a737d;
+  color: #8c8c8c;
   margin-top: 12px;
 }
 
@@ -265,4 +265,18 @@ nav.navigation a.button {
 #list-page .cover img {
   width: 100%;
   text-align: center;
+}
+
+#list-page .pagination {
+  margin: 48px 0;
+  width: 100%;
+  height: 32px;
+  margin-top: 48px;
+}
+
+#list-page .pagination .pre {
+  float: left;
+}
+#list-page .pagination .next {
+  float: right;
 }
