@@ -25,6 +25,53 @@ blockquote {
   color: #757575;
 }
 
+hr {
+  display: block;
+  border: none;
+  height: 2px;
+  margin: 40px auto;
+  background: #eee;
+}
+
+table {
+  width: 100%;
+  margin: 40px 0;
+  border-collapse: collapse;
+  line-height: 1.5em;
+}
+
+th, td {
+  text-align: left;
+  padding-right: 20px;
+  vertical-align: top;
+}
+
+table td, td {
+  border-spacing: none;
+  border-style: solid;
+  padding: 10px 15px;
+  border-width: 1px 0 0 0;
+}
+thead th, th {
+  text-align: left;
+  padding: 10px 15px;
+  height: 20px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #444;
+  cursor: default;
+  white-space: nowrap;
+  border: 1px solid #dadadc;
+}
+
+tr>td {
+  border: 1px solid #dadadc;
+}
+
+tr:nth-child(odd)>td {
+  background: #fcfcfc;
+}
+
 h1,
 h2,
 h3 {
@@ -36,9 +83,8 @@ p {
 }
 p,
 pre {
-  white-space: normal;
   line-break: anywhere;
-  word-break: break-word;
+  word-break: break-all;
 }
 .markdown-image img {
   max-width: 100%;
@@ -56,6 +102,11 @@ h4:hover a {
 }
 .highlight pre {
   padding: 7px;
+}
+
+.highlight {
+  max-width: 100%;
+  overflow-x: auto;
 }
 p code {
   font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
