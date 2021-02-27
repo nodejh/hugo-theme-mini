@@ -1,55 +1,44 @@
-{{ partial "head.html" . }}
-    <body>
-       {{ partial "navigation.html" . }}
+{{ define "main" }}
 
-        <section id="wrapper" class="post">
-            <article>
-                <header>
-                    <h1>
-                        {{ .Title }}
-                    </h1>
-                    <h2 class="headline">
-                    {{ .Date.Format "Jan 2, 2006 15:04" }}
-                    · {{ if lt 1 .WordCount }}{{ .WordCount }} words{{ else }}{{ .WordCount }} word{{ end }}
-                    · {{ .ReadingTime }} minute read
-                      <span class="tags">
-                      {{ with .Params.tags }}
-                      {{ if ge (len .) 1 }}
-                          {{ range . }}
-                              <a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}">{{ . }}</a>
-                          {{ end }}
-                      {{ end }}
-                      {{ end}}
-                      </span>
-                    </h2>
-                </header>
-                {{ if .Site.Params.enableToc }}
-                  {{ if .TableOfContents }}
-                    <div id="toc">
-                      {{ .TableOfContents }}
-                    </div>
-                  {{ end }}
-                {{ end }}
-                <section id="post-body">
-                    {{ .Content }}
-                </section>
-            </article>
+<section id="single">
+    <h1 class="title">{{ .Title }}</h1>
 
-            {{ if .Site.Params.enableShare }}
-                {{ partial "share.html" . }}
+    <div class="tip">
+        <span>
+          {{ .Date.Format "Jan 2, 2006 15:04" }}
+        </span>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          {{ if lt 1 .WordCount }}
+            {{ .WordCount }} words
+          {{ else }}
+              {{ .WordCount }} word
+          {{ end }}
+        </span>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          {{ .ReadingTime }} minute read
+        </span>
+    </div>
+
+    <div class="content">
+      {{  .Content }}
+    </div>
+
+    {{ with .Params.tags }}
+        <div class="tags">
+            {{ range . }}
+                <a href="{{ "tags/" | absURL }}{{ . | urlize }}">{{ . }}</a>
             {{ end }}
+        </div>
+    {{ end}}
 
-            {{ if .Site.Params.enableDisqus }}
-                {{ partial "disqus.html" . }}
-            {{ end }}
+    {{ partial "comment.html" . }}
+</section>
 
-            {{ if .Site.Params.showLatestPosts }}
-                {{ partial "latest-posts.html" . }}
-            {{ end }}
+{{ end }}
 
-            {{ partial "footer.html" . }}
-        </section>
-
-        {{ partial "js.html" . }}
-    </body>
-</html>

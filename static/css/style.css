@@ -1,121 +1,9 @@
-/* Reset */
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  margin: 0;
-  padding: 0;
-}
-
 body {
   line-height: 1;
-  font: normal 14px/1.5em 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-*,
-*:before,
-*:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+  font: normal 15px/1.5em 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #404040;
+  line-height: 1.75;
+  letter-spacing: 0.008em;
 }
 
 a {
@@ -125,6 +13,63 @@ a {
 
 a:hover {
   color: #0366d6;
+}
+
+/* markdown content styles */
+blockquote {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 1em;
+  margin-left: 0px;
+  border-left: 3px solid #eee;
+  color: #757575;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+}
+p {
+  margin-block-start: 1.5em;
+  margin-block-end: 1.5em;
+}
+p,
+pre {
+  white-space: break-spaces;
+  line-break: anywhere;
+  word-break: break-word;
+}
+.markdown-image img {
+  max-width: 100%;
+}
+.anchor { 
+  font-size: 100%; 
+  visibility: hidden; 
+  color:silver;
+}
+h1:hover a,
+h2:hover a,
+h3:hover a,
+h4:hover a { 
+  visibility: visible
+}
+.highlight pre {
+  padding: 7px;
+}
+p code {
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
+  font-size: inherit;
+  background-color: rgba(0, 0, 0, 0.06);
+  padding: 0 2px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 2px 2px;
+  line-height: inherit;
+  word-wrap: break-word;
+  text-indent: 0;
+}
+pre code {
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
 }
 
 
@@ -183,14 +128,22 @@ nav.navigation a.button {
   }
 }
 
+/* comment */
+#comment {
+  margin-top: 64px;
+}
+
+/* footer */
+#footer {
+  margin-top: 100px;
+}
+
 
 /* main content */
 .main {
-  max-width: 580px;
+  width: 100%;
   margin: 0 auto;
-  padding: 24px;
 }
-
 
 /* profile  */
 
@@ -198,7 +151,6 @@ nav.navigation a.button {
   margin: 60px auto 0 auto;
   text-align: center;
 }
-
 
 .profile .avatar {
   display: inline-block;
@@ -218,12 +170,17 @@ nav.navigation a.button {
 .profile h2 {
   font-size: 20px;
   font-weight: 300;
-  color: #aaa;
+  color: #757575;
   margin-top: 10px;
 }
 
-
 /* index post list */
+#list-page {
+  max-width: 580px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
 #list-page .item {
   margin: 48px 0 0 0;
 }
@@ -233,6 +190,8 @@ nav.navigation a.button {
   color: #333;
   font-size: 20px;
   font-weight: 400;
+  margin: 0;
+  width: 80%;
 }
 
 #list-page .title a {
@@ -245,14 +204,16 @@ nav.navigation a.button {
 }
 
 #list-page .date {
-    float: right;
-    position: relative;
-    top: 1px;
-    color: #bbb;
+  width: 20%;
+  float: right;
+  text-align: right;
+  position: relative;
+  top: 1px;
+  color: #bbb;
 }
 
 #list-page .summary {
-  color: #8c8c8c;
+  color: #757575;
   margin-top: 12px;
 }
 
@@ -280,3 +241,54 @@ nav.navigation a.button {
 #list-page .pagination .next {
   float: right;
 }
+
+/* single page */
+#single {
+  max-width: 680px;
+  margin: 60px auto 0 auto;
+  padding: 0 64px;
+}
+
+#single .title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 48px;
+}
+
+@media (max-width: 700px) {
+  #single {
+    padding: 0 18px;
+    margin: 20px auto 0 auto;
+  }
+  #single .title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+#single .tip {
+  text-align: center;
+  color: #8c8c8c;
+  margin-top: 18px;
+  font-size: 14px;
+}
+#single .tip .split {
+  margin: 0 4px;
+}
+
+#single .content {
+  margin-top: 36px;
+}
+
+#single .tags {
+  margin-top: 24px;
+}
+#single .tags a {
+  background: #f2f2f2;
+  padding: 4px 7px;
+  color: #757575;
+  font-size: 14px;
+  margin-right: 3px;
+}
+
