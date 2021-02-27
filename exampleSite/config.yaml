@@ -1,0 +1,59 @@
+baseurl: http://nodejh.com/
+languageCode: zh-cn
+title: nodejh
+theme: mini
+googleAnalytics: UA-84989670-1
+hasCJKLanguage: true
+permalinks:
+  posts: /posts/:title/
+
+disqusShortname: nodejh
+
+# https://gohugo.io/getting-started/configuration-markup#highlight
+markup:
+  highlight:
+    anchorLineNos: false
+    codeFences: true
+    guessSyntax: true
+    hl_Lines: ""
+    lineAnchors: ""
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: false
+    noClasses: true
+    style: emacs
+    tabWidth: 4
+
+params:
+  # Site Author
+  author: nodejh
+  # Author biography
+  bio: Software Engineer
+  # Site Description, used in HTML meat
+  description: nodejh's blog
+  enableRSS: true
+  enableToc: true
+  enableDisqus: true
+
+
+  home: ''
+  about: ''
+  archive: ''
+  subscribe: ''
+  olderPosts: ''
+  newerPosts: ''
+  copyright: ''
+  showLatestPosts: false
+  title404: ''
+  subtitle404: ''
+  iconFont: font-awesome
+  socialIconStyle: ''
+  links:
+    # - name: Project
+    #   path: /project
+
+social:
+  github: 'https://www.github.com/nodejh'
+  twitter: 'https://www.twitter.com/nodejh'
+  stackoverflow: 'https://stackoverflow.com/users/4518882/nodejh'
+  facebook: 'https://www.facebook.com/nodejh'
