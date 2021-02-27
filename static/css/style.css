@@ -36,7 +36,7 @@ p {
 }
 p,
 pre {
-  white-space: break-spaces;
+  white-space: normal;
   line-break: anywhere;
   word-break: break-word;
 }
@@ -136,8 +136,31 @@ nav.navigation a.button {
 /* footer */
 #footer {
   margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+  color: #bbbbbb;
+  font-size: 14px;
+}
+#footer .copyright {
+  margin: 20px auto;
+  font-size: 15px;
+}
+.powerby {
+  margin: 20px auto;
+  font-size: 13px;
+}
+#footer .split {
+  cursor: pointer;
+}
+#footer .split:hover path {
+  fill: #ff3356;
+  transition: 0.7s ease-out;
+  cursor: pointer;;
 }
 
+#social a {
+  margin: 0 4px;
+}
 
 /* main content */
 .main {

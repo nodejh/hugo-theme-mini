@@ -2,15 +2,20 @@
     {{ if .Site.Social }}
         {{ partial "social.html" . }}
     {{ end }}
-    
-    <p class="small">
+
+    <p class="copyright">
     {{ with .Site.Params.copyright }}
         {{ . | markdownify }}
     {{ else }}
-       © Copyright {{ now.Format "2006"}} <i class="fa fa-heart" aria-hidden="true"></i> {{ .Site.Params.Author }}
+       © Copyright 
+       {{ now.Format "2006"}} 
+       <span class="split">
+        {{ partial "svgs/heart.svg" (dict "fill" "#bbbbbb" "width" 15 "height" 15 ) }}
+       </span>
+       {{ .Site.Params.Author }}
     {{ end }}
     </p>
-    <p class="small">
+    <p class="powerby">
         Powered by <a href="http://www.gohugo.io/">Hugo</a> Theme By <a href="https://github.com/nodejh/hugo-theme-cactus-plus">nodejh</a>
     </p>
 </footer>
