@@ -1,15 +1,44 @@
-	{{ partial "head.html" . }}
-	<body>
-    {{ partial "nav.html" . }}
+{{ define "main" }}
+{{ partial "profile.html" . }}
 
-    {{ partial "profile.html" . }}
+<div id="list-page">
+    {{ $pages := .Site.RegularPages }}
+    {{ $paginator := .Paginate ($pages) }}
+    {{ range $paginator.Pages }}
+        {{ $title := .Title }}
+        {{ $summary := .Summary }}
+        {{ $date := dateFormat "Jan 2, 2006" .Date }}
+        <section class="item">
+          <div>
+            <h1 class="title"><a href='{{ .RelPermalink }}'>{{ $title }}</a></h1>   
+            <div class="date">{{ $date }}</div>
+          </div>
 
-    <section id="wrapper" class="home">
-        {{ partial "post-list.html"  . }}
-        {{ partial "pagination.html" . }}
-        {{ partial "footer.html"     . }}
-    </section>
+          <div class="summary">{{ $summary | plainify | htmlUnescape }}</div>
 
-    {{ partial "js.html" . }}
-    </body>
-</html>
+        </section>
+    {{ end }}
+
+    {{ if or ($paginator.HasPrev) ($paginator.HasNext) }}
+        <div class="pagination">
+          {{ if $paginator.HasPrev }}
+              <span class="prev">
+                  <a href="{{.Paginator.Prev.URL}}">
+                      <span class="arrow">←</span> {{ with .Site.Params.newerPosts }}{{ . }}{{ else }}Newer Posts{{ end }}
+                  </a>
+            </span>
+          {{ end }}
+          
+          {{ if $paginator.HasNext }}
+              <span class="next">
+                  <a href="{{.Paginator.Next.URL}}">
+                      {{ with .Site.Params.olderPosts }}{{ . }}{{ else }}Older Posts{{ end }} <span class="arrow">→</span>
+                  </a>
+              </span>
+          {{ end }}
+        </div>
+    {{ end }}
+
+
+</div>
+{{ end }}

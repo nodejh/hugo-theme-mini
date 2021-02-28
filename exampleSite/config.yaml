@@ -1,0 +1,55 @@
+baseURL: https://gohugo.io
+languageCode: en-us
+title: Hugo Themes
+theme: mini
+googleAnalytics: your-google-analytics-id
+hasCJKLanguage: true
+permalinks:
+  posts: /posts/:title/
+
+disqusShortname: your-disqus-shorname
+
+# Hugo Configure Markup
+# see: https://gohugo.io/getting-started/configuration-markup#highlight
+markup:
+  highlight:
+    guessSyntax: true
+    style: emacs
+
+
+# Social links in footer, support github,twitter,stackoverflow,facebook
+social:
+  # e.g.
+  github: 'your-github-link'
+  twitter: 'your-github-link'
+  stackoverflow: 'your-github-link'
+  # facebook: 'your-facebook-link'
+
+
+# Site parameters
+params:
+  # Site Author
+  author: Author
+  # Author biography
+  bio: Software Engineer
+  # Site Description, used in HTML meat
+  description: My Blog
+  enableRSS: true
+
+  # Optional
+  home: '' # Default: Home
+  about: '' # Default: About
+  archive: '' # Default: Archive
+  subscribe: '' # Default: Subscribe
+  olderPosts: '' # Default: Older Posts
+  newerPosts: '' # Default: Newer Posts
+  copyright: ''
+  title404: '' # Default: 404 - Page Not Found
+  subtitle404: '' # Default: The content you're looking for doesn't seem to exist.
+  readMore: '' # Default: Read More
+
+  # Extra links in navigation
+  links:
+    # e.g.
+    # - name: Project
+    #   path: /project

@@ -1,20 +1,10 @@
 <div id="social">
-{{ if eq .Site.Params.iconFont "font-awesome" }}
-	
-	{{ range $key, $val := .Site.Social }}
-    <a class="symbol" href="{{ $val }}">
-        <i class="fa fa-{{ $key }}"></i>
-    </a>
-    {{ end }}
 
-{{ else }}
-	
-	{{ $iconStyle := .Site.Params.socialIconStyle }}
-    {{ range $key, $val := .Site.Social }}
-    <a class="symbol" href="{{ $val }}">
-        {{ $iconStyle }}{{ if eq $key "twitter" }}twitterbird{{ else }}{{ $key }}{{ end }}
+{{ range $key, $val := .Site.Social }}
+    <a class="symbol" href="{{ $val }}" target="_blank">
+        {{ $svg :=  print "svgs/" $key ".svg" }}
+        {{ partial $svg (dict "fill" "#bbbbbb" "width" 28 "height" 28 ) }}
     </a>
-    {{ end }}
-
 {{ end }}
+
 </div>

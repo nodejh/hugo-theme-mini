@@ -1,19 +1,8 @@
-{{ partial "head.html" . }}
-<body>
-{{ partial "nav.html" . }}
+{{ define "main" }}
 {{ partial "profile.html" . }}
 
-<section id="wrapper" class="home">
+<section id="section">
     {{ .Content }}
-
-    {{ if .Site.Params.enableDisqus }}
-        {{ if ne .Params.disabledisqus "true" }}
-            {{ partial "disqus.html" . }}
-        {{ end }}
-    {{ end }}
-
-    {{ partial "footer.html" . }}
 </section>
 
-{{ partial "js.html" . }}
-</body>
+{{ end }}
