@@ -453,3 +453,43 @@ nav.navigation a.button {
   margin: 48px auto 0 auto;
   padding: 0 12px;
 }
+
+/* 404 page */
+#page-404 {
+  max-width: 580px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+#page-404 .item {
+  margin: 12px 0 0 0;
+}
+
+#page-404 .title {
+  display: inline-block;
+  color: #404040;
+  font-size: 15px;
+  font-weight: 400;
+  margin: 0;
+  width: 80%;
+}
+
+#page-404 .text {
+  text-align: center;
+  margin-top: 60px;
+}
+
+#page-404 .read-more {
+  font-weight: 300;
+  font-size: 20px;
+  margin-top: 48px;
+  margin-bottom: 12px;
+}
+
+#page-404 .date {
+  width: 20%;
+  float: right;
+  text-align: right;
+  position: relative;
+  top: 1px;
+  color: #bbb;
+}
