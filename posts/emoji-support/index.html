@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <title>Hugo Themes</title>
+    <title>Emoji Support | Hugo Themes</title>
 
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
@@ -32,6 +32,8 @@
     <nav class="navigation">
 	
 	
+		<a href='https://example.com'> <span class="arrow">←</span>Home</a>
+	
 	<a href='https://example.composts'>Archive</a>
 	<a href='https://example.comtags'>Tags</a>
 	<a href='https://example.comabout'>About</a>
@@ -46,110 +48,117 @@
 
     <main class="main">
       
-<header class="profile">
-    
-        <img class="avatar" alt="avatar" src="https://example.comimages/avatar.png" />
-    
 
-    <h1>Hugo Themes</h1>
-    
-    
-      <h2>Software Engineer</h2>
-    
-</header>
+<section id="single">
+    <h1 class="title">Emoji Support</h1>
 
-<div id="list-page">
-    
-    
-    
-        
-        
-        
-        <section class="item">
-          <div>
-            <h1 class="title"><a href='/archives/'></a></h1>   
-            <div class="date">May 28, 2019</div>
-          </div>
+    <div class="tip">
+        <span>
+          Mar 5, 2019 00:00
+        </span>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          
+            124 words
+          
+        </span>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          1 minute read
+        </span>
+    </div>
 
-          <div class="summary"></div>
-
-        </section>
+    <div class="content">
+      <p>Emoji can be enabled in a Hugo project in a number of ways.</p>
+<p>The <a 
+    href="https://gohugo.io/functions/emojify/"
     
-        
-        
-        
-        <section class="item">
-          <div>
-            <h1 class="title"><a href='/posts/markdown-syntax-guide/'>Markdown Syntax Guide</a></h1>   
-            <div class="date">Mar 11, 2019</div>
-          </div>
+    
+     
+      target="_blank" 
+      rel="noopener"
+    
+>
+    <code>emojify</code>
+</a> function can be called directly in templates or <a 
+    href="https://gohugo.io/templates/shortcode-templates/#inline-shortcodes"
+    
+    
+     
+      target="_blank" 
+      rel="noopener"
+    
+>
+    Inline Shortcodes
+</a>.</p>
+<p>To enable emoji globally, set <code>enableEmoji</code> to <code>true</code> in your site&rsquo;s <a 
+    href="https://gohugo.io/getting-started/configuration/"
+    
+    
+     
+      target="_blank" 
+      rel="noopener"
+    
+>
+    configuration
+</a> and then you can type emoji shorthand codes directly in content files; e.g.</p>
+<!-- raw HTML omitted -->
+<p>The <a 
+    href="http://www.emoji-cheat-sheet.com/"
+    
+    
+     
+      target="_blank" 
+      rel="noopener"
+    
+>
+    Emoji cheat sheet
+</a> is a useful reference for emoji shorthand codes.</p>
+<hr>
+<p><strong>N.B.</strong> The above steps enable Unicode Standard emoji characters and sequences in Hugo, however the rendering of these glyphs depends on the browser and the platform. To style the emoji you can either use a third party emoji font or a font stack; e.g.</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">.emoji {
+  font-family: Apple Color Emoji, Segoe UI Emoji, NotoColorEmoji, Segoe UI Symbol, Android Emoji, EmojiSymbols;
+}</code></pre></div>
+    </div>
 
-          <div class="summary">This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.
+    
+        <div class="tags">
+            
+                <a href="https://example.com/tags/emoji">emoji</a>
+            
+        </div>
+    
+    
+    <div id="comment">
+  
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "your-disqus-shorname" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 </div>
 
-        </section>
-    
-        
-        
-        
-        <section class="item">
-          <div>
-            <h1 class="title"><a href='/posts/rich-content/'>Rich Content</a></h1>   
-            <div class="date">Mar 10, 2019</div>
-          </div>
+</section>
 
-          <div class="summary">Hugo ships with several Built-in Shortcodes  for rich content, along with a Privacy Config  and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.
-</div>
-
-        </section>
-    
-        
-        
-        
-        <section class="item">
-          <div>
-            <h1 class="title"><a href='/posts/placeholder-text/'>Placeholder Text</a></h1>   
-            <div class="date">Mar 9, 2019</div>
-          </div>
-
-          <div class="summary">Lorem est tota propiore conpellat pectoribus de pectora summo.
-</div>
-
-        </section>
-    
-        
-        
-        
-        <section class="item">
-          <div>
-            <h1 class="title"><a href='/posts/math-typesetting/'>Math Typesetting</a></h1>   
-            <div class="date">Mar 8, 2019</div>
-          </div>
-
-          <div class="summary">Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.
-</div>
-
-        </section>
-    
-        
-        
-        
-        <section class="item">
-          <div>
-            <h1 class="title"><a href='/posts/emoji-support/'>Emoji Support</a></h1>   
-            <div class="date">Mar 5, 2019</div>
-          </div>
-
-          <div class="summary">Emoji can be enabled in a Hugo project in a number of ways.
-</div>
-
-        </section>
-    
-
-    
-
-
-</div>
 
     </main>
     
