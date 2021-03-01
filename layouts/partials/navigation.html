@@ -1,10 +1,10 @@
 <nav class="navigation">
 	{{ if not .IsHome }}
-		<a href='/'> <span class="arrow">←</span>{{ with .Site.Params.home }}{{ . }}{{ else }}Home{{ end }}</a>
+		<a href="{{ "/" | relURL }}"> <span class="arrow">←</span>{{ with .Site.Params.home }}{{ . }}{{ else }}Home{{ end }}</a>
 	{{ end }}
-	<a href='/posts'>{{ with .Site.Params.archive }}{{ . }}{{ else }}Archive{{ end }}</a>
-	<a href='/tags'>{{ with .Site.Params.tags }}{{ . }}{{ else }}Tags{{ end }}</a>
-	<a href='/about'>{{ with .Site.Params.about }}{{ . }}{{ else }}About{{ end }}</a>
+	<a href="{{ "/posts" | relURL }}">{{ with .Site.Params.archive }}{{ . }}{{ else }}Archive{{ end }}</a>
+	<a href="{{ "/tags" | relURL }}">{{ with .Site.Params.tags }}{{ . }}{{ else }}Tags{{ end }}</a>
+	<a href="{{ "/about" | relURL }}">{{ with .Site.Params.about }}{{ . }}{{ else }}About{{ end }}</a>
 
 	{{ range $element := .Site.Params.Links }}
 		<a href="{{ $element.path }}">{{ $element.name }}</a>
