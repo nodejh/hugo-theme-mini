@@ -429,12 +429,20 @@ nav.navigation a.button {
   padding: 0 12px;
   text-align: center;
 }
-
 #tags .tag {
   display: inline-block;
-  display: inline-block;
-  margin: 7px 12px;
+  margin: 7px 7px;
 }
+@media (max-width: 700px) {
+  #tags {
+    margin: 0 auto 0 auto;
+  }
+  #tags .tag {
+    display: inline-block;
+    margin: 4px 5px;
+  }
+}
+
 #tags .tag a {
   background: #f2f2f2;
   padding: 4px 7px;

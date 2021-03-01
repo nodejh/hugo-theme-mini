@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>shortcodes on Hugo Themes</title>
-    <link>http://nodejh.github.io/hugo-theme-mini/tags/shortcodes/</link>
-    <description>Recent content in shortcodes on Hugo Themes</description>
+    <title>shortcodes on Hugo</title>
+    <link>https://nodejh.github.io/hugo-theme-mini/tags/shortcodes/</link>
+    <description>Recent content in shortcodes on Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://nodejh.github.io/hugo-theme-mini/tags/shortcodes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 10 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://nodejh.github.io/hugo-theme-mini/tags/shortcodes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Rich Content</title>
-      <link>http://nodejh.github.io/hugo-theme-mini/posts/rich-content/</link>
+      <link>https://nodejh.github.io/hugo-theme-mini/posts/rich-content/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://nodejh.github.io/hugo-theme-mini/posts/rich-content/</guid>
+      <guid>https://nodejh.github.io/hugo-theme-mini/posts/rich-content/</guid>
       <description>&lt;p&gt;Hugo ships with several &lt;a 
     href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes&#34;
     
