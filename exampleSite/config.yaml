@@ -1,7 +1,8 @@
 baseURL: https://example.com
 languageCode: en-us
-title: Hugo Themes
-theme: mini
+title: Hugo
+theme: hugo-theme-mini
+themesDir: ../../
 googleAnalytics: your-google-analytics-id
 hasCJKLanguage: true
 permalinks:
