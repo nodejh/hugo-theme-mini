@@ -6,7 +6,7 @@ A fast, minimalist and responsive hugo theme.
 
 
 - [Online demo](https://nodejh.github.io/hugo-theme-mini)
-- [Example Site Source]([exampleSite](https://github.com/nodejh/hugo-theme-mini/tree/master/exampleSite))
+- [Example Site Source](https://github.com/nodejh/hugo-theme-mini/tree/master/exampleSite)
 
 Features:
 
