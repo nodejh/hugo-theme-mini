@@ -1,1 +1,74 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tags on Hugo</title><link>https://nodejh.github.io/hugo-theme-mini/tags/</link><description>Recent content in Tags on Hugo</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://nodejh.github.io/hugo-theme-mini/tags/index.xml" rel="self" type="application/rss+xml"/><item><title>css</title><link>https://nodejh.github.io/hugo-theme-mini/tags/css/</link><pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate><guid>https://nodejh.github.io/hugo-theme-mini/tags/css/</guid><description/></item><item><title>html</title><link>https://nodejh.github.io/hugo-theme-mini/tags/html/</link><pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate><guid>https://nodejh.github.io/hugo-theme-mini/tags/html/</guid><description/></item><item><title>markdown</title><link>https://nodejh.github.io/hugo-theme-mini/tags/markdown/</link><pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate><guid>https://nodejh.github.io/hugo-theme-mini/tags/markdown/</guid><description/></item><item><title>privacy</title><link>https://nodejh.github.io/hugo-theme-mini/tags/privacy/</link><pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate><guid>https://nodejh.github.io/hugo-theme-mini/tags/privacy/</guid><description/></item><item><title>shortcodes</title><link>https://nodejh.github.io/hugo-theme-mini/tags/shortcodes/</link><pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate><guid>https://nodejh.github.io/hugo-theme-mini/tags/shortcodes/</guid><description/></item><item><title>text</title><link>https://nodejh.github.io/hugo-theme-mini/tags/text/</link><pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate><guid>https://nodejh.github.io/hugo-theme-mini/tags/text/</guid><description/></item><item><title>emoji</title><link>https://nodejh.github.io/hugo-theme-mini/tags/emoji/</link><pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate><guid>https://nodejh.github.io/hugo-theme-mini/tags/emoji/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Hugo</title>
+    <link>https://nodejh.github.io/hugo-theme-mini/tags/</link>
+    <description>Recent content in Tags on Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://nodejh.github.io/hugo-theme-mini/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>css</title>
+      <link>https://nodejh.github.io/hugo-theme-mini/tags/css/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://nodejh.github.io/hugo-theme-mini/tags/css/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>html</title>
+      <link>https://nodejh.github.io/hugo-theme-mini/tags/html/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://nodejh.github.io/hugo-theme-mini/tags/html/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>markdown</title>
+      <link>https://nodejh.github.io/hugo-theme-mini/tags/markdown/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://nodejh.github.io/hugo-theme-mini/tags/markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>privacy</title>
+      <link>https://nodejh.github.io/hugo-theme-mini/tags/privacy/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://nodejh.github.io/hugo-theme-mini/tags/privacy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shortcodes</title>
+      <link>https://nodejh.github.io/hugo-theme-mini/tags/shortcodes/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://nodejh.github.io/hugo-theme-mini/tags/shortcodes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>text</title>
+      <link>https://nodejh.github.io/hugo-theme-mini/tags/text/</link>
+      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://nodejh.github.io/hugo-theme-mini/tags/text/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>emoji</title>
+      <link>https://nodejh.github.io/hugo-theme-mini/tags/emoji/</link>
+      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://nodejh.github.io/hugo-theme-mini/tags/emoji/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
