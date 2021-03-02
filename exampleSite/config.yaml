@@ -48,6 +48,7 @@ params:
   home: '' # Default: Home
   about: '' # Default: About
   archive: '' # Default: Archive
+  tags: '' # Default: Tags
   subscribe: '' # Default: Subscribe
   olderPosts: '' # Default: Older Posts
   newerPosts: '' # Default: Newer Posts
