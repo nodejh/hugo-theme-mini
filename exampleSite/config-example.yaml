@@ -1,0 +1,35 @@
+baseURL: https://nodejh.github.io/hugo-theme-mini
+languageCode: en-us
+title: Hugo
+theme: hugo-theme-mini
+
+# for exampleSite only, you may need to delete the line: `themesDir: ../../` 
+themesDir: ../../
+
+hasCJKLanguage: true
+permalinks:
+  posts: /posts/:title/
+
+googleAnalytics: nodejh
+disqusShortname: nodejh
+
+
+markup:
+  highlight:
+    guessSyntax: true
+    style: emacs
+
+
+social:
+  github: https://github.com/nodejh
+  twitter: your-github-link
+  stackoverflow: https://stackoverflow.com/users/4518882/nodejh
+
+
+params:
+  author: nodejh
+  bio: Software Engineer
+  description: My Blog
+  enableRSS: true
+  enableComments: true
+  enableGoogleAnalytics: true

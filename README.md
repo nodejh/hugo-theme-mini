@@ -30,7 +30,7 @@ Features:
 
 1. From your project's root directory, initiate the hugo module system if you haven't already:
 
-    ```
+    ```bash
     $ hugo mod init github.com/<your_user>/<your_project>
     ```
 
@@ -45,7 +45,7 @@ Features:
 
 1. Inside the folder of your Hugo site run:
 
-  ```
+  ```bash
   $ git submodule add https://github.com/nodejh/hugo-theme-mini.git themes/mini
   ```
 
@@ -109,7 +109,7 @@ You can replace the log in the top of each page and favicon with your own images
 
 In order to see your site in action, run Hugo's built-in local server.
 
-```sh
+```bash
 $ hugo server
 ```
 
