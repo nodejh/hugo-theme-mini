@@ -11,7 +11,7 @@ hasCJKLanguage: true
 permalinks:
   posts: /posts/:title/
 
-googleAnalytics: nodejh
+googleAnalytics: UA-123-45
 disqusShortname: nodejh
 
 
