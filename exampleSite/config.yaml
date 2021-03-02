@@ -11,7 +11,7 @@ permalinks:
   posts: /posts/:title/
 
 googleAnalytics: your-google-analytics-id
-disqusShortname: your-disqus-shorname
+disqusShortname: your-disqus-shortname
 
 # Hugo Configure Markup
 # see: https://gohugo.io/getting-started/configuration-markup#highlight

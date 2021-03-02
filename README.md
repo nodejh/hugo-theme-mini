@@ -1,9 +1,10 @@
 # Hugo Theme Mini
 
+English | [简体中文](https://github.com/nodejh/hugo-theme-mini/tree/master/README-zh_CN.md)
+
 A fast, minimalist and responsive hugo theme.
 
-![./images/screenshot.png](./images/screenshot.png)
-
+![./images/screenshot.png](https://raw.githubusercontent.com/nodejh/hugo-theme-mini/master/images/screenshot.png)
 
 - [Online demo](https://nodejh.github.io/hugo-theme-mini)
 - [Example Site Source](https://github.com/nodejh/hugo-theme-mini/tree/master/exampleSite)
@@ -73,7 +74,7 @@ Take a look inside the [`exampleSite`](https://github.com/nodejh/hugo-theme-mini
 
 To enable comments, add following to your config file:
 
-- DISQUS: `disqusShortname: your-disqus-shorname`
+- Disqus shortname: `disqusShortname: your-disqus-shortname`
 - Enable Comment:
 
     ```yaml
@@ -85,8 +86,8 @@ To enable comments, add following to your config file:
 
 To enable google analytics, add following to your config file:
 
-- DISQUS: `googleAnalytics: your-google-analytics-id`
-- Enable Comment:
+- Google Analytics ID: `googleAnalytics: your-google-analytics-id`
+- Enable Google Analytics:
 
     ```yaml
     params:
@@ -113,7 +114,7 @@ In order to see your site in action, run Hugo's built-in local server.
 $ hugo server
 ```
 
-Now enter localhost:1313 in the address bar of your browser.
+Now enter http://localhost:1313 in the address bar of your browser.
 
 ## License
 
