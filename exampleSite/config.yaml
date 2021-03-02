@@ -2,12 +2,15 @@ baseURL: https://example.com
 languageCode: en-us
 title: Hugo
 theme: hugo-theme-mini
+
+# for exampleSite only, you may need to delete the line: `themesDir: ../../` 
 themesDir: ../../
-googleAnalytics: your-google-analytics-id
+
 hasCJKLanguage: true
 permalinks:
   posts: /posts/:title/
 
+googleAnalytics: your-google-analytics-id
 disqusShortname: your-disqus-shorname
 
 # Hugo Configure Markup
@@ -35,7 +38,11 @@ params:
   bio: Software Engineer
   # Site Description, used in HTML meat
   description: My Blog
-  enableRSS: true
+  enableRSS: false
+  # To enable comments, you may need to set `disqusShortname`
+  enableComments: true
+  # To enable comments, you may need to set `googleAnalytics`
+  enableGoogleAnalytics: true
 
   # Optional
   home: '' # Default: Home
@@ -44,7 +51,7 @@ params:
   subscribe: '' # Default: Subscribe
   olderPosts: '' # Default: Older Posts
   newerPosts: '' # Default: Newer Posts
-  copyright: ''
+  copyright: '' # Default: © Copyright 2021 ❤️ author
   title404: '' # Default: 404 - Page Not Found
   subtitle404: '' # Default: The content you're looking for doesn't seem to exist.
   readMore: '' # Default: Read More

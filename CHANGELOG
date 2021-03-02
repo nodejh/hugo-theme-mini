@@ -1,4 +1,10 @@
-## 2017.12.09  Version 1.0
+## 2021.03.01  Version 2.0.0
+
+- [x] Refactor
+- [x] Support hugo 0.80.0
+
+
+## 2017.12.09  Version 1.0.0
 
 - [x] Support twitter card.
 - [x] Remove name in `.Site.Params`. It's duplicate with `.Site.title`.
