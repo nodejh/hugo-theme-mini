@@ -45,9 +45,9 @@ Features:
 
 1. Inside the folder of your Hugo site run:
 
-  ```bash
-  $ git submodule add https://github.com/nodejh/hugo-theme-mini.git themes/mini
-  ```
+    ```bash
+    $ git submodule add https://github.com/nodejh/hugo-theme-mini.git themes/mini
+    ```
 
 2. Add the theme's directory to your `config.yaml`:
 
