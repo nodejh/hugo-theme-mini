@@ -2,6 +2,7 @@ baseURL: https://nodejh.github.io/hugo-theme-mini
 languageCode: en-us
 title: Hugo
 theme: hugo-theme-mini
+paginate: 3
 
 # for exampleSite only, you may need to delete the line: `themesDir: ../../` 
 themesDir: ../../
