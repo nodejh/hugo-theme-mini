@@ -102,6 +102,7 @@ h4:hover a {
 }
 .highlight pre {
   padding: 7px;
+  overflow-x: auto;
 }
 
 .highlight {
