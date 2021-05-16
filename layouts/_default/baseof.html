@@ -3,7 +3,7 @@
   <head>
     <title>{{ block "title" . }}{{ with .Params.Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
 
-    {{ partialCached "head.html" . }}
+    {{ partial "head.html" . }}
 
   </head>
 
