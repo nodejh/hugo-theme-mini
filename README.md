@@ -70,6 +70,8 @@ Take a look inside the [`exampleSite`](https://github.com/nodejh/hugo-theme-mini
 
 > ⚠️ You may need to delete the line: `themesDir: ../../` 
 
+After your site is read, add `env: production` in `params` in [`config.yaml`](https://github.com/nodejh/hugo-theme-mini/blob/master/exampleSite/config.yaml).
+
 ### Add Comments
 
 To enable comments, add following to your config file:
