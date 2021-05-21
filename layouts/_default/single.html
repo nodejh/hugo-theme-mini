@@ -4,9 +4,7 @@
     <h1 class="title">{{ .Title }}</h1>
 
     <div class="tip">
-        <span>
-          {{ .Date.Format "Jan 2, 2006 15:04" }}
-        </span>
+        <time datetime="{{ .PublishDate }}">{{ i18n "publishdate" . }}</time>
         <span class="split">
           ·
         </span>

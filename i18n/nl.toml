@@ -1,0 +1,29 @@
+[404title]
+other = "404 - Pagina Niet Gevonden"
+
+[404subtitle]
+other = "De pagina waar u naar op zoek bent, lijkt niet te bestaan."
+
+[minuteread]
+other = "minuten leestijd"
+
+[postsnewer]
+other = "Nieuwere posts"
+
+[postsolder]
+other = "Oudere posts"
+
+[poweredby]
+other = "Gemaakt met <a href='http://www.gohugo.io/'>Hugo</a> Thema door <a href='https://github.com/nodejh/hugo-theme-cactus-plus'>nodejh</a>"
+
+[publishdate]
+other = "{{ .PublishDate.Day }} {{ index $.Site.Data.months_nl (printf \"%d\" .PublishDate.Month) }} {{ .PublishDate.Year }}"
+
+[readmore]
+other = "Lees meer"
+
+[word]
+other = "woord"
+
+[words]
+other = "woorden"

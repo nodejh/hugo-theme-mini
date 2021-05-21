@@ -11,7 +11,7 @@
             {{ range .Pages }}
                 <div class="value">
                   <div class="date">
-                      {{ .Date.Format "Jan 2" }}
+                    <time datetime="{{ .PublishDate }}">{{ i18n "publishdate" . }}</time>
                   </div>
                   <div class="title">
                       <a href="{{ .Permalink }}">
