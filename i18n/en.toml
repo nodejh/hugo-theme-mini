@@ -14,7 +14,7 @@ other = "Newer posts"
 other = "Older posts"
 
 [poweredby]
-other = "Powered by <a href="http://www.gohugo.io/">Hugo</a> Theme By <a href="https://github.com/nodejh/hugo-theme-cactus-plus">nodejh</a>"
+other = "Powered by <a href='http://www.gohugo.io/'>Hugo</a> Theme By <a href='https://github.com/nodejh/hugo-theme-cactus-plus'>nodejh</a>"
 
 [readmore]
 other = "Read more"
