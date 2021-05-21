@@ -1,0 +1,26 @@
+[404title]
+other = "404 - Page Not Found"
+
+[404subtitle]
+other = "The content you're looking for doesn't seem to exist."
+
+[minuteread]
+other = "minute read"
+
+[postsnewer]
+other = "Newer posts"
+
+[postsolder]
+other = "Older posts"
+
+[poweredby]
+other = "Powered by <a href="http://www.gohugo.io/">Hugo</a> Theme By <a href="https://github.com/nodejh/hugo-theme-cactus-plus">nodejh</a>"
+
+[readmore]
+other = "Read more"
+
+[word]
+other = "word"
+
+[words]
+other = "words"

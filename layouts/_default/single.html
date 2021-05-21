@@ -12,16 +12,16 @@
         </span>
         <span>
           {{ if lt 1 .WordCount }}
-            {{ .WordCount }} words
+            {{ .WordCount }} {{ i18n "words" }}
           {{ else }}
-              {{ .WordCount }} word
+              {{ .WordCount }} {{ i18n "word" }}
           {{ end }}
         </span>
         <span class="split">
           ·
         </span>
         <span>
-          {{ .ReadingTime }} minute read
+          {{ .ReadingTime }} {{ i18n "minuteread" }}
         </span>
     </div>
 
