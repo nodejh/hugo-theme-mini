@@ -83,7 +83,7 @@ p {
 }
 p,
 pre {
-  word-break: break-word;
+  word-break: normal;
   text-align: justify;
 }
 .markdown-image img {
