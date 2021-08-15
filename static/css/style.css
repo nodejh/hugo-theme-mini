@@ -83,8 +83,8 @@ p {
 }
 p,
 pre {
-  line-break: anywhere;
-  word-break: break-all;
+  word-break: normal;
+  text-align: justify;
 }
 .markdown-image img {
   max-width: 100%;
