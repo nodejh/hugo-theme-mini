@@ -18,10 +18,10 @@ Features:
 - Tags
 
 
-## Installation
+## 1. Installation
 
 
-### As a Hugo Module (recommended)
+### 1.1 As a Hugo Module (recommended)
 
 > ⚠️ If you installed a [Hugo binary](https://gohugo.io/getting-started/installing/#binary-cross-platform), you may not have Go installed on your machine. To check if Go is installed:
 > ```
@@ -42,7 +42,7 @@ Features:
        - github.com/nodejh/hugo-theme-mini
     ```
 
-### As Git Submodule
+### 1.2 As Git Submodule
 
 1. Inside the folder of your Hugo site run:
 
@@ -59,18 +59,18 @@ Features:
 For more information read the official [setup guide](//gohugo.io/overview/installing/) of Hugo.
 
 
-## Getting started
+## 2. Getting started
 
 After installing the theme successfully it requires a just a few more steps to get your site running.
 
 
-### The config file
+### 2.1 The config file
 
 Take a look inside the [`exampleSite`](https://github.com/nodejh/hugo-theme-mini/tree/master/exampleSite) folder of this theme. You'll find a file called [`config.yaml`](https://github.com/nodejh/hugo-theme-mini/blob/master/exampleSite/config.yaml). To use it, copy the [`config.yaml`](https://github.com/nodejh/hugo-theme-mini/blob/master/exampleSite/config.yaml) in the root folder of your Hugo site. Feel free to change the strings in this theme.
 
 > ⚠️ You may need to delete the line: `themesDir: ../../` 
 
-### Add Comments
+### 2.2 Add Comments
 
 To enable comments, add following to your config file:
 
@@ -82,7 +82,7 @@ To enable comments, add following to your config file:
       enableComments: true
     ```
 
-### Google Analytics
+### 2.3 Google Analytics
 
 To enable google analytics, add following to your config file:
 
@@ -94,7 +94,7 @@ To enable google analytics, add following to your config file:
       enableGoogleAnalytics: true
     ```
 
-### Logo and favicon
+### 2.4 Logo and favicon
 
 You can replace the log in the top of each page and favicon with your own images. To do that put your own logo and favicon into the `images` directory of your website static directory, then named them `avatar.png` and `favicon.ico`. For example:
 
@@ -106,7 +106,7 @@ You can replace the log in the top of each page and favicon with your own images
     └── favicon.ico
 ```
 
-### Nearly finished
+### 2.5 Nearly finished
 
 In order to see your site in action, run Hugo's built-in local server.
 
@@ -115,6 +115,21 @@ $ hugo server
 ```
 
 Now enter http://localhost:1313 in the address bar of your browser.
+
+## 3. Optional
+
+### 3.1 Disable Comments on a single post
+
+You can set `enableComments = false` in front matter to disable disqus comments on a single post.
+
+For example:
+
+```
++++
+title = "Some title"
+enableComments = false
++++
+```
 
 ## License
 

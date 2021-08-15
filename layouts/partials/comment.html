@@ -1,6 +1,8 @@
-{{ if .Site.Params.enableComments }} 
-  <div id="comment">
-    <!-- https://gohugo.io/templates/internal/#use-the-disqus-template -->
-    {{ template "_internal/disqus.html" . }}
-  </div>
+{{ if .Site.Params.enableComments }}
+  {{ if ne .Params.enableComments false }}
+    <div id="comment">
+      <!-- https://gohugo.io/templates/internal/#use-the-disqus-template -->
+      {{ template "_internal/disqus.html" . }}
+    </div>
+  {{ end }}
 {{ end }}
