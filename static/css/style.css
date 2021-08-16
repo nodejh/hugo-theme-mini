@@ -84,7 +84,7 @@ p {
 p,
 pre {
   word-break: normal;
-  text-align: justify;
+  overflow-wrap: anywhere;
 }
 .markdown-image img {
   max-width: 100%;
@@ -291,6 +291,8 @@ nav.navigation a.button {
 #list-page .summary {
   color: #757575;
   margin-top: 12px;
+  word-break: normal;
+  overflow-wrap: anywhere;
 }
 
 #list-page .cover {
