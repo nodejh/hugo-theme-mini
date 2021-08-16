@@ -148,6 +148,21 @@ enableComments = false
 +++
 ```
 
+### 3.2 自定义 CSS 和 JS
+
+你可以将自定义 CSS 和 JS 放在 `static` 中，也可以使用远程的 CSS 或 JS 文件。
+
+例如：
+
+```yaml
+customCSS:
+  - css/custom.css # local css in `static/css/custom.css`
+  - https://example.com/custom.css # remote css
+customJS:
+  - js/custom.js # local js in `static/js/custom.js`
+  - https://example.com/custom.js # remote js
+```
+
 
 ## License
 
