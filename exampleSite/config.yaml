@@ -14,12 +14,15 @@ googleAnalytics: your-google-analytics-id
 disqusShortname: your-disqus-shortname
 
 # Hugo Configure Markup
-# see: https://gohugo.io/getting-started/configuration-markup#highlight
+# more info: https://gohugo.io/getting-started/configuration-markup#
 markup:
   highlight:
     guessSyntax: true
     style: emacs
-
+  tableOfContents:
+    endLevel: 3
+    ordered: false
+    startLevel: 2
 
 # Social links in footer, support github,twitter,stackoverflow,facebook
 social:
@@ -50,6 +53,8 @@ params:
   enableComments: true
   # To enable comments, you may need to set `googleAnalytics`
   enableGoogleAnalytics: true
+  # To enable table of content, you could set `showToc: true`
+  showToc: true
   # To hidden powerBy message in the page footer, you could set: `showPowerBy: false`, default is `true`
   showPowerBy: true
   # To enable math typesetting , you could set `math: true`
