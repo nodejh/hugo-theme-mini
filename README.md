@@ -166,7 +166,7 @@ customJS:
 
 Mathematical notation is enabled by [KaTeX](https://katex.org/).
 
-- To enable KaTex globally set the parameter `math` to t`rue` in project’s configuration
+- To enable KaTex globally set the parameter `math` to `true` in project’s configuration
 - To enable KaTex on a per page basis include the parameter `math` to `true` in content files
 
 
