@@ -116,6 +116,22 @@ $ hugo server
 
 Now enter http://localhost:1313 in the address bar of your browser.
 
+### 2.6 Production
+
+To run in production (e.g. to have Google Analytics show up), run HUGO_ENV=production before your build command. For example:
+
+```bash
+HUGO_ENV=production hugo
+```
+
+Note: The above command will not work on Windows. If you are running a Windows OS, use the below command:
+
+```bash
+set HUGO_ENV=production
+hugo
+```
+
+
 ## 3. Optional
 
 ### 3.1 Disable Comments on a single post
