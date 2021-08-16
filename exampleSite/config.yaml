@@ -38,6 +38,12 @@ params:
   bio: Software Engineer
   # Site Description, used in HTML meat
   description: My Blog
+
+
+  ###########################################
+  # Optional
+  ###########################################
+
   # To enable RSS, you could set `enableRSS: true`, default is `true`
   enableRSS: true
   # To enable comments, you may need to set `disqusShortname`
@@ -46,8 +52,10 @@ params:
   enableGoogleAnalytics: true
   # To hidden powerBy message in the page footer, you could set: `showPowerBy: false`, default is `true`
   showPowerBy: true
+  # To enable math typesetting , you could set `math: true`
+  math: false
 
-  # Optional
+  # text in page
   home: '' # Default: Home
   about: '' # Default: About
   archive: '' # Default: Archive
