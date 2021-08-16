@@ -59,6 +59,8 @@ params:
   showPowerBy: true
   # To enable math typesetting , you could set `math: true`
   math: false
+  # To disable post summary in home page, you could set `disablePostSummaryInHomePage: false`, default is `false`
+  disablePostSummaryInHomePage: false
 
   # text in page
   home: '' # Default: Home

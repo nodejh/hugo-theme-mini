@@ -281,7 +281,7 @@ nav.navigation a.button {
 }
 
 #list-page .item {
-  margin: 48px 0 0 0;
+  margin: 12px 0;
 }
 
 #list-page .title {
@@ -316,6 +316,7 @@ nav.navigation a.button {
   margin-top: 12px;
   word-break: normal;
   overflow-wrap: anywhere;
+  margin-bottom: 36px;
 }
 
 #list-page .cover {
