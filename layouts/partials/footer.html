@@ -15,7 +15,10 @@
        {{ .Site.Params.Author }}
     {{ end }}
     </div>
-    <div class="powerby">
+
+    {{ if ne .Site.Params.showPowerBy false }}
+      <div class="powerby">
         Powered by <a href="http://www.gohugo.io/">Hugo</a> Theme By <a href="https://github.com/nodejh/hugo-theme-cactus-plus">nodejh</a>
-    </div>
+      </div>
+    {{ end }}
 </footer>
