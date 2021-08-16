@@ -135,17 +135,17 @@ hugo
 
 ## 3. 可选配置
 
-### 3.1 在某些页面禁用评论
+### 3.1 在某页面禁用评论
 
-要在某个页面禁用评论，你可以在页面 Front Matter 中指定 `enableComments = false`。
+要在某页面禁用评论，你可以在页面的 Front Matter 中将 `enableComments` 设置为 `false`。
 
 例如：
 
-```
-+++
-title = "Some title"
-enableComments = false
-+++
+```yaml
+---
+title: Some title
+enableComments: false
+---
 ```
 
 ### 3.2 自定义 CSS 和 JS
@@ -162,6 +162,14 @@ customJS:
   - js/custom.js # local js in `static/js/custom.js`
   - https://example.com/custom.js # remote js
 ```
+
+
+### 3.3 数学排版
+
+该主题使用了 [KaTeX](https://katex.org/) 来支持数学符号拍版。
+
+- 全局支持数学排版：在项目的配置文件中将 `math` 设置为 `true`
+- 在某页面支持数学拍版：在某页面 Front Matter 中将 `math` 设置为 `true`
 
 
 ## License

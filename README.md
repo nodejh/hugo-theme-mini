@@ -136,15 +136,15 @@ hugo
 
 ### 3.1 Disable Comments on a single post
 
-You can set `enableComments = false` in front matter to disable disqus comments on a single post.
+You can set `enableComments` to `false` in front matter to disable disqus comments on a single post.
 
 For example:
 
-```
-+++
-title = "Some title"
-enableComments = false
-+++
+```yaml
+---
+title: Some title
+enableComments: false
+---
 ```
 
 ### 3.2 Custom CSS and JS
@@ -161,6 +161,13 @@ customJS:
   - js/custom.js # local js in `static/js/custom.js`
   - https://example.com/custom.js # remote js
 ```
+
+### 3.3 Math Typesetting
+
+Mathematical notation is enabled by [KaTeX](https://katex.org/).
+
+- To enable KaTex globally set the parameter `math` to t`rue` in project’s configuration
+- To enable KaTex on a per page basis include the parameter `math` to `true` in content files
 
 
 ## License
