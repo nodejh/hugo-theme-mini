@@ -53,12 +53,14 @@ params:
   enableComments: true
   # To enable comments, you may need to set `googleAnalytics`
   enableGoogleAnalytics: true
-  # To enable table of content, you could set `showToc: true`
+  # To enable table of content, you could set `showToc: true`, default is `false`
   showToc: true
   # To hidden powerBy message in the page footer, you could set: `showPowerBy: false`, default is `true`
   showPowerBy: true
-  # To enable math typesetting , you could set `math: true`
+  # To enable math typesetting , you could set `math: true`, default is `false`
   math: false
+  # To hidden post summary in home page, you could set `hiddenPostSummaryInHomePage: true`, default is `false`
+  hiddenPostSummaryInHomePage: false
 
   # text in page
   home: '' # Default: Home
