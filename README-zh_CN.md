@@ -135,7 +135,16 @@ hugo
 
 ## 3. 可选配置
 
-### 3.1 在某页面禁用评论
+### 3.1 Table of Content
+
+如果要启用目录，你可以将 `showToc` 设置为 `true`：
+
+```yaml
+showToc: true
+```
+
+
+### 3.2 在某页面禁用评论
 
 要在某页面禁用评论，你可以在页面的 Front Matter 中将 `enableComments` 设置为 `false`。
 
@@ -148,7 +157,7 @@ enableComments: false
 ---
 ```
 
-### 3.2 自定义 CSS 和 JS
+### 3.3 自定义 CSS 和 JS
 
 你可以将自定义 CSS 和 JS 放在 `static` 中，也可以使用远程的 CSS 或 JS 文件。
 
@@ -164,7 +173,7 @@ customJS:
 ```
 
 
-### 3.3 数学排版
+### 3.4 数学排版
 
 该主题使用了 [KaTeX](https://katex.org/) 来支持数学符号拍版。
 
