@@ -179,6 +179,15 @@ Mathematical notation is enabled by [KaTeX](https://katex.org/).
 - To enable KaTex globally set the parameter `math` to `true` in project’s configuration
 - To enable KaTex on a per page basis include the parameter `math` to `true` in content files
 
+### 3.5 Hidden Post Summary in Home Page 
+
+To hidden post summary in home page, you could set `hiddenPostSummaryInHomePage` to `true`, default is `false`.
+
+For example:
+
+```yaml
+hiddenPostSummaryInHomePage: true
+```
 
 ## License
 

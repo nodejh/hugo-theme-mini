@@ -180,6 +180,15 @@ customJS:
 - 全局支持数学排版：在项目的配置文件中将 `math` 设置为 `true`
 - 在某页面支持数学拍版：在某页面 Front Matter 中将 `math` 设置为 `true`
 
+### 3.5 在首页隐藏文章摘要 
+
+如果要在首页隐藏文章摘要，你可以将 `hiddenPostSummaryInHomePage` 设置为 `true`，默认是 `false`。
+
+例如：
+
+```yaml
+hiddenPostSummaryInHomePage: true
+```
 
 ## License
 

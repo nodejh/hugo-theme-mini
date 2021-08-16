@@ -14,7 +14,7 @@
             <div class="date">{{ $date }}</div>
           </div>
 
-          {{ if ne .Site.Params.disablePostSummaryInHomePage true }}
+          {{ if ne .Site.Params.hiddenPostSummaryInHomePage true }}
               <div class="summary">{{ $summary | plainify | htmlUnescape }}</div>
           {{ end }}
 
