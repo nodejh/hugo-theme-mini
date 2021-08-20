@@ -14,12 +14,15 @@ googleAnalytics: your-google-analytics-id
 disqusShortname: your-disqus-shortname
 
 # Hugo Configure Markup
-# see: https://gohugo.io/getting-started/configuration-markup#highlight
+# more info: https://gohugo.io/getting-started/configuration-markup#
 markup:
   highlight:
     guessSyntax: true
     style: emacs
-
+  tableOfContents:
+    endLevel: 3
+    ordered: false
+    startLevel: 2
 
 # Social links in footer, support github,twitter,stackoverflow,facebook
 social:
@@ -38,13 +41,28 @@ params:
   bio: Software Engineer
   # Site Description, used in HTML meat
   description: My Blog
+
+
+  ###########################################
+  # Optional
+  ###########################################
+
+  # To enable RSS, you could set `enableRSS: true`, default is `true`
   enableRSS: true
   # To enable comments, you may need to set `disqusShortname`
   enableComments: true
   # To enable comments, you may need to set `googleAnalytics`
   enableGoogleAnalytics: true
+  # To enable table of content, you could set `showToc: true`, default is `false`
+  showToc: true
+  # To hidden powerBy message in the page footer, you could set: `showPowerBy: false`, default is `true`
+  showPowerBy: true
+  # To enable math typesetting , you could set `math: true`, default is `false`
+  math: false
+  # To hidden post summary in home page, you could set `hiddenPostSummaryInHomePage: true`, default is `false`
+  hiddenPostSummaryInHomePage: false
 
-  # Optional
+  # text in page
   home: '' # Default: Home
   about: '' # Default: About
   archive: '' # Default: Archive
@@ -59,6 +77,16 @@ params:
 
   # Extra links in navigation
   links:
-    # e.g.
+    ## e.g.
     # - name: Project
     #   path: /project
+
+  # You can put your custom css and js to `static` directory, or use remote css and js files which start with `http://` or `https://`
+  customCSS:
+    ## e.g.
+    # - css/custom.css # local css in `static/css/custom.css`
+    # - https://example.com/custom.css # remote css
+  customJS:
+    ## e.g.
+    # - js/custom.js # local js in `static/js/custom.js`
+    # - https://example.com/custom.js # remote js

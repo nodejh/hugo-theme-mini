@@ -3,7 +3,7 @@
         {{ partial "social.html" . }}
     {{ end }}
 
-    <p class="copyright">
+    <div class="copyright">
     {{ with .Site.Params.copyright }}
         {{ . | markdownify }}
     {{ else }}
@@ -14,8 +14,21 @@
        </span>
        {{ .Site.Params.Author }}
     {{ end }}
-    </p>
-    <p class="powerby">
-        {{ i18n "poweredby" | safeHTML }}
-    </p>
+    </div>
+
+    {{ if ne .Site.Params.showPowerBy false }}
+      <div class="powerby">
+        Powered by <a href="http://www.gohugo.io/">Hugo</a> Theme By <a href="https://github.com/nodejh/hugo-theme-cactus-plus">nodejh</a>
+      </div>
+    {{ end }}
 </footer>
+
+{{ range .Site.Params.customJS }}
+    {{ if ( or ( hasPrefix . "http://" ) ( hasPrefix . "https://" ) ) }}
+        <!-- remote js -->
+        <script src="{{ . }}"></script>
+    {{ else }}
+        <!-- local js -->
+        <script src="{{ $.Site.BaseURL }}{{ . }}"></script>
+    {{ end }}
+{{ end }}

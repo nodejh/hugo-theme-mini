@@ -1,3 +1,7 @@
+html[theme='dark-mode'] {
+  filter: invert(1) hue-rotate(180deg);
+}
+
 body {
   line-height: 1;
   font: normal 15px/1.5em 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -83,8 +87,8 @@ p {
 }
 p,
 pre {
-  line-break: anywhere;
-  word-break: break-all;
+  word-break: normal;
+  overflow-wrap: anywhere;
 }
 .markdown-image img {
   max-width: 100%;
@@ -102,6 +106,7 @@ h4:hover a {
 }
 .highlight pre {
   padding: 7px;
+  overflow-x: auto;
 }
 
 .highlight {
@@ -177,6 +182,29 @@ nav.navigation a.button {
   nav.navigation a.button {
     display: none;
   }
+}
+
+/* toc */
+.toc {
+  margin: auto;
+  background: #f8f8f8;
+  border-radius: 0;
+  padding: 10px 7px;
+  margin-top: 36px;
+}
+.toc details summary {
+  cursor: zoom-in;
+  margin-inline-start: 14px;
+  font-weight: 500;
+}
+.toc details[open] summary {
+  cursor: zoom-out;
+}
+.toc #TableOfContents {
+  margin-left: 10px;
+}
+.toc ul {
+  padding-inline-start: 24px;
 }
 
 /* comment */
@@ -257,7 +285,7 @@ nav.navigation a.button {
 }
 
 #list-page .item {
-  margin: 48px 0 0 0;
+  margin: 12px 0;
 }
 
 #list-page .title {
@@ -290,6 +318,9 @@ nav.navigation a.button {
 #list-page .summary {
   color: #757575;
   margin-top: 12px;
+  word-break: normal;
+  overflow-wrap: anywhere;
+  margin-bottom: 36px;
 }
 
 #list-page .cover {

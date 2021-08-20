@@ -18,10 +18,10 @@ Features:
 - Tags
 
 
-## Installation
+## 1. Installation
 
 
-### As a Hugo Module (recommended)
+### 1.1 As a Hugo Module (recommended)
 
 > ⚠️ If you installed a [Hugo binary](https://gohugo.io/getting-started/installing/#binary-cross-platform), you may not have Go installed on your machine. To check if Go is installed:
 > ```
@@ -42,7 +42,7 @@ Features:
        - github.com/nodejh/hugo-theme-mini
     ```
 
-### As Git Submodule
+### 1.2 As Git Submodule
 
 1. Inside the folder of your Hugo site run:
 
@@ -59,18 +59,18 @@ Features:
 For more information read the official [setup guide](//gohugo.io/overview/installing/) of Hugo.
 
 
-## Getting started
+## 2. Getting started
 
 After installing the theme successfully it requires a just a few more steps to get your site running.
 
 
-### The config file
+### 2.1 The config file
 
 Take a look inside the [`exampleSite`](https://github.com/nodejh/hugo-theme-mini/tree/master/exampleSite) folder of this theme. You'll find a file called [`config.yaml`](https://github.com/nodejh/hugo-theme-mini/blob/master/exampleSite/config.yaml). To use it, copy the [`config.yaml`](https://github.com/nodejh/hugo-theme-mini/blob/master/exampleSite/config.yaml) in the root folder of your Hugo site. Feel free to change the strings in this theme.
 
 > ⚠️ You may need to delete the line: `themesDir: ../../` 
 
-### Add Comments
+### 2.2 Add Comments
 
 To enable comments, add following to your config file:
 
@@ -82,7 +82,7 @@ To enable comments, add following to your config file:
       enableComments: true
     ```
 
-### Google Analytics
+### 2.3 Google Analytics
 
 To enable google analytics, add following to your config file:
 
@@ -94,7 +94,7 @@ To enable google analytics, add following to your config file:
       enableGoogleAnalytics: true
     ```
 
-### Logo and favicon
+### 2.4 Logo and favicon
 
 You can replace the log in the top of each page and favicon with your own images. To do that put your own logo and favicon into the `images` directory of your website static directory, then named them `avatar.png` and `favicon.ico`. For example:
 
@@ -106,7 +106,7 @@ You can replace the log in the top of each page and favicon with your own images
     └── favicon.ico
 ```
 
-### Nearly finished
+### 2.5 Nearly finished
 
 In order to see your site in action, run Hugo's built-in local server.
 
@@ -115,6 +115,79 @@ $ hugo server
 ```
 
 Now enter http://localhost:1313 in the address bar of your browser.
+
+### 2.6 Production
+
+To run in production (e.g. to have Google Analytics show up), run HUGO_ENV=production before your build command. For example:
+
+```bash
+HUGO_ENV=production hugo
+```
+
+Note: The above command will not work on Windows. If you are running a Windows OS, use the below command:
+
+```bash
+set HUGO_ENV=production
+hugo
+```
+
+
+## 3. Optional Configuration
+
+### 3.1 Table of Content
+
+To enable table of content, you could set `showToc` to `true`.
+
+For example:
+
+```yaml
+showToc: true
+```
+
+### 3.2 Disable Comments on a single post
+
+You can set `enableComments` to `false` in front matter to disable disqus comments on a single post.
+
+For example:
+
+```yaml
+---
+title: Some title
+enableComments: false
+---
+```
+
+### 3.3 Custom CSS and JS
+
+You can put your custom css and js files to `static` directory, or use remote css and js files which start with `http://` or `https://`.
+
+For example:
+
+```yaml
+customCSS:
+  - css/custom.css # local css in `static/css/custom.css`
+  - https://example.com/custom.css # remote css
+customJS:
+  - js/custom.js # local js in `static/js/custom.js`
+  - https://example.com/custom.js # remote js
+```
+
+### 3.4 Math Typesetting
+
+Mathematical notation is enabled by [KaTeX](https://katex.org/).
+
+- To enable KaTex globally set the parameter `math` to `true` in project’s configuration
+- To enable KaTex on a per page basis include the parameter `math` to `true` in content files
+
+### 3.5 Hidden Post Summary in Home Page 
+
+To hidden post summary in home page, you could set `hiddenPostSummaryInHomePage` to `true`, default is `false`.
+
+For example:
+
+```yaml
+hiddenPostSummaryInHomePage: true
+```
 
 ## License
 
