@@ -7,11 +7,12 @@
     {{ range $paginator.Pages }}
         {{ $title := .Title }}
         {{ $summary := .Summary }}
-        {{ $date := dateFormat "Jan 2, 2006" .Date }}
         <section class="item">
           <div>
-            <h1 class="title"><a href='{{ .RelPermalink }}'>{{ $title }}</a></h1>   
-            <div class="date">{{ $date }}</div>
+            <h1 class="title"><a href='{{ .RelPermalink }}'>{{ $title }}</a></h1>
+            <div class ="date">
+                <time datetime="{{ .PublishDate }}">{{ i18n "publishDate" . }}</time>  
+            </div>
           </div>
 
           {{ if ne .Site.Params.hiddenPostSummaryInHomePage true }}
@@ -26,7 +27,7 @@
           {{ if $paginator.HasPrev }}
               <span class="prev">
                   <a href="{{.Paginator.Prev.URL}}">
-                      <span class="arrow">←</span> {{ with .Site.Params.newerPosts }}{{ . }}{{ else }}Newer Posts{{ end }}
+                      <span class="arrow">←</span> {{ with .Site.Params.newerPosts }}{{ . }}{{ else }}{{ i18n "postsNewer" }}{{ end }}
                   </a>
             </span>
           {{ end }}
@@ -34,7 +35,7 @@
           {{ if $paginator.HasNext }}
               <span class="next">
                   <a href="{{.Paginator.Next.URL}}">
-                      {{ with .Site.Params.olderPosts }}{{ . }}{{ else }}Older Posts{{ end }} <span class="arrow">→</span>
+                      {{ with .Site.Params.olderPosts }}{{ . }}{{ else }}{{ i18n "postsOlder" }}{{ end }} <span class="arrow">→</span>
                   </a>
               </span>
           {{ end }}

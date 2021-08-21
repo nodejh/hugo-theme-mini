@@ -4,7 +4,7 @@ title: Hugo
 theme: hugo-theme-mini
 paginate: 3
 
-# for exampleSite only, you may need to delete the line: `themesDir: ../../` 
+# !!! exampleSite only, you may need to delete the line: `themesDir: ../../` 
 themesDir: ../../
 
 hasCJKLanguage: true

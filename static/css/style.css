@@ -427,7 +427,7 @@ nav.navigation a.button {
 #archive .group .value .date {
   display: inline-block;
   color: #999;
-  width: 60px;
+  min-width: 60px;
 }
 #archive .group .value .title {
   display: inline;

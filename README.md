@@ -70,7 +70,23 @@ Take a look inside the [`exampleSite`](https://github.com/nodejh/hugo-theme-mini
 
 > ⚠️ You may need to delete the line: `themesDir: ../../` 
 
-### 2.2 Add Comments
+### 2.2 Default Content Language
+
+You can set default content language by `defaultContentLanguage`:
+
+```yaml
+defaultContentLanguage: en
+```
+
+Default is `en`. Now support:
+
+- `en`: English
+- `zh`: Chinese
+- `nl`: Dutch 
+
+More about multiple languages: [Multilingual Mode](https://gohugo.io/content-management/multilingual/).
+
+### 2.3 Add Comments
 
 To enable comments, add following to your config file:
 
@@ -82,7 +98,7 @@ To enable comments, add following to your config file:
       enableComments: true
     ```
 
-### 2.3 Google Analytics
+### 2.4 Google Analytics
 
 To enable google analytics, add following to your config file:
 
@@ -94,7 +110,7 @@ To enable google analytics, add following to your config file:
       enableGoogleAnalytics: true
     ```
 
-### 2.4 Logo and favicon
+### 2.5 Logo and favicon
 
 You can replace the log in the top of each page and favicon with your own images. To do that put your own logo and favicon into the `images` directory of your website static directory, then named them `avatar.png` and `favicon.ico`. For example:
 
@@ -106,7 +122,7 @@ You can replace the log in the top of each page and favicon with your own images
     └── favicon.ico
 ```
 
-### 2.5 Nearly finished
+### 2.6 Nearly finished
 
 In order to see your site in action, run Hugo's built-in local server.
 
@@ -116,7 +132,7 @@ $ hugo server
 
 Now enter http://localhost:1313 in the address bar of your browser.
 
-### 2.6 Production
+### 2.7 Production
 
 To run in production (e.g. to have Google Analytics show up), run HUGO_ENV=production before your build command. For example:
 

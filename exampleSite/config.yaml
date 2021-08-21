@@ -3,7 +3,10 @@ languageCode: en-us
 title: Hugo
 theme: hugo-theme-mini
 
-# for exampleSite only, you may need to delete the line: `themesDir: ../../` 
+# Default content language, support en (English) / zh (Chinese) / nl (Dutch), default 'en'
+defaultContentLanguage: en
+
+# !!! exampleSite only, you may need to delete the line: `themesDir: ../../` 
 themesDir: ../../
 
 hasCJKLanguage: true
@@ -14,7 +17,7 @@ googleAnalytics: your-google-analytics-id
 disqusShortname: your-disqus-shortname
 
 # Hugo Configure Markup
-# more info: https://gohugo.io/getting-started/configuration-markup#
+# More info: https://gohugo.io/getting-started/configuration-markup#
 markup:
   highlight:
     guessSyntax: true
@@ -44,7 +47,7 @@ params:
 
 
   ###########################################
-  # Optional
+  # Optional Configuration
   ###########################################
 
   # To enable RSS, you could set `enableRSS: true`, default is `true`
@@ -61,19 +64,8 @@ params:
   math: false
   # To hidden post summary in home page, you could set `hiddenPostSummaryInHomePage: true`, default is `false`
   hiddenPostSummaryInHomePage: false
-
-  # text in page
-  home: '' # Default: Home
-  about: '' # Default: About
-  archive: '' # Default: Archive
-  tags: '' # Default: Tags
-  subscribe: '' # Default: Subscribe
-  olderPosts: '' # Default: Older Posts
-  newerPosts: '' # Default: Newer Posts
-  copyright: '' # Default: © Copyright 2021 ❤️ author
-  title404: '' # Default: 404 - Page Not Found
-  subtitle404: '' # Default: The content you're looking for doesn't seem to exist.
-  readMore: '' # Default: Read More
+  # Website copy write, default: '© Copyright 2021 ❤️ {params.author}'
+  copyright: '' 
 
   # Extra links in navigation
   links:
