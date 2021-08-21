@@ -72,6 +72,23 @@
 
 > ⚠️ 你需要删除这行配置： `themesDir: ../../` 。
 
+### 2.2 默认语言
+
+你可以通过 `defaultContentLanguage` 配置设置默认语言：
+
+```yaml
+defaultContentLanguage: en
+```
+
+默认是 `en`。目前支持以下语言：
+
+- `en`: 英语
+- `zh`: 汉语
+- `nl`: 荷兰语
+
+更多关于多语言的信息可以参考：[Multilingual Mode](https://gohugo.io/content-management/multilingual/)。
+
+
 ### 2.2 评论功能
 
 要使用评论功能，你需要添加下面的配置：

@@ -1,0 +1,53 @@
+home:
+  other: Huis
+
+archive:
+  other: Archief
+
+tags:
+  other: Tags
+
+subscribe:
+  other: Abonneren
+  
+about:
+  other: Over
+
+404title:
+  other: 404 - Pagina Niet Gevonden
+
+404subtitle:
+  other: 'De pagina waar u naar op zoek bent, lijkt niet te bestaan.'
+
+readMore:
+  other: Lees meer
+
+minuteRead:
+  other: "{{ .ReadingTime }} minuten leestijd"
+
+publishDate:
+  other: >-
+    {{ .PublishDate.Day }} {{ index $.Site.Data.months_nl (printf "%d" .PublishDate.Month) }} {{ .PublishDate.Year }}
+
+publishDateFull:
+  other: >-
+    {{ .PublishDate.Day }} {{ index $.Site.Data.months_nl (printf "%d" .PublishDate.Month) }} {{ .PublishDate.Year }}
+
+wordCount:
+  one: "{{ .WordCount }} woord"
+  other: "{{ .WordCount }} woorden"
+
+postsNewer:
+  other: Nieuwere posts
+
+postsOlder:
+  other: Oudere posts
+
+poweredBy:
+  other: >-
+    Gemaakt met <a href='http://www.gohugo.io/'>Hugo</a> Thema door <a
+    href='https://github.com/nodejh/hugo-theme-cactus-plus'>nodejh</a>
+
+publishDateShort:
+  other: >-
+    {{ .PublishDate.Day }} {{ index $.Site.Data.months_nl (printf "%d" .PublishDate.Month) }}

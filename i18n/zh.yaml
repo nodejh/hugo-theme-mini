@@ -1,0 +1,50 @@
+home:
+  other: 首页
+
+archive:
+  other: 归档
+
+tags:
+  other: 标签
+
+subscribe:
+  other: 订阅
+
+about:
+  other: 关于
+
+404title:
+  other: "404"
+
+404subtitle:
+  other: 页面不存在
+
+readMore:
+  other: 更多内容
+
+minuteRead:
+  other: "{{ .ReadingTime }}分钟"
+
+publishDate:
+  other: '{{ .PublishDate.Format "2006/01/02" }}'
+
+publishDateFull:
+  other: '{{ .PublishDate.Format "2006年01月02日" }}'
+
+wordCount:
+  one: "{{ .WordCount }}字"
+  other: "{{ .WordCount }}字"
+
+postsNewer:
+  other: 下一页
+
+postsOlder:
+  other: 上一页
+
+poweredBy:
+  other: >-
+    Powered by <a href='http://www.gohugo.io/'>Hugo</a> Theme By <a
+    href='https://github.com/nodejh/hugo-theme-cactus-plus'>nodejh</a>
+
+publishDateShort:
+  other: '{{ .PublishDate.Format "01/02" }}'
