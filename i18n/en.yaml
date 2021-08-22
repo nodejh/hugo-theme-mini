@@ -26,10 +26,10 @@ minuteRead:
   other: "{{ .ReadingTime }} minute read"
 
 publishDate:
-  other: '{{ .PublishDate.Format "January 2, 2006" }}'
+  other: '{{ .PublishDate.Format "Jan 2, 2006" }}'
 
 publishDateFull:
-  other: '{{ .PublishDate.Format "January 2, 2006" }}'
+  other: '{{ .PublishDate.Format "Jan 2, 2006" }}'
 
 wordCount:
   one: "{{ .WordCount }} word"
