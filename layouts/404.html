@@ -31,7 +31,11 @@
         {{ $date := dateFormat "Jan 2, 2006" .Date }}
         <section class="item">
           <div>
-            <h1 class="title"><a href='{{ .RelPermalink }}'>{{ $title }}</a></h1>   
+            {{ if isset .Params "externallink" }}
+                <h1 class="title"><a href="{{ .Params.externallink }}" target="_blank">{{ $title }} <i class="fas fa-external-link-alt"></i></a></h1>
+            {{else}}
+                <h1 class="title"><a href='{{ .RelPermalink }}'>{{ $title }}</a></h1>
+            {{ end }}
             <div class="date">{{ $date }}</div>
           </div>
         </section>
