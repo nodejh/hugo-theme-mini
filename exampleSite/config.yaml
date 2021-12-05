@@ -3,7 +3,7 @@ languageCode: en-us
 title: Hugo
 theme: hugo-theme-mini
 
-# Default content language, support en (English) / zh (Chinese) / nl (Dutch), default 'en'
+# Default content language, support en (English) / zh (Chinese) / nl (Dutch) / fr (French), default 'en'
 defaultContentLanguage: en
 
 # !!! exampleSite only, you may need to delete the line: `themesDir: ../../` 

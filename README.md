@@ -83,6 +83,7 @@ Default is `en`. Now support:
 - `en`: English
 - `zh`: Chinese
 - `nl`: Dutch 
+- `fr`: French
 
 More about multiple languages: [Multilingual Mode](https://gohugo.io/content-management/multilingual/).
 
