@@ -86,6 +86,7 @@ defaultContentLanguage: en
 - `zh`: 汉语
 - `nl`: 荷兰语
 - `fr`: 法语
+- `es`: 西班牙语
 
 更多关于多语言的信息可以参考：[Multilingual Mode](https://gohugo.io/content-management/multilingual/)。
 
