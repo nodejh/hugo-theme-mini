@@ -8,7 +8,7 @@ tags:
   other: Tags
 
 about:
-  other: Über
+  other: Info
 
 subscribe:
   other: Abonnieren
@@ -17,7 +17,7 @@ subscribe:
   other: 404 - Seite nicht gefunden
 
 404subtitle:
-  other: Der Inhalt den du suchst scheint nicht zu existieren.
+  other: Der Inhalt, den du suchst, scheint nicht zu existieren.
 
 readMore:
   other: Weiterlesen
@@ -43,7 +43,7 @@ postsOlder:
 
 poweredBy:
   other: >-
-    Publiziert von <a href='http://www.gohugo.io/'>Hugo</a> Theme von <a
+    Publiziert mit <a href='http://www.gohugo.io/'>Hugo</a> Theme von <a
     href='https://https://github.com/nodejh/hugo-theme-mini'>nodejh</a>
 
 publishDateShort:
