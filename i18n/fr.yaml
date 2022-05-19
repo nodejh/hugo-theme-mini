@@ -26,10 +26,12 @@ minuteRead:
   other: "Temps de lecture {{ .ReadingTime }}min"
 
 publishDate:
-  other: '{{ .PublishDate.Format "02-01-2006" }}'
+  other: >-
+    {{ .PublishDate.Day }} {{ index $.Site.Data.months_fr (printf "%d" .PublishDate.Month) }} {{ .PublishDate.Year }}
 
 publishDateFull:
-  other: '{{ .PublishDate.Format "02-01-2006" }}'
+  other: >-
+    {{ .PublishDate.Day }} {{ index $.Site.Data.months_fr (printf "%d" .PublishDate.Month) }} {{ .PublishDate.Year }}
 
 wordCount:
   one: "{{ .WordCount }} mot"
@@ -47,4 +49,5 @@ poweredBy:
     href='https://github.com/nodejh/hugo-theme-mini'>nodejh</a>
 
 publishDateShort:
-  other: '{{ .PublishDate.Format "02-01-2006" }}'
+  other: >-
+    {{ .PublishDate.Day }} {{ index $.Site.Data.months_fr (printf "%d" .PublishDate.Month) }} {{ .PublishDate.Year }}
