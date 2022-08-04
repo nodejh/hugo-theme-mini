@@ -1,0 +1,50 @@
+home:
+  other: Hem
+
+archive:
+  other: Arkiv
+
+tags:
+  other: Taggar
+
+about:
+  other: Om
+
+subscribe:
+  other: Prenumerera
+
+404title:
+  other: 404 - Sidan kunde inte hittas
+
+404subtitle:
+  other: Innehållet du söker verkar inte finnas.
+
+readMore:
+  other: Läs mer
+
+minuteRead:
+  other: "{{ .ReadingTime }} minut(er) att läsa"
+
+publishDate:
+  other: '{{ .PublishDate.Format "02.01.2006" }}'
+
+publishDateFull:
+  other: '{{ .PublishDate.Format "02.01.2006" }}'
+
+wordCount:
+  one: "{{ .WordCount }} ord"
+  other: "{{ .WordCount }} ord"
+
+postsNewer:
+  other: Nyare inlägg
+
+postsOlder:
+  other: Äldre inlägg
+
+poweredBy:
+  other: >-
+    Drivs med hjälp av <a href='http://www.gohugo.io/'>Hugo</a> Tema av <a
+    href='https://github.com/nodejh/hugo-theme-mini'>nodejh</a>
+
+publishDateShort:
+  other: '{{ .PublishDate.Format "02.01." }}'
