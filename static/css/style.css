@@ -95,6 +95,7 @@ pre {
 }
 .markdown-image img {
 	max-width: 100%;
+	border-radius: 0.5rem;
 }
 .anchor {
 	font-size: 100%;
@@ -129,6 +130,9 @@ p code {
 }
 pre code {
 	font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
+}
+pre {
+	border-radius: 0.5rem;
 }
 
 /* navigation */

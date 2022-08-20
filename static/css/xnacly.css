@@ -1,0 +1,15 @@
+.skill {
+	display: flex;
+	flex-direction: column;
+	border-radius: 0.5rem;
+	border: 2px solid #bbb;
+	padding: 0.5rem;
+}
+.skill-container {
+	display: grid;
+	grid-gap: 0.5rem;
+	grid-template-columns: repeat(3, 1fr);
+}
+.skill-image {
+	max-width: 4rem;
+}

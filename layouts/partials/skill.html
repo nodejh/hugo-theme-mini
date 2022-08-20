@@ -1,0 +1,11 @@
+<div class="skill">
+	<h4>{{ .title }}</h4>
+	{{if .img }} {{ $split_name := split .img "-"}} {{ $name := first 1 $split_name}}
+	<img
+		class="skill-image"
+		src="https://raw.githubusercontent.com/devicons/devicon/master/icons/{{ index ($name) 0 }}/{{ .img }}.svg"
+		alt="{{.title}}"
+	/>
+	{{end}}
+	<span>{{ .level }} - since: {{ .date }}</span>
+</div>
