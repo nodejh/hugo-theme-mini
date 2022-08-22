@@ -1,3 +1,24 @@
+body,
+html,
+.tags,
+.tip {
+	font-family: monospace;
+}
+.item .title {
+	font-family: monospace;
+	font-size: 1.1rem !important;
+}
+.profile,
+.title,
+#single {
+	font-family: sans-serif;
+}
+.tags a::before {
+	content: "#";
+}
+.post-summary {
+	margin-top: 2rem;
+}
 .skill {
 	display: flex;
 	flex-direction: column;

@@ -17,9 +17,14 @@
         <span>
           {{ i18n "minuteRead" . }}
         </span>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          <a href="{{ .Site.Social.github }}">@{{ .Site.Params.Author }}</a>
+        </span>
     </div>
 
-    
     {{ if or .Site.Params.showToc .Params.showToc }}
         {{ partial "toc.html" . }}
     {{ end }}
@@ -36,10 +41,9 @@
             {{ end }}
         </div>
     {{ end}}
-    
+
     {{ partial "comment.html" . }}
 
 </section>
 
 {{ end }}
-
