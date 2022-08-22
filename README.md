@@ -4,7 +4,7 @@ English | [简体中文](https://github.com/nodejh/hugo-theme-mini/tree/master/R
 
 A fast, minimalist and responsive hugo theme.
 
-![./images/screenshot.png](https://raw.githubusercontent.com/nodejh/hugo-theme-mini/master/images/screenshot.png)
+![grafik](https://user-images.githubusercontent.com/47723417/185876457-46850ca0-ce70-4693-a6f8-3fcafba59f38.png)
 
 - [Online demo](https://nodejh.github.io/hugo-theme-mini)
 - [Example Site Source](https://github.com/nodejh/hugo-theme-mini/tree/master/exampleSite)
