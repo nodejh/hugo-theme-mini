@@ -8,10 +8,10 @@ html,
 	font-family: monospace;
 	font-size: 1.1rem !important;
 }
-.profile,
-.title,
+.profile h1,
+#listpage .title,
 #single {
-	font-family: sans-serif;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
 }
 .tags a::before {
 	content: "#";
