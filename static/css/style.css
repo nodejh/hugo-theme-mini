@@ -560,6 +560,7 @@ html,
 }
 .profile h1,
 #listpage .title,
+#section,
 #single {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }

@@ -2,7 +2,8 @@
 	{{if .img }} {{ $split_name := split .img "-"}} {{ $name := first 1 $split_name}}
 	<img
 		class="skill-image"
-		src="https://raw.githubusercontent.com/devicons/devicon/master/icons/{{ index ($name) 0 }}/{{ .img }}.svg"
+		loading="lazy"
+		src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/{{ index ($name) 0 }}/{{ .img }}.svg"
 		alt="{{.title}}"
 	/>
 	{{end}}
