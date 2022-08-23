@@ -4,7 +4,11 @@
 <section id="section">
     {{ .Content }}
 
-    {{ partial "comment.html" . }}
+	<div class="skill-container">
+		{{range .Site.Data.skills.skills }} 
+			{{partial "skill.html" .}} 
+		{{end}}
+	</div>
 </section>
 
 

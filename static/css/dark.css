@@ -1,0 +1,13 @@
+:root {
+	--background: #161616;
+	--background-sec: #1f1f1f;
+	--background-third: #353535;
+	--primary: #8875ff;
+	--primary-between: #7867e3;
+	--primary-hover: #685ac7;
+	--text: #dcddde;
+	--text-secondary: #999;
+	--text-secondary-hover: #99999910;
+	--text-third: #6a6a6a;
+	--background-sec-hover: #1a1a1a;
+}

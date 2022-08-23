@@ -1,15 +1,12 @@
 <nav class="navigation">
 	{{ if not .IsHome }}
-		<a href="{{ "/" | relURL }}"> <span class="arrow">../</span>{{ with .Site.Params.home }}{{ . }}{{ else }}{{ i18n "home" }}{{ end }}</a>
+		<a href="{{ "/" | relURL }}"> <span class="arrow"></span>~</a>
 	{{ end }}
-	<a href="{{ "/posts" | relURL }}">{{ with .Site.Params.archive }}{{ . }}{{ else }}{{ i18n "archive" }}{{ end }}</a>
-	<a href="{{ "/tags" | relURL }}">{{ with .Site.Params.tags }}{{ . }}{{ else }}{{ i18n "tags" }}{{ end }}</a>
+	<a href="{{ "/posts" | relURL }}">~/archive</a>
+	<a href="{{ "/tags" | relURL }}">~/tags</a>
+	<a href="{{ "/about" | relURL }}">~/about</a>
 
 	{{ range $element := .Site.Params.Links }}
 		<a href="{{ $element.path }}">{{ $element.name }}</a>
-	{{ end }}
-
-	{{ if .Site.Params.enableRSS }}
-	  <a class="button" href="{{ .Site.RSSLink }}">{{ with .Site.Params.subscribe }}{{ . }}{{ else }}{{ i18n "subscribe" }}{{ end }}</a>
 	{{ end }}
 </nav>

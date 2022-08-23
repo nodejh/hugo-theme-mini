@@ -1,5 +1,4 @@
-<div class="skill">
-	<h4>{{ .title }}</h4>
+<div class="skill" data-tooltip="{{.title}}">
 	{{if .img }} {{ $split_name := split .img "-"}} {{ $name := first 1 $split_name}}
 	<img
 		class="skill-image"
@@ -7,5 +6,5 @@
 		alt="{{.title}}"
 	/>
 	{{end}}
-	<span>{{ .level }} - since: {{ .date }}</span>
+	<span class="level-box level-{{ .level }}">{{ .level }}</span>
 </div>

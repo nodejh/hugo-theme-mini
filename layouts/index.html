@@ -1,7 +1,4 @@
-{{ define "main" }} {{ partial "profile.html" . }} {{/*
-<div class="skill-container">{{range .Site.Data.skills.skills }} {{partial "skill.html" .}} {{end}}</div>
-*/}}
-
+{{ define "main" }} {{ partial "profile.html" . }} 
 <div id="list-page">
 	{{ $pages := .Site.RegularPages }} {{ $paginator := .Paginate ($pages) }} {{ range $paginator.Pages }} {{ $title :=
 	.Title }} {{ $summary := .Summary }}

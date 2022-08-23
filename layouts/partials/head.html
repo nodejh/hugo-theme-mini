@@ -10,9 +10,8 @@
 <meta name="ROBOTS" content="INDEX, FOLLOW" />
 {{ else }}
 <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
-{{ end }} <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}"> <link rel="stylesheet" href="{{
-"/css/xnacly.css" | relURL }}"> {{ range .Site.Params.customCSS }} {{ if ( or ( hasPrefix . "http://" ) ( hasPrefix .
-"https://" ) ) }}
+{{ end }} <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}"> {{ range .Site.Params.customCSS }} {{ if ( or (
+hasPrefix . "http://" ) ( hasPrefix . "https://" ) ) }}
 <!-- remote css -->
 <link rel="stylesheet" href="{{ . }}" />
 {{ else }}
