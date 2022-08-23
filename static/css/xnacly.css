@@ -19,18 +19,17 @@ html,
 .post-summary {
 	margin-top: 2rem;
 }
-.skill {
+.item div  {
 	display: flex;
-	flex-direction: column;
-	border-radius: 0.5rem;
-	border: 2px solid #bbb;
-	padding: 0.5rem;
+	justify-content: center;
 }
-.skill-container {
-	display: grid;
-	grid-gap: 0.5rem;
-	grid-template-columns: repeat(3, 1fr);
+.item time {
+	font-size: small;
 }
-.skill-image {
-	max-width: 4rem;
+
+.navigation {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
+	
