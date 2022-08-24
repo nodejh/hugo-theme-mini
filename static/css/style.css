@@ -3,7 +3,7 @@
 /* xnacly's custom vars */
 :root {
 	--spacing: 0.5rem;
-    --code: #d04c60;
+	--code: #d04c60;
 	--expert: #ddb6f2;
 	--advanced: #abe9b3;
 	--intermediate: #f8bd96;
@@ -22,7 +22,6 @@ code {
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 }
-
 
 body {
 	line-height: 1;
@@ -144,13 +143,15 @@ h4:hover a {
 	max-width: 100%;
 	overflow-x: auto;
 }
-p code, li code {
+p code,
+li code {
 	font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
+	background-color: var(--background-forth);
 	font-size: inherit;
 	padding: 2px 5px;
-	border: 1px solid var(--text-secondary);
+	border: 1px solid var(--text-third);
 	border-radius: calc(var(--spacing) / 2);
-    color: var(--code);
+	color: var(--code);
 	line-height: inherit;
 	word-wrap: break-word;
 	text-indent: 0;
@@ -645,10 +646,10 @@ html,
 }
 
 #list-page .blog-draft a {
-    color: var(--text-secondary);
+	color: var(--text-secondary);
 }
 
 #list-page .blog-draft a::before {
-    content: "[d]";
-    margin-right: var(--spacing);
+	content: "[d]";
+	margin-right: var(--spacing);
 }
