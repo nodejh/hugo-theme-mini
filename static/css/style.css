@@ -13,13 +13,15 @@
 	--beginner-darker: #a56175;
 }
 
-/* this should fix the ios mobile code blog font size bug, recorded here: https://github.com/adityatelange/hugo-PaperMod/issues/828 */
+/* this should fix the ios mobile code blog font size bug
+ * recorded here: https://github.com/adityatelange/hugo-PaperMod/issues/828 */
 code {
 	text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 }
+
 
 body {
 	line-height: 1;
@@ -641,4 +643,13 @@ html,
 .level-expert {
 	background-color: var(--expert);
 	box-shadow: inset 0 -4px 0 var(--expert-darker);
+}
+
+#list-page .blog-draft a {
+    color: var(--text-secondary);
+}
+
+#list-page .blog-draft a::before {
+    content: "[d]";
+    margin-right: var(--spacing);
 }
