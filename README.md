@@ -4,7 +4,27 @@ English | [简体中文](https://github.com/nodejh/hugo-theme-mini/tree/master/R
 
 A fast, minimalist and responsive hugo theme.
 
-![grafik](https://user-images.githubusercontent.com/47723417/185876457-46850ca0-ce70-4693-a6f8-3fcafba59f38.png)
+![grafik](https://user-images.githubusercontent.com/47723417/186348198-7af0de77-4575-46dc-8a0c-e89ac53c7d73.png)
+![grafik](https://user-images.githubusercontent.com/47723417/186349245-5d26d838-3e05-4b90-9715-9bdbabe65762.png)
+![grafik](https://user-images.githubusercontent.com/47723417/186349397-fd45b8d4-1f98-4168-91cc-6f3a0fb352de.png)
+
+
+## Features differing from upstream:
+- dark and light mode support (loading stylesheets depending on system preference)
+- cleaner design 
+    - monospace font in headings
+    - '#' as link anchors 
+    - refactored css with variables 
+    - prefix and other color for draft posts
+    - rounded code blocks, blockquotes, images
+    - open toc by default
+    - better inline code / monospace blocks
+    - updated table background colors
+    - better colorsheme
+ - skill set in about
+
+
+# Upstream readme:
 
 - [Online demo](https://nodejh.github.io/hugo-theme-mini)
 - [Example Site Source](https://github.com/nodejh/hugo-theme-mini/tree/master/exampleSite)
