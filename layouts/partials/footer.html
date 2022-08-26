@@ -1,8 +1,4 @@
 <footer id="footer">
-    {{ if .Site.Social }}
-        {{ partial "social.html" . }}
-    {{ end }}
-
     <div class="copyright">
     {{ with .Site.Params.copyright }}
         {{ . | markdownify }}
@@ -10,7 +6,7 @@
        © Copyright 
        {{ now.Format "2006"}} 
        <span class="split">
-        {{ partial "svgs/heart.svg" (dict "fill" "#bbbbbb" "width" 15 "height" 15 ) }}
+        {{ partial "svgs/heart.svg" (dict "fill" "var(--primary)" "width" 15 "height" 15 ) }}
        </span>
        {{ .Site.Params.Author }}
     {{ end }}

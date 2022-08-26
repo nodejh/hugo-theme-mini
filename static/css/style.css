@@ -23,6 +23,33 @@ code {
 	-webkit-text-size-adjust: 100%;
 }
 
+.social-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: center;
+    align-items: center;
+}
+.social-container a:nth-child(1){
+    display: flex;
+    justify-content: flex-end;
+}
+.social-container a:nth-child(2){
+    display: flex;
+    justify-content: flex-start;
+}
+
+.symbol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.symbol svg {
+    max-width: 30px;
+    max-height: 30px;
+    fill: var(--primary)
+}
+
 body {
 	line-height: 1;
 	font: normal 15px/1.5em "Helvetica Neue", Helvetica, Arial, sans-serif;

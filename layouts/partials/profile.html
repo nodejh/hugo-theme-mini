@@ -8,6 +8,10 @@
     {{ end }}
 
     <h1>{{ .Site.Title }}</h1>
+
+    {{ if .Site.Social }}
+        {{ partial "social.html" . }}
+    {{ end }}
     
     {{ with .Site.Params.Bio }}
       <h2>{{ . | markdownify }}</h2>
