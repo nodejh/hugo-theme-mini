@@ -24,18 +24,7 @@ code {
 }
 
 .social-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-content: center;
-    align-items: center;
-}
-.social-container a:nth-child(1){
     display: flex;
-    justify-content: flex-end;
-}
-.social-container a:nth-child(2){
-    display: flex;
-    justify-content: flex-start;
 }
 
 .symbol {
@@ -47,6 +36,7 @@ code {
 .symbol svg {
     max-width: 30px;
     max-height: 30px;
+    width: 100%;
     fill: var(--primary)
 }
 
@@ -279,10 +269,11 @@ nav.navigation a.button {
 	font-size: 13px;
 }
 #footer .split {
+    color: var(--primary);
 	cursor: pointer;
 }
-#footer .split:hover path {
-	fill: #ff3356;
+#footer .split:hover {
+	color: #ff3356;
 	transition: 0.7s ease-out;
 	cursor: pointer;
 }
@@ -300,8 +291,11 @@ nav.navigation a.button {
 /* profile  */
 
 .profile {
-	margin: 60px auto 0 auto;
 	text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .profile .avatar {
