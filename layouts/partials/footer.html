@@ -12,19 +12,10 @@
     {{ end }}
     </div>
 
+
     {{ if ne .Site.Params.showPowerBy false }}
       <div class="powerby">
         {{ i18n "poweredBy" | safeHTML }}
       </div>
     {{ end }}
 </footer>
-
-{{ range .Site.Params.customJS }}
-    {{ if ( or ( hasPrefix . "http://" ) ( hasPrefix . "https://" ) ) }}
-        <!-- remote js -->
-        <script src="{{ . }}"></script>
-    {{ else }}
-        <!-- local js -->
-        <script src="{{ $.Site.BaseURL }}{{ . }}"></script>
-    {{ end }}
-{{ end }}

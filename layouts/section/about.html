@@ -2,7 +2,20 @@
 {{ partial "profile.html" . }}
 
 <section id="section">
+    <div class="badge-container">
+        <a href="https://ublockorigin.com">
+            <img alt="Nothing to block badge" src="{{ "images/badges/nothingtoblock.gif" | relURL }}" />
+        </a>
+        <a href="https://yesterweb.org/no-to-web3/">
+            <img alt="Say no to web3 badge" src="{{ "/images/badges/noweb3.gif" | relURL }}" />
+        </a>
+        <a href="https://kernel.org">
+            <img alt="Made on GNU/Linux badge" src="{{"/images/badges/linux.gif" | relURL}}" />
+        </a> 
+    </div>
+
     {{ .Content }}
+
 
 	<div class="skill-container">
 		{{range .Site.Data.skills.skills }} 

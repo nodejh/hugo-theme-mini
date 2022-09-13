@@ -534,7 +534,7 @@ nav.navigation a.button {
 /* section page */
 #section {
 	max-width: 580px;
-	margin: 48px auto 0 auto;
+	margin: 0 auto 0 auto;
 	padding: 0 12px;
 }
 
@@ -632,16 +632,18 @@ html,
 	margin: var(--spacing);
 }
 
-/* [data-tooltip]::before {
+[data-tooltip]::before {
 	position: absolute;
 	content: attr(data-tooltip);
 	color: var(--text);
 	display: none;
+    background-color: var(--background-third);
+    padding: calc(var(--spacing) / 2);
+    border-radius: var(--spacing);
 }
-
-[data-tooltip]:hover::before {
+[data-tooltip]:hover::before{
 	display: inline;
-} */
+}
 .level-box {
 	text-transform: capitalize;
 	border-radius: var(--spacing);
@@ -673,4 +675,13 @@ html,
 #list-page .blog-draft a::before {
 	content: "[d]";
 	margin-right: var(--spacing);
+}
+
+.badge-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.badge-container a {
+    margin: calc(var(--spacing) / 2);
 }
