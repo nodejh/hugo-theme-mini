@@ -43,7 +43,7 @@ postsOlder:
 
 poweredBy:
   other: >-
-    Powered by <a href='http://www.gohugo.io/'>Hugo</a> Theme By <a
+    Powered by <a href='http://www.gohugo.io/'>Hugo</a> Theme based on <a
     href='https://github.com/nodejh/hugo-theme-mini'>nodejh</a>
 
 publishDateShort:
