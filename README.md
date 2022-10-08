@@ -1,4 +1,8 @@
-# Hugo Theme Mini
+# stevebennett.co Theme
+
+The theme for [stevebennett.co](https://stevebennett.co). This theme based of a fork of the [Hugo Mini Theme](https://github.com/nodejh/hugo-theme-mini).
+
+# Hugo Theme Mini Documentation
 
 English | [简体中文](https://github.com/nodejh/hugo-theme-mini/tree/master/README-zh_CN.md)
 
