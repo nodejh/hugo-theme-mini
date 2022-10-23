@@ -13,6 +13,9 @@ about:
 subscribe:
   other: Subscribe
 
+toc:
+  other: 目次
+
 404title:
   other: ページが見つかりません。
 
@@ -23,7 +26,7 @@ readMore:
   other: Read more
 
 minuteRead:
-  other: "{{ .ReadingTime }} 分間で読めます"
+  other: "{{ .ReadingTime }}分間で読めます"
 
 publishDate:
   other: '{{ .PublishDate.Format "2006年1月2日" }}'
@@ -35,8 +38,8 @@ publishDateShort:
   other: '{{ .PublishDate.Format "1月2日" }}'
 
 wordCount:
-  one: "{{ .WordCount }} 文字"
-  other: "{{ .WordCount }} 文字"
+  one: "{{ .WordCount }}文字"
+  other: "{{ .WordCount }}文字"
 
 postsNewer:
   other: 新しい投稿
