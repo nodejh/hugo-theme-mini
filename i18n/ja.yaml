@@ -14,37 +14,37 @@ subscribe:
   other: Subscribe
 
 404title:
-  other: 404 - Page Not Found
+  other: ページが見つかりません。
 
 404subtitle:
-  other: The content you're looking for doesn't seem to exist.
+  other: お探しのページは、移動または削除された可能性があります。
 
 readMore:
   other: Read more
 
 minuteRead:
-  other: "{{ .ReadingTime }} minute read"
+  other: "{{ .ReadingTime }} 分間で読めます"
 
 publishDate:
-  other: '{{ .PublishDate.Format "Jan 2, 2006" }}'
+  other: '{{ .PublishDate.Format "2006年1月2日" }}'
 
 publishDateFull:
-  other: '{{ .PublishDate.Format "Jan 2, 2006" }}'
+  other: '{{ .PublishDate.Format "2006年1月2日" }}'
+
+publishDateShort:
+  other: '{{ .PublishDate.Format "1月2日" }}'
 
 wordCount:
-  one: "{{ .WordCount }} word"
-  other: "{{ .WordCount }} words"
+  one: "{{ .WordCount }} 文字"
+  other: "{{ .WordCount }} 文字"
 
 postsNewer:
-  other: Newer posts
+  other: 新しい投稿
 
 postsOlder:
-  other: Older posts
+  other: 古い投稿
 
 poweredBy:
   other: >-
     Powered by <a href='http://www.gohugo.io/'>Hugo</a> Theme By <a
     href='https://github.com/nodejh/hugo-theme-mini'>nodejh</a>
-
-publishDateShort:
-  other: '{{ .PublishDate.Format "Jan 2" }}'
