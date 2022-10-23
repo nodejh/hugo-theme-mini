@@ -1,0 +1,50 @@
+home:
+  other: Home
+
+archive:
+  other: Archive
+
+tags:
+  other: Tags
+
+about:
+  other: About
+
+subscribe:
+  other: Subscribe
+
+404title:
+  other: 404 - Page Not Found
+
+404subtitle:
+  other: The content you're looking for doesn't seem to exist.
+
+readMore:
+  other: Read more
+
+minuteRead:
+  other: "{{ .ReadingTime }} minute read"
+
+publishDate:
+  other: '{{ .PublishDate.Format "Jan 2, 2006" }}'
+
+publishDateFull:
+  other: '{{ .PublishDate.Format "Jan 2, 2006" }}'
+
+wordCount:
+  one: "{{ .WordCount }} word"
+  other: "{{ .WordCount }} words"
+
+postsNewer:
+  other: Newer posts
+
+postsOlder:
+  other: Older posts
+
+poweredBy:
+  other: >-
+    Powered by <a href='http://www.gohugo.io/'>Hugo</a> Theme By <a
+    href='https://github.com/nodejh/hugo-theme-mini'>nodejh</a>
+
+publishDateShort:
+  other: '{{ .PublishDate.Format "Jan 2" }}'
