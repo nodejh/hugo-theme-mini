@@ -3,7 +3,8 @@
 <section id="single">
     <h1 class="title">{{ .Title }}</h1>
 
-    <div class="tip">
+    {{ if ne .Params.showTip false }}
+      <div class="tip">
         <time datetime="{{ .PublishDate }}">{{ i18n "publishDateFull" . }}</time>
         <span class="split">
           ·
@@ -17,7 +18,8 @@
         <span>
           {{ i18n "minuteRead" . }}
         </span>
-    </div>
+      </div>
+    {{ end }}
 
     
     {{ if or .Site.Params.showToc .Params.showToc }}
