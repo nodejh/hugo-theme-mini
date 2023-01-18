@@ -85,6 +85,7 @@ Default is `en`. Now support:
 - `nl`: Dutch 
 - `fr`: French
 - `es`: Spanish
+- `da`: Danish
 
 More about multiple languages: [Multilingual Mode](https://gohugo.io/content-management/multilingual/).
 
