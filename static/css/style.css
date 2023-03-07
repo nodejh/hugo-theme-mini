@@ -255,7 +255,7 @@ nav.navigation a.button {
 }
 
 .profile .avatar {
-    max-width:100%;
+    max-width:50%;
     object-fit: scale-down;
 }
 
