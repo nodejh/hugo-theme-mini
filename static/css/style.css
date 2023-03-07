@@ -243,19 +243,20 @@ nav.navigation a.button {
 
 /* main content */
 .main {
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
 }
 
 /* profile  */
 
 .profile {
-  margin: 20px auto 0 auto;
+  margin: 10px auto 0 auto;
   text-align: center;
 }
 
 .profile .avatar {
   display: inline-block;
+  transform: scale(0.85);
 }
 
 .profile h1 {
