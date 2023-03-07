@@ -255,9 +255,8 @@ nav.navigation a.button {
 }
 
 .profile .avatar {
-  display: inline-block;
-  transform: scale(0.7);
-  object-fit: contain;
+    max-width:100%;
+    object-fit: scale-down;
 }
 
 .profile h1 {
