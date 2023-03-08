@@ -254,9 +254,10 @@ nav.navigation a.button {
   text-align: center;
 }
 
-.profile .avatar {
-    max-width:50%;
-    object-fit: scale-down;
+.avatar {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
 }
 
 .profile h1 {
