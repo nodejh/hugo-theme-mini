@@ -138,6 +138,9 @@ nav.navigation {
   margin: 0 auto;
   text-align: right;
   z-index: 100;
+  top: 0;
+  right: 0;
+  position: fixed;
 }
 
 nav.navigation a {
@@ -245,6 +248,8 @@ nav.navigation a.button {
 .main {
   width: 100%;
   margin: 0 auto;
+  position: relative;
+  top: 50px;
 }
 
 /* profile  */
