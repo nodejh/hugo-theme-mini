@@ -37,8 +37,8 @@ markup:
 social:
   # e.g.
   github: your-github-link
-  twitter: your-github-link
-  stackoverflow: your-github-link
+  twitter: your-twitter-link
+  stackoverflow: your-stackoverflow-link
   # facebook: your-facebook-link
 
 
