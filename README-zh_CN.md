@@ -117,7 +117,7 @@ defaultContentLanguage: en
 
 ### 2.4 Logo 和 favicon
 
-你可以替换网站中的 Log 和 favicon，只需要将你的图片放在网站的 `static/images` 中，并分别命名为 `avatar.png` 和 `avicon.ico`。下面是项目目录示例：
+你可以替换网站中的 Log 和 favicon，只需要将你的图片放在网站的 `static/images` 中，并分别命名为 `avatar.png` 和 `favicon.ico`。下面是项目目录示例：
 
 ```shell
 - content
