@@ -12,7 +12,10 @@ subscribe:
 
 about:
   other: 关于
-
+  
+toc:
+  other: 目录
+  
 404title:
   other: "404"
 
