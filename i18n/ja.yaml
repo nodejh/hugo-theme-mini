@@ -1,0 +1,53 @@
+home:
+  other: Home
+
+archive:
+  other: Archive
+
+tags:
+  other: Tags
+
+about:
+  other: About
+
+subscribe:
+  other: RSS feed
+
+toc:
+  other: 目次
+
+404title:
+  other: ページが見つかりません。
+
+404subtitle:
+  other: お探しのページは、移動または削除された可能性があります。
+
+readMore:
+  other: 他の投稿を読む
+
+minuteRead:
+  other: "{{ .ReadingTime }}分間で読めます"
+
+publishDate:
+  other: '{{ .PublishDate.Format "2006年1月2日" }}'
+
+publishDateFull:
+  other: '{{ .PublishDate.Format "2006年1月2日" }}'
+
+publishDateShort:
+  other: '{{ .PublishDate.Format "1月2日" }}'
+
+wordCount:
+  one: "{{ .WordCount }}文字"
+  other: "{{ .WordCount }}文字"
+
+postsNewer:
+  other: 新しい投稿
+
+postsOlder:
+  other: 古い投稿
+
+poweredBy:
+  other: >-
+    Powered by <a href='http://www.gohugo.io/'>Hugo</a> Theme By <a
+    href='https://github.com/nodejh/hugo-theme-mini'>nodejh</a>
