@@ -176,7 +176,19 @@ enableComments: false
 ---
 ```
 
-### 3.3 Custom CSS and JS
+### 3.3 Disable word count and read time on a single post
+
+You can disable the word count and read time tip on pages that don't need it (eg about page) by setting `showTip` to `false`.
+
+For example:
+```yaml
+---
+title: post title
+showTip: false
+---
+```
+
+### 3.4 Custom CSS and JS
 
 You can put your custom css and js files to `static` directory, or use remote css and js files which start with `http://` or `https://`.
 
@@ -191,14 +203,14 @@ customJS:
   - https://example.com/custom.js # remote js
 ```
 
-### 3.4 Math Typesetting
+### 3.5 Math Typesetting
 
 Mathematical notation is enabled by [KaTeX](https://katex.org/).
 
 - To enable KaTex globally set the parameter `math` to `true` in project’s configuration
 - To enable KaTex on a per page basis include the parameter `math` to `true` in content files
 
-### 3.5 Hidden Post Summary in Home Page 
+### 3.6 Hidden Post Summary in Home Page 
 
 To hidden post summary in home page, you could set `hiddenPostSummaryInHomePage` to `true`, default is `false`.
 
