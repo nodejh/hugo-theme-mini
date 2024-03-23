@@ -8,12 +8,16 @@
         {{ $title := .Title }}
         {{ $summary := .Summary }}
         <section class="item">
-          <div>
-            <h1 class="title"><a href='{{ .RelPermalink }}'>{{ $title }}</a></h1>
-            <div class ="date">
+            <div>
+              {{ if isset .Params "externallink" }}
+                  <h1 class="title"><a href="{{ .Params.externallink }}" target="_blank">{{ $title }} <i class="fas fa-external-link-alt"></i></a></h1>
+              {{else}}
+                  <h1 class="title"><a href='{{ .RelPermalink }}'>{{ $title }}</a></h1>
+              {{ end }}
+              <div class ="date">
                 <time datetime="{{ .PublishDate }}">{{ i18n "publishDate" . }}</time>  
+              </div>
             </div>
-          </div>
 
           {{ if ne .Site.Params.hiddenPostSummaryInHomePage true }}
               <div class="summary">{{ $summary | plainify | htmlUnescape }}</div>

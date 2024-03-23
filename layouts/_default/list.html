@@ -14,9 +14,15 @@
                     <time datetime="{{ .PublishDate }}">{{ i18n "publishDateShort" . }}</time>
                   </div>
                   <div class="title">
-                      <a href="{{ .Permalink }}">
-                          {{ .Title }}
-                      </a>
+                      {{ if isset .Params "externallink" }}
+                          <a href="{{ .Params.externallink }}" target="_blank">
+                              {{ .Title }} <i class="fas fa-external-link-alt"></i>
+                          </a>
+                      {{else}}
+                          <a href="{{ .Permalink }}">
+                              {{ .Title }}
+                          </a>
+                      {{ end }}
 
                       {{ with .Params.tags }}
                           <div class="tags">
