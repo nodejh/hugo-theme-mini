@@ -36,10 +36,10 @@ wordCount:
   other: "{{ .WordCount }}字"
 
 postsNewer:
-  other: 下一页
+  other: 上一页
 
 postsOlder:
-  other: 上一页
+  other: 下一页
 
 poweredBy:
   other: >-
