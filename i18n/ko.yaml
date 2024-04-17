@@ -26,10 +26,10 @@ minuteRead:
   other: "평균 읽기 시간 {{ .ReadingTime }}분"
 
 publishDate:
-  other: '{{ .PublishDate.Format "2006 1 2" }}'
+  other: '{{ .PublishDate.Format "06.01.02." }}'
 
 publishDateFull:
-  other: '{{ .PublishDate.Format "2006 1 2 15 4" }}'
+  other: '{{ .PublishDate.Format "2006년 1월 2일 15:04" }}'
 
 wordCount:
   one: "{{ .WordCount }} 단어"
@@ -47,4 +47,4 @@ poweredBy:
     href='https://github.com/nodejh/hugo-theme-mini'>nodejh</a>
 
 publishDateShort:
-  other: '{{ .PublishDate.Format "2006 2" }}'
+  other: '{{ .PublishDate.Format "06.02." }}'
