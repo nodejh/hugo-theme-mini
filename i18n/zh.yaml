@@ -48,3 +48,6 @@ poweredBy:
 
 publishDateShort:
   other: '{{ .PublishDate.Format "01/02" }}'
+
+toc:
+  other: 目录

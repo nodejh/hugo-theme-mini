@@ -48,3 +48,6 @@ poweredBy:
 
 publishDateShort:
   other: '{{ .PublishDate.Format "Jan 2" }}'
+
+toc:
+  other: Table of Contents
