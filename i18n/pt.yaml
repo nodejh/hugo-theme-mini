@@ -1,0 +1,50 @@
+home:
+  other: Início
+
+archive:
+  other: Arquivo
+
+tags:
+  other: Tags
+
+about:
+  other: Sobre
+
+subscribe:
+  other: Assinar
+
+404title:
+  other: 404 - Página Não Encontrada
+
+404subtitle:
+  other: O conteúdo que você está procurando parece não existir.
+
+readMore:
+  other: Leia mais
+
+minuteRead:
+  other: "{{ .ReadingTime }} minuto de leitura"
+
+publishDate:
+  other: '{{ .PublishDate.Format "2 de Jan, 2006" }}'
+
+publishDateFull:
+  other: '{{ .PublishDate.Format "2 de Jan, 2006" }}'
+
+wordCount:
+  one: "{{ .WordCount }} palavra"
+  other: "{{ .WordCount }} palavras"
+
+postsNewer:
+  other: Posts mais recentes
+
+postsOlder:
+  other: Posts mais antigos
+
+poweredBy:
+  other: >-
+    Desenvolvido com <a href='http://www.gohugo.io/'>Hugo</a> Tema por <a
+    href='https://github.com/nodejh/hugo-theme-mini'>nodejh</a>
+
+publishDateShort:
+  other: '{{ .PublishDate.Format "2 de Jan" }}'
