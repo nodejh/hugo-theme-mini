@@ -6,14 +6,15 @@ theme: hugo-theme-mini
 # Default content language, support en (English) / zh (Chinese) / nl (Dutch) / fr (French) / es (Spanish) / da (Danish), default 'en'
 defaultContentLanguage: en
 
-# !!! exampleSite only, you may need to delete the line: `themesDir: ../../` 
+# !!! exampleSite only, you may need to delete the line: `themesDir: ../../`
 themesDir: ../../
 
 hasCJKLanguage: true
 permalinks:
   posts: /posts/:title/
 
-paginate: 3
+pagination:
+  pagerSize: 3
 
 googleAnalytics: your-google-analytics-id
 disqusShortname: your-disqus-shortname
@@ -33,15 +34,6 @@ markup:
     renderer:
       unsafe: true
 
-# Social links in footer, support github,twitter,stackoverflow,facebook
-social:
-  # e.g.
-  github: your-github-link
-  twitter: your-twitter-link
-  stackoverflow: your-stackoverflow-link
-  # facebook: your-facebook-link
-
-
 # Site parameters
 params:
   # Site Author
@@ -50,6 +42,14 @@ params:
   bio: Software Engineer
   # Site Description, used in HTML meat
   description: My Blog
+
+  # Social links in footer, support github,twitter,stackoverflow,facebook
+  social:
+    # e.g.
+    github: your-github-link
+    twitter: your-twitter-link
+    stackoverflow: your-stackoverflow-link
+    # facebook: your-facebook-link
 
 
   ###########################################
@@ -71,7 +71,7 @@ params:
   # To hidden post summary in home page, you could set `hiddenPostSummaryInHomePage: true`, default is `false`
   hiddenPostSummaryInHomePage: false
   # Website copyright, default: '© Copyright 2021 ❤️ {params.author}'
-  copyright: '' 
+  copyright: ''
 
   # Extra links in navigation
   links:
